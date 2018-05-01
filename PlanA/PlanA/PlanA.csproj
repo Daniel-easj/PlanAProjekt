@@ -97,9 +97,13 @@
     </Compile>
     <Compile Include="BaseClasses\CatalogBase.cs" />
     <Compile Include="BaseClasses\CustomerBase.cs" />
+    <Compile Include="CatalogClasses\ProductCatalog.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ProductClasses\IProducts.cs" />
+    <Compile Include="ProductClasses\Paint.cs" />
+    <Compile Include="ProductClasses\Tool.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -134,10 +138,8 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="CatalogClasses\" />
     <Folder Include="CustomerClasses\" />
     <Folder Include="GUIPages\" />
-    <Folder Include="ProductClasses\" />
     <Folder Include="TaskClasses\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
