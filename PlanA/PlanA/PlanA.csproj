@@ -97,6 +97,7 @@
     </Compile>
     <Compile Include="BaseClasses\CatalogBase.cs" />
     <Compile Include="BaseClasses\CustomerBase.cs" />
+    <Compile Include="CatalogClasses\ProduktCatalog.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -134,7 +135,6 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="CatalogClasses\" />
     <Folder Include="CustomerClasses\" />
     <Folder Include="GUIPages\" />
     <Folder Include="ProductClasses\" />
