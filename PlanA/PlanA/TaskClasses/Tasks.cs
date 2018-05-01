@@ -10,20 +10,21 @@ namespace PlanA.TaskClasses
 {
     class Tasks
     {
-        private int _taskdescription;
+        private string _taskDescription;
+
         private int _refNum;
 
         private DateTime _startDate;
 
         private Dictionary<string, IProduct> _productsAssociated;
-        private Dictionary<string, CustomerBase> _customersAssociated;
+        private Dictionary<string, CustomerBase> _customerAssociated;
 
         public Tasks()
         {
             _startDate = DateTime.Now;
         }
 
-        public int Taskdescription { get => _taskdescription; set => _taskdescription = value; }
+        public string TaskDescription { get => _taskDescription; set => _taskDescription = value; }
 
         public int RefNum { get => _refNum; set => _refNum = value; }
 
@@ -35,7 +36,7 @@ namespace PlanA.TaskClasses
 
         public Dictionary<string, CustomerBase> CustomersAssociated
         {
-            get => _customersAssociated; set => _customersAssociated = value;
+            get => _customerAssociated; set => _customerAssociated = value;
         }
 
         public Dictionary<string, IProduct> ProductsAssociated
