@@ -97,6 +97,12 @@
     </Compile>
     <Compile Include="BaseClasses\CatalogBase.cs" />
     <Compile Include="BaseClasses\CustomerBase.cs" />
+    <Compile Include="CatalogClasses\CompanyCustomerCatalog.cs" />
+    <Compile Include="CatalogClasses\HousingAssociationCustomerCatalog.cs" />
+    <Compile Include="CatalogClasses\PrivateCustomerCatalog.cs" />
+    <Compile Include="CustomerClasses\HousingAssociationCustomer.cs" />
+    <Compile Include="CustomerClasses\CompanyCustomer.cs" />
+    <Compile Include="CustomerClasses\PrivateCustomer.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -134,8 +140,6 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="CatalogClasses\" />
-    <Folder Include="CustomerClasses\" />
     <Folder Include="GUIPages\" />
     <Folder Include="ProductClasses\" />
     <Folder Include="TaskClasses\" />
