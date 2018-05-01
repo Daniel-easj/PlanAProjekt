@@ -8,5 +8,6 @@ namespace PlanA.CatalogClasses
 {
     class HousingAssociationCustomer
     {
+        //Todo
     }
 }

@@ -8,5 +8,6 @@ namespace PlanA.CustomerClasses
 {
     class PrivateCustomer
     {
+        //TODO
     }
 }
