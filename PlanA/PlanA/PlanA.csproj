@@ -132,6 +132,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="BaseClasses\" />
     <Folder Include="CatalogClasses\" />
     <Folder Include="CustomerClasses\" />
     <Folder Include="GUIPages\" />
