@@ -133,9 +133,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CatalogClasses\" />
-    <Folder Include="CustomerClasses\TaskClasses\" />
+    <Folder Include="CustomerClasses\" />
     <Folder Include="GUIPages\" />
     <Folder Include="ProductClasses\" />
+    <Folder Include="TaskClasses\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
