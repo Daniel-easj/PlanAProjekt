@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PlanA.BaseClasses
+namespace PlanA.TaskClasses
 {
-    class CustomerBase
+    class Tasks
     {
-      
+        private string _taskDescription;
+        private Dictionary<> 
 
     }
 }
