@@ -27,6 +27,7 @@ namespace PlanA.TaskClasses
 
         public int RefNum { get => _refNum; set => _refNum = value; }
 
+
         public DateTime StartDate
         {
             get { return _startDate; }
@@ -41,5 +42,7 @@ namespace PlanA.TaskClasses
         {
             get => _productsAssociated; set => _productsAssociated = value;
         }
+
+
     }
 }
