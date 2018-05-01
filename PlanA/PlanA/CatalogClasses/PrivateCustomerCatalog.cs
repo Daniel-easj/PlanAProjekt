@@ -9,5 +9,8 @@ namespace PlanA.CatalogClasses
 {
     class PrivateCustomerCatalog : CatalogBase
     {
+
+        //todo
+
     }
 }
