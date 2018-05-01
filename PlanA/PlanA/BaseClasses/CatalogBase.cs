@@ -8,5 +8,22 @@ namespace PlanA.BaseClasses
 {
     class CatalogBase
     {
+        private Dictionary<string, //TODO>
+        private static CatalogBase _singletonInstance;
+
+        public CatalogBase()
+        {
+            //TODO
+        }
+
+        public static CatalogBase SingletonInstance
+        {
+            get
+            {
+                if (_singletonInstance != null) return _singletonInstance;
+                _singletonInstance = new CatalogBase();
+                return _singletonInstance;
+            }
+        }
     }
 }
