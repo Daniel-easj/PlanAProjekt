@@ -106,9 +106,6 @@
     <Compile Include="CustomerClasses\HousingAssociationCustomer.cs" />
     <Compile Include="CustomerClasses\CompanyCustomer.cs" />
     <Compile Include="CustomerClasses\PrivateCustomer.cs" />
-    <Compile Include="XAML Pages\CustomerPage.xaml.cs">
-      <DependentUpon>CustomerPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="XAML Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -153,10 +150,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="XAML Pages\CustomerPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="XAML Pages\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
