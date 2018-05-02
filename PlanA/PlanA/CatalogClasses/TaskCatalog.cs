@@ -11,22 +11,22 @@ namespace PlanA.CatalogClasses
     class TaskCatalog : CatalogBase<Tasks>
     {
         
-      private Dictionary<int, Tasks> _tasks;
+       private Dictionary<int, Tasks> _tasks;
 
-      public TaskCatalog()
-      {
-       _tasks = new Dictionary<int, Tasks>();
-      }
+       public TaskCatalog()
+       {
+        _tasks = new Dictionary<int, Tasks>();
+       }
 
-      public void AddTask(int key, Tasks task)
-      {
-       _tasks.Add(key, task);
-      }
+       public void AddTask(int key, Tasks task)
+       {
+        _tasks.Add(key, task);
+       }
 
-      public void RemoveTask(int key)
-      {
-       _tasks.Remove(key);
-      }
+       public void RemoveTask(int key)
+       {
+        _tasks.Remove(key);
+       }
         
     }
 }
