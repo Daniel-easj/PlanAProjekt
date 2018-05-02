@@ -9,8 +9,13 @@ namespace PlanA.CustomerClasses
 {
     class CompanyCustomer : CustomerBase
     {
-        public CompanyCustomer(string name, string phone, string address, string email) : base(name, phone, address, email)
+        private string _cVR;
+
+        public CompanyCustomer(string name, string phone, string address, string email, string cVR) : base(name, phone, address, email)
         {
+            _cVR = cVR;
         }
+
+        public string CVR { get; set; }
     }
 }
