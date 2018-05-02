@@ -7,7 +7,7 @@ using PlanA.BaseClasses;
 
 namespace PlanA.CatalogClasses
 {
-    class HousingAssociationCustomerCatalog : CatalogBase
+    class HousingAssociationCustomerCatalog : CatalogBase<HousingAssociationCustomer>
     {
     }
 }
