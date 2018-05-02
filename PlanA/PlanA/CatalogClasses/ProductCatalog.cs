@@ -16,17 +16,21 @@ namespace PlanA.CatalogClasses
         {
             _productCatalog = new Dictionary<string, IProduct>();
         }
-        
-        public void AddProduct(string key, IProduct product)
+
+        public Dictionary<string, IProduct> GetProductCatalog => _productCatalog;
+
+        public void AddProduct(string id, IProduct product)
         {
-            if (!_productCatalog.ContainsKey(key))
+            if (!_productCatalog.ContainsKey(id))
             {
-                _productCatalog.Add(key, product);
+                _productCatalog.Add(id, product);
             }
             
             //TODO: Tilføj fejlhåndtering i situationer hvor _productCatalog allerede indeholder "key"
         }
 
+
+        // Fjerner et produkt fra kataloget. Metoden bør kun anvendes hvis produktet ikke længere vil eksistere på det fysiske lager
         public void RemoveProduct(string id)
         {
             if (!_productCatalog.ContainsKey(id))
@@ -36,25 +40,45 @@ namespace PlanA.CatalogClasses
             //TODO: Tilføj fejlhåndtering i situationer hvor _productCatalog ikke indeholder "id / key"
         }
 
-        public bool CheckAvailability(IProduct product)
+        // *følger gammelt "reserved" logik
+
+        //public bool CheckAvailability(IProduct product)
+        //{
+        //    if (product.Quantity > 0 && !product.IsReserved)
+        //    {
+        //        return true;
+        //    }
+        //    return false;
+        //}
+
+        public bool CheckAvailabilityExistingProduct(string id, int quantity)
         {
-            if (product.Quantity > 0 && !product.IsReserved)
+            if (_productCatalog.ContainsKey(id) && _productCatalog[id].Quantity >= quantity)
             {
                 return true;
             }
             return false;
         }
 
-        public void ReserveObject(IProduct product)
+        // *følger gammelt "reserved" logik
+
+        //public void ReserveObject(IProduct product, int quantity)
+        //{
+        //    if (CheckAvailability(product) && product.Quantity >= quantity )
+        //    {
+        //        product.IsReserved = true;
+        //    }
+        //}
+
+        public void ReserveProductAmount(IProduct product, int amount)
         {
-            if (CheckAvailability(product))
+            if (CheckAvailabilityExistingProduct(product.ProductID, amount))
             {
-                product.IsReserved = true;
+                product.Quantity = product.Quantity - amount;
             }
 
-            //TODO: Tilføj fejlhåndtering i situationer hvor der ikke kan reseveres et produkt
+            //TODO: Tilføj fejlhåndtering i situationer hvor CheckAvailabilityExistingProduct returnerer "false"
         }
-
 
     }
 }

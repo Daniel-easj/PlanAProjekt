@@ -101,6 +101,7 @@
     <Compile Include="CatalogClasses\HousingAssociationCustomerCatalog.cs" />
     <Compile Include="CatalogClasses\PrivateCustomerCatalog.cs" />
     <Compile Include="CatalogClasses\ProductCatalog.cs" />
+    <Compile Include="CommandClasses\CreateProductCommand.cs" />
     <Compile Include="CustomerClasses\HousingAssociationCustomer.cs" />
     <Compile Include="CustomerClasses\CompanyCustomer.cs" />
     <Compile Include="CustomerClasses\PrivateCustomer.cs" />
