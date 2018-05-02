@@ -6,22 +6,24 @@ using System.Threading.Tasks;
 
 namespace PlanA.BaseClasses
 {
-    class CatalogBase
+    class CatalogBase<TCatalog>
     {
         //TODO
-        private static CatalogBase _singletonInstance;
+        private static CatalogBase<TCatalog> _singletonInstance;
+
+        private Dictionary<string, TCatalog> _catalogs;
 
         public CatalogBase()
         {
             //TODO
         }
 
-        public static CatalogBase SingletonInstance
+        public static CatalogBase<TCatalog> SingletonInstance
         {
             get
             {
                 if (_singletonInstance != null) return _singletonInstance;
-                _singletonInstance = new CatalogBase();
+                _singletonInstance = new CatalogBase<TCatalog>();
                 return _singletonInstance;
             }
         }
