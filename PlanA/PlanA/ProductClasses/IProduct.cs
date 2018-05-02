@@ -8,7 +8,7 @@ namespace PlanA.ProductClasses
 {
     interface IProduct
     {
-        int ProductID { get; }
+        string ProductID { get; }
 
         int Quantity
         {
@@ -16,10 +16,11 @@ namespace PlanA.ProductClasses
             set;
         }
 
-        bool IsReserved
+        string Description
         {
             get;
             set;
         }
+
     }
 }
