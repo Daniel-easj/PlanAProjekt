@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid x:Name="MainGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="25*"/>
             <ColumnDefinition Width="25*"/>
@@ -15,25 +15,43 @@
             <ColumnDefinition Width="25*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="85*"/>
-            <RowDefinition Height="15*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="63*"/>
+            <RowDefinition Height="9*"/>
         </Grid.RowDefinitions>
-
-        <Button Name="Assignment" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.Column="0" Grid.RowSpan="1" Background="#00F30404" Margin="5,5,5,5">
-            <Image Source="Assets/Assignment Not Selected.png"></Image>
-        </Button>
-        <Button Name="Inventory" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.Column="1" Grid.RowSpan="1" Background="#00F30404" Margin="5,5,5,5">
-            <Image Source="Assets/Inventory Not Selected.png"></Image>
-        </Button>
-        <Button Name="Customer" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.Column="2" Grid.RowSpan="1" Background="#00F30404" Margin="5,5,5,5">
-            <Image Source="Assets/People Not Selected.png"></Image>
-        </Button>
-        <Button Name="Statistics"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.Column="3" Grid.RowSpan="1" Background="#00F30404" Margin="5,5,5,5">
-            <Image Source="Assets/Statistic Not Selected.png"></Image>
-        </Button>
-        <Button Name="New Assignment" HorizontalAlignment="Left" Margin="80,0,0,0" VerticalAlignment="Bottom" Grid.Column="2" Grid.ColumnSpan="2" Width="80" Height="80" Background="#00F30404">
+        <Button Name="New Assignment" HorizontalAlignment="Left" Margin="100,0,0,70" VerticalAlignment="Bottom" Grid.Column="2" Grid.ColumnSpan="2" Width="65" Height="65" Background="#00F30404" Grid.Row="1" Grid.RowSpan="2">
             <Image Source="Assets/Black Plus.png"></Image>
         </Button>
+        <Grid x:Name="BottomPanel" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.ColumnSpan="4" Grid.Row="2" BorderBrush="Black" BorderThickness="0,3,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="Assignment" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#00F30404" Margin="0,0,0,0">
+                <Image Source="Assets/Assignment Selected.png"/>
+            </Button>
+            <Button x:Name="Inventory" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#00F30404" Margin="0,0,0,0" Grid.ColumnSpan="1                         " Grid.Column="1">
+                <Image Source="Assets/Inventory Not Selected.png"/>
+            </Button>
+            <Button x:Name="Customer" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#00F30404" Margin="0,0,0,0" Grid.Column="2">
+                <Image Source="Assets/People Not Selected.png"/>
+            </Button>
+            <Button x:Name="Statistics"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#00F30404" Margin="0,0,0,0" Grid.Column="3">
+                <Image Source="Assets/Statistic Not Selected.png"/>
+            </Button>
+        </Grid>
+        <Grid HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.ColumnSpan="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock HorizontalAlignment="Stretch" Margin="0,0,0,0" Text="Opgaver" TextAlignment="Center"  TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="20" TextDecorations="Underline" LineHeight="6"/>
+            <TextBox Text="" Margin="0,0,10,0" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Grid.Column="1" Grid.ColumnSpan="3" PlaceholderText="Søg"/>
+        </Grid>
 
     </Grid>
 </Page>
