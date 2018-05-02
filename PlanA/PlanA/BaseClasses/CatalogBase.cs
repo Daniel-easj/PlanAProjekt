@@ -11,7 +11,7 @@ namespace PlanA.BaseClasses
         //TODO
         private static CatalogBase<TCatalog> _singletonInstance;
 
-        private Dictionary<string, TCatalog> _catalogs;
+        private Dictionary<string,TCatalog> _catalogs;
 
         public CatalogBase()
         {
