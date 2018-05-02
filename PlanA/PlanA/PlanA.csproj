@@ -124,6 +124,16 @@
     <None Include="PlanA_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Assignment Not Selected.png" />
+    <Content Include="Assets\Assignment Selected.png" />
+    <Content Include="Assets\Black Plus.png" />
+    <Content Include="Assets\Inventory Not Selected.png" />
+    <Content Include="Assets\Inventory Selected.png" />
+    <Content Include="Assets\People Not Selected.png" />
+    <Content Include="Assets\People Selected.png" />
+    <Content Include="Assets\Statistic Not Selected.png" />
+    <Content Include="Assets\Statistic Selected.png" />
+    <Content Include="Assets\White Plus.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
