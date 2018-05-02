@@ -15,5 +15,7 @@ namespace PlanA.TaskClasses
 
         public Dictionary<string, CustomerBase> CustomerAssociated { get => _customerAssociated; set => _customerAssociated = value; }
          Dictionary<string, IProduct> ProductsAssociated { get => _productsAssociated; set => _productsAssociated = value; }
+
+
     }
 }
