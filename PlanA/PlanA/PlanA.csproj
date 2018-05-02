@@ -106,17 +106,14 @@
     <Compile Include="CustomerClasses\HousingAssociationCustomer.cs" />
     <Compile Include="CustomerClasses\CompanyCustomer.cs" />
     <Compile Include="CustomerClasses\PrivateCustomer.cs" />
-    <Compile Include="XAML Pages\InventoryMainPage.xaml.cs">
-      <DependentUpon>InventoryMainPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="XAML Pages\StatisticMainPage.xaml.cs">
-      <DependentUpon>StatisticMainPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="XAML Pages\CustomerMainPage.xaml.cs">
       <DependentUpon>CustomerMainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="XAML Pages\AssigmentMainPage.xaml.cs">
-      <DependentUpon>AssigmentMainPage.xaml</DependentUpon>
+    <Compile Include="XAML Pages\InventoryMainPage.xaml.cs">
+      <DependentUpon>InventoryMainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XAML Pages\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ProductClasses\Cover.cs" />
     <Compile Include="ProductClasses\IProduct.cs" />
@@ -127,6 +124,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TaskClasses\Associators.cs" />
     <Compile Include="TaskClasses\Tasks.cs" />
+    <Compile Include="XAML Pages\StatisticPage.xaml.cs">
+      <DependentUpon>StatisticPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -159,31 +159,29 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="XAML Pages\InventoryMainPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="XAML Pages\StatisticMainPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="XAML Pages\CustomerMainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="XAML Pages\InventoryMainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="XAML Pages\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="XAML Pages\AssigmentMainPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
+    <Page Include="XAML Pages\StatisticPage.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-      <Version>6.0.8</Version>
+      <Version>6.1.2</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="GUIPages\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
