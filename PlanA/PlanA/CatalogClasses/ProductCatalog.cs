@@ -5,12 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using PlanA.BaseClasses;
 using PlanA.ProductClasses;
+using PlanA.TaskClasses;
 
 namespace PlanA.CatalogClasses
 {
-    class ProductCatalog : CatalogBase
+    class ProductCatalog
     {
         private Dictionary<string, IProduct> _productCatalog;
+        
 
         public ProductCatalog()
         {
@@ -78,6 +80,19 @@ namespace PlanA.CatalogClasses
             }
 
             //TODO: Tilføj fejlhåndtering i situationer hvor CheckAvailabilityExistingProduct returnerer "false"
+        }
+
+        public void ReturnProductAmount(string productId, int amount)
+        {
+            _productCatalog[productId].Quantity = _productCatalog[productId].Quantity + amount;
+        }
+
+        public void CancelledTask(Tasks tasks)
+        {
+            foreach (var t in tasks.ProductsAssociated)
+            {
+                ReturnProductAmount(t.Key, t.Value);
+            }
         }
 
     }

@@ -29,8 +29,12 @@ namespace PlanA.BaseClasses
         public string Address { get; set; }
 
         public string Email { get; set; }
-    
-        public int ID { get; set; }
-        
+
+        public string ID
+        {
+            get { return _iD.ToString(); }
+            
+        }
+
     }
 }
