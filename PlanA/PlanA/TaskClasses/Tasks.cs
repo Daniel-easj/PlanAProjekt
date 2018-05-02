@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using PlanA.BaseClasses;
@@ -8,7 +10,7 @@ using PlanA.ProductClasses;
 
 namespace PlanA.TaskClasses
 {
-    class Tasks
+    class Tasks : INotifyPropertyChanged
     {
         private string _taskDescription;
 
@@ -16,17 +18,34 @@ namespace PlanA.TaskClasses
 
         private DateTime _startDate;
 
-        private Dictionary<string, IProduct> _productsAssociated;
-        private Dictionary<string, CustomerBase> _customerAssociated;
+        //// HAS BEEN MOVED TO THEIR OWN CLASS
+        //// private Dictionary<string, IProduct> _productsAssociated; 
+        //// private Dictionary<string, CustomerBase> _customerAssociated;
 
         public Tasks()
         {
             _startDate = DateTime.Now;
         }
 
-        public string TaskDescription { get => _taskDescription; set => _taskDescription = value; }
+        public string TaskDescription
+        {
+            get => _taskDescription;
+            set
+            {
+                _taskDescription = value; 
+                OnPropertyChanged();
+            }
+        }
 
-        public int RefNum { get => _refNum; set => _refNum = value; }
+        public int RefNum
+        {
+            get => _refNum;
+            set
+            { 
+                _refNum = value;
+                OnPropertyChanged();
+            }
+        }
 
 
         public DateTime StartDate
@@ -34,16 +53,21 @@ namespace PlanA.TaskClasses
             get { return _startDate; }
         }
 
-        public Dictionary<string, CustomerBase> CustomersAssociated
+        public enum TaskType
         {
-            get => _customerAssociated; set => _customerAssociated = value;
+           MalerOpgave,
+           RenovationsOpgave,
+           SpartelOpgave,
+           AndenOpgave
         }
 
-        public Dictionary<string, IProduct> ProductsAssociated
+
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
-            get => _productsAssociated; set => _productsAssociated = value;
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-
-
     }
 }
