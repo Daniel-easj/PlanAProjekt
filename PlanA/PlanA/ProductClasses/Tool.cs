@@ -10,9 +10,13 @@ namespace PlanA.ProductClasses
 {
     class Tool : IProduct, INotifyPropertyChanged
     {
-        private int _productID;
+        private string _productID;
+        private string _description;
         private int _quantity;
-        private bool _isReserved;
+
+        private ToolType _toolType;
+
+
         public enum ToolType
         {
             Pensler,
@@ -27,10 +31,9 @@ namespace PlanA.ProductClasses
         public Tool(int quantity)
         {
             _quantity = quantity;
-            _isReserved = false;
         }
 
-        public int ProductID { get { return _productID; } }
+        public string ProductID { get { return _productID; } }
 
         public int Quantity
         {
@@ -42,19 +45,26 @@ namespace PlanA.ProductClasses
             }
         }
 
-        public bool IsReserved
+        public ToolType SpecificType
         {
-            get
-            {
-                return _isReserved;
-            }
+            get => _toolType;
             set
             {
-                _isReserved = value;
+                _toolType = value;
                 OnPropertyChanged();
             }
         }
 
+        // Kort beskrivelse af produktet som laves i Viewet således at der kan kendes forskel på de enkelte objekter med samme enum type
+        public string Description
+        {
+            get => _description;
+            set
+            {
+                _description = value;
+                OnPropertyChanged();
+            }
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
 

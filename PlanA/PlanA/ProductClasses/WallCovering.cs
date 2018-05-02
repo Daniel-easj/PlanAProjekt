@@ -10,9 +10,11 @@ namespace PlanA.ProductClasses
 {
     class WallCovering : IProduct, INotifyPropertyChanged
     {
-        private int _productID;
+        private string _productID;
+        private string _description;
         private int _quantity;
-        private bool _isReserved;
+
+        private WallCoveringType _wallCoveringType;
 
         public enum WallCoveringType
         {
@@ -24,10 +26,9 @@ namespace PlanA.ProductClasses
         public WallCovering(int quantity)
         {
             _quantity = quantity;
-            _isReserved = false;
         }
 
-        public int ProductID { get { return _productID; } }
+        public string ProductID { get { return _productID; } }
 
         public int Quantity
         {
@@ -38,20 +39,26 @@ namespace PlanA.ProductClasses
                 OnPropertyChanged();
             }
         }
-
-        public bool IsReserved
+        public WallCoveringType SpecificType
         {
-            get
-            {
-                return _isReserved;
-            }
+            get => _wallCoveringType;
             set
             {
-                _isReserved = value;
+                _wallCoveringType = value;
                 OnPropertyChanged();
             }
         }
 
+        // Kort beskrivelse af produktet som laves i Viewet således at der kan kendes forskel på de enkelte objekter med samme enum type
+        public string Description
+        {
+            get => _description;
+            set
+            {
+                _description = value;
+                OnPropertyChanged();
+            }
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
 

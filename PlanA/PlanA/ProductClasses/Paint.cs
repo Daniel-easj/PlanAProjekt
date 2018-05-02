@@ -11,9 +11,11 @@ namespace PlanA.ProductClasses
 {
     class Paint : IProduct, INotifyPropertyChanged
     {
-        private int _productID;
+        private string _productID;
+        private string _description;
         private int _quantity;
-        private bool _isReserved;
+
+        private PaintType _paintType;
 
         public enum PaintType
         {
@@ -25,10 +27,9 @@ namespace PlanA.ProductClasses
         public Paint(int quantity)
         {
             _quantity = quantity;
-            _isReserved = false;
         }
 
-        public int ProductID { get { return _productID; } }
+        public string ProductID { get { return _productID; } }
 
         public int Quantity
         {
@@ -40,19 +41,26 @@ namespace PlanA.ProductClasses
             }
         }
 
-        public bool IsReserved
+        public PaintType SpecificType
         {
-            get
-            {
-                return _isReserved;
-            }
+            get => _paintType;
             set
             {
-                _isReserved = value;
+                _paintType = value;
                 OnPropertyChanged();
             }
         }
 
+        // Kort beskrivelse af produktet som laves i Viewet således at der kan kendes forskel på de enkelte objekter med samme enum type
+        public string Description
+        {
+            get => _description;
+            set
+            {
+                _description = value;
+                OnPropertyChanged();
+            }
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
 
