@@ -32,7 +32,7 @@
             <Button x:Name="Assignment" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#00F30404" Margin="0,0,0,0">
                 <Image Source="../Assets/Assignment Selected.png"></Image>
             </Button>
-            <Button x:Name="Inventory" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#00F30404" Margin="0,0,0,0" Grid.ColumnSpan="1                         " Grid.Column="1">
+            <Button x:Name="Inventory" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#00F30404" Margin="0,0,0,0" Grid.ColumnSpan="1" Grid.Column="1">
                 <Image Source="../Assets/Inventory Not Selected.png"></Image>
             </Button>
             <Button x:Name="Customer" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#00F30404" Margin="0,0,0,0" Grid.Column="2">
