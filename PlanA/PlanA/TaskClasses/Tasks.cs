@@ -6,6 +6,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using PlanA.BaseClasses;
+using PlanA.CatalogClasses;
 using PlanA.ProductClasses;
 
 namespace PlanA.TaskClasses
@@ -13,10 +14,14 @@ namespace PlanA.TaskClasses
     class Tasks : INotifyPropertyChanged
     {
         private string _taskDescription;
-
         private int _refNum;
-
         private DateTime _startDate;
+
+        private Dictionary<string, int> _productsAssociated;
+        private Dictionary<string, CustomerBase> _customerAssociated;
+
+
+        private ProductCatalog _productCatalog;
 
         //// HAS BEEN MOVED TO THEIR OWN CLASS
         //// private Dictionary<string, IProduct> _productsAssociated; 
@@ -25,6 +30,9 @@ namespace PlanA.TaskClasses
         public Tasks()
         {
             _startDate = DateTime.Now;
+
+            _customerAssociated = new Dictionary<string, CustomerBase>();
+            _productsAssociated = new Dictionary<string, int>();
         }
 
         public string TaskDescription
@@ -46,6 +54,27 @@ namespace PlanA.TaskClasses
                 OnPropertyChanged();
             }
         }
+
+
+        public void AddAssociatedCustomers(CustomerBase customer)
+        {
+            if (!_customerAssociated.ContainsKey(customer.ID))
+            {
+                _customerAssociated.Add(customer.ID, customer);
+                OnPropertyChanged();
+            }
+        }
+
+        public void AddAssociatedProducts(IProduct product, int quantity)
+        {
+            if (!_productsAssociated.ContainsKey(product.ProductID))
+            {
+                _productsAssociated.Add(product.ProductID,quantity);
+            }
+        }
+
+        public Dictionary<string, CustomerBase> CustomerAssociated { get => _customerAssociated; set => _customerAssociated = value; }
+        public Dictionary<string, int> ProductsAssociated { get => _productsAssociated; set => _productsAssociated = value; }
 
 
         public DateTime StartDate
