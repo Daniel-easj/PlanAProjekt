@@ -106,8 +106,17 @@
     <Compile Include="CustomerClasses\HousingAssociationCustomer.cs" />
     <Compile Include="CustomerClasses\CompanyCustomer.cs" />
     <Compile Include="CustomerClasses\PrivateCustomer.cs" />
-    <Compile Include="XAML Pages\MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
+    <Compile Include="XAML Pages\InventoryMainPage.xaml.cs">
+      <DependentUpon>InventoryMainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XAML Pages\StatisticMainPage.xaml.cs">
+      <DependentUpon>StatisticMainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XAML Pages\CustomerMainPage.xaml.cs">
+      <DependentUpon>CustomerMainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XAML Pages\AssigmentMainPage.xaml.cs">
+      <DependentUpon>AssigmentMainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ProductClasses\Cover.cs" />
     <Compile Include="ProductClasses\IProduct.cs" />
@@ -150,7 +159,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="XAML Pages\MainPage.xaml">
+    <Page Include="XAML Pages\InventoryMainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="XAML Pages\StatisticMainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="XAML Pages\CustomerMainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="XAML Pages\AssigmentMainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
