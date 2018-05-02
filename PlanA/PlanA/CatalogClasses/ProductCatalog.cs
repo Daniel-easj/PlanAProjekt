@@ -21,9 +21,14 @@ namespace PlanA.CatalogClasses
                 return _singletonInstance;
             }
         }
-        public void AddProduct()
+        public void AddProduct(string key, IProduct product)
         {
+            if (!_productCatalog.ContainsKey(key))
+            {
+                _productCatalog.Add(key, product);
+            }
             
+            //TODO: Tilføj fejlhåndtering i situationer hvor _productCatalog allerede indeholder "key"
         }
 
         public void RemoveProduct(string id)
@@ -31,14 +36,23 @@ namespace PlanA.CatalogClasses
             
         }
 
-        public void CheckQuantity(IProduct product)
+        public bool CheckAvailability(IProduct product)
         {
-            
+            if (product.Quantity > 0 && !product.IsReserved)
+            {
+                return true;
+            }
+            return false;
         }
 
-        public void ReserveObject(bool yeees)
+        public void ReserveObject(IProduct product)
         {
-            
+            if (CheckAvailability(product))
+            {
+                product.IsReserved = true;
+            }
+
+            //TODO: Tilføj fejlhåndtering i situationer hvor der ikke kan reseveres et produkt
         }
 
 
