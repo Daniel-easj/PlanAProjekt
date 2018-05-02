@@ -3,24 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PlanA.BaseClasses;
 using PlanA.ProductClasses;
 
 namespace PlanA.CatalogClasses
 {
-    class ProductCatalog
+    class ProductCatalog : CatalogBase
     {
         private Dictionary<string, IProduct> _productCatalog;
-        private static ProductCatalog _singletonInstance;
 
-        public static ProductCatalog SingletonInstance
+        public ProductCatalog()
         {
-            get
-            {
-                if (_singletonInstance != null) return _singletonInstance;
-                _singletonInstance = new ProductCatalog();
-                return _singletonInstance;
-            }
+            _productCatalog = new Dictionary<string, IProduct>();
         }
+        
         public void AddProduct(string key, IProduct product)
         {
             if (!_productCatalog.ContainsKey(key))
@@ -33,7 +29,11 @@ namespace PlanA.CatalogClasses
 
         public void RemoveProduct(string id)
         {
-            
+            if (!_productCatalog.ContainsKey(id))
+            {
+                _productCatalog.Remove(id);
+            }
+            //TODO: Tilføj fejlhåndtering i situationer hvor _productCatalog ikke indeholder "id / key"
         }
 
         public bool CheckAvailability(IProduct product)
