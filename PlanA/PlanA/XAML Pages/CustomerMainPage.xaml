@@ -19,12 +19,6 @@
             <RowDefinition Height="63*"/>
             <RowDefinition Height="9*"/>
         </Grid.RowDefinitions>
-        <Button x:Name="NewAssignmentButton" HorizontalAlignment="Left" Margin="100,0,0,70" 
-                VerticalAlignment="Bottom" Grid.Column="2" Grid.ColumnSpan="2" 
-                Width="65" Height="65" Background="#00F30404" 
-                Grid.Row="1" Grid.RowSpan="2">
-            <Image Source="../Assets/Black Plus.png"></Image>
-        </Button>
         <Grid x:Name="BottomPanel" HorizontalAlignment="Stretch" Margin="0,0,0,0" 
               VerticalAlignment="Stretch" Grid.ColumnSpan="4" Grid.Row="2" 
               BorderBrush="Black" BorderThickness="0,3,0,0">
@@ -68,6 +62,12 @@
         </Grid>
         <Grid x:Name="CenterViewGrid" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" 
               Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1">
+            <Button x:Name="NewAssignmentButton" HorizontalAlignment="Right" Margin="0,0,20,0" 
+                VerticalAlignment="Bottom" 
+                Width="65" Height="65" Background="#00F30404" 
+                >
+                <Image Source="../Assets/Black Plus.png"/>
+            </Button>
 
         </Grid>
 
