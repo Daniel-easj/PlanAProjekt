@@ -18,6 +18,8 @@ namespace PlanA.CatalogClasses
         _tasks = new Dictionary<int, Tasks>();
        }
 
+        public Dictionary<int, Tasks> GetTasks => _tasks;
+
        public void AddTask(int key, Tasks task)
        {
         _tasks.Add(key, task);
