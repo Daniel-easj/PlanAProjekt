@@ -28,24 +28,29 @@ namespace PlanA
             this.InitializeComponent();
         }
 
-        public void GoToInventoryMainpage(object sender, RoutedEventArgs a)
+        public void GoToInventoryMainPage(object sender, RoutedEventArgs a)
         {
             this.Frame.Navigate(typeof(InventoryMainPage), null);
         }
 
-        public void GoToCustomerMainPage(object sender, RoutedEventArgs b)
+        public void GoToCustomerMainPage(object sender, RoutedEventArgs a)
         {
             this.Frame.Navigate(typeof(CustomerMainPage), null);
         }
 
-        public void GoToStatisticPage(object sender, RoutedEventArgs c)
+        public void GoToStatisticPage(object sender, RoutedEventArgs a)
         {
             this.Frame.Navigate(typeof(StatisticPage), null);
         }
 
-        private void GoToNewAssignment(object sender, RoutedEventArgs d)
+        private void GoToNewAssignment(object sender, RoutedEventArgs a)
         {
             this.Frame.Navigate(typeof(NewAssignment), null);
+        }
+
+        private void GoToMainPage(object sender, RoutedEventArgs a)
+        {
+            this.Frame.Navigate(typeof(MainPage), null);
         }
     }
 }
