@@ -12,7 +12,7 @@ namespace PlanA.CatalogClasses
     class ProductCatalog : CatalogBase<IProduct>
     {
         private Dictionary<string, IProduct> _productCatalog;
-        
+
 
         public ProductCatalog()
         {
