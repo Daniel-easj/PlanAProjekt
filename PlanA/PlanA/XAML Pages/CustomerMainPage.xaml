@@ -29,19 +29,22 @@
                 <ColumnDefinition Width="25*"/>
             </Grid.ColumnDefinitions>
             <Button x:Name="Assignment" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
-                    Background="#00F30404" Margin="0,0,0,0">
-                <Image Source="../Assets/Assignment Not Selected.png"></Image>
+                    Background="#00F30404" Margin="0,0,0,0" Click="GoToMainPage">
+                <Image Source="../Assets/Assignment Selected.png"></Image>
             </Button>
             <Button x:Name="Inventory" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
-                    Background="#00F30404" Margin="0,0,0,0" Grid.Column="1">
+                    Background="#00F30404" Margin="0,0,0,0" Grid.Column="1"
+                    Click="GoToInventoryMainPage">
                 <Image Source="../Assets/Inventory Not Selected.png"></Image>
             </Button>
             <Button x:Name="Customer" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
-                    Background="#00F30404" Margin="0,0,0,0" Grid.Column="2">
-                <Image Source="../Assets/People Selected.png"></Image>
+                    Background="#00F30404" Margin="0,0,0,0" Grid.Column="2"
+                    Click="GoToCustomerMainPage">
+                <Image Source="../Assets/People Not Selected.png"></Image>
             </Button>
             <Button x:Name="Statistics"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
-                    Background="#00F30404" Margin="0,0,0,0" Grid.Column="3">
+                    Background="#00F30404" Margin="0,0,0,0" Grid.Column="3"
+                    Click="GoToStatisticPage">
                 <Image Source="../Assets/Statistic Not Selected.png"></Image>
             </Button>
         </Grid>
