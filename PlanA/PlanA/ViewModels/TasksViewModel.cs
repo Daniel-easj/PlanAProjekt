@@ -7,29 +7,25 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using PlanA.CatalogClasses;
-using PlanA.CommandClasses;
-using PlanA.ProductClasses;
+using PlanA.TaskClasses;
 
 namespace PlanA.ViewModels
 {
-    class ProductViewModel : INotifyPropertyChanged
+    class TasksViewModel : INotifyPropertyChanged
     {
-        private ProductCatalog _productCatalog;
-        private IProduct _selectedProduct;
+        private TaskCatalog _taskCatalog;
+        private ObservableCollection<Tasks> _listOfTasks = new ObservableCollection<Tasks>();
 
-        private ObservableCollection<IProduct> _products = new ObservableCollection<IProduct>();
-
-        public ProductViewModel()
+        public TasksViewModel()
         {
-            _productCatalog = new ProductCatalog();
-
-            foreach (var product in _productCatalog.GetProductCatalog.Values)
+            _taskCatalog = new TaskCatalog();
+            foreach (var task in _taskCatalog.GetTasks.Values)
             {
-                _products.Add(product);
+                _listOfTasks.Add(task);
             }
         }
 
-        public ObservableCollection<IProduct> Products => _products;
+        public ObservableCollection<Tasks> ListAll => _listOfTasks; 
 
         public event PropertyChangedEventHandler PropertyChanged;
 

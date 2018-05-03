@@ -11,13 +11,14 @@ namespace PlanA.ProductClasses
     class WallCovering : IProduct, INotifyPropertyChanged
     {
         private string _productID;
-        private string _description;
+        private string _description = "Ingen beskrivelse";
         private int _quantity;
 
-        private WallCoveringType _wallCoveringType;
+        private WallCoveringType _wallCoveringType = WallCoveringType.Default;
 
         public enum WallCoveringType
         {
+            Default,
             Glasvæv,
             Glasfilt,
             Savsmuldstapet
@@ -47,6 +48,11 @@ namespace PlanA.ProductClasses
                 _wallCoveringType = value;
                 OnPropertyChanged();
             }
+        }
+
+        public string SpecificTypeToString
+        {
+            get => _wallCoveringType.ToString();
         }
 
         // Kort beskrivelse af produktet som laves i Viewet således at der kan kendes forskel på de enkelte objekter med samme enum type
