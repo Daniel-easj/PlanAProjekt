@@ -45,7 +45,7 @@
                 <Image Source="../Assets/Statistic Not Selected.png"></Image>
             </Button>
         </Grid>
-        <Grid x:Name="TopPanel" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.ColumnSpan="4">
+        <Grid x:Name="TopPanel" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.ColumnSpan="4" BorderBrush="Black" BorderThickness="0,0,0,1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="25*"/>
                 <ColumnDefinition Width="25*"/>
@@ -54,8 +54,8 @@
             </Grid.ColumnDefinitions>
             <TextBlock x:Name="SiteDescription" HorizontalAlignment="Stretch" Margin="0,0,0,0" 
                        Text="Opgaver" TextAlignment="Center" TextWrapping="Wrap" 
-                       VerticalAlignment="Bottom" FontSize="20" TextDecorations="Underline" 
-                       LineHeight="6"/>
+                       VerticalAlignment="Bottom" FontSize="20" 
+                       LineHeight="6" Grid.Column="1" Grid.ColumnSpan="2"/>
         </Grid>
         <Grid x:Name="CenterViewGrid" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" 
               Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1"/>
