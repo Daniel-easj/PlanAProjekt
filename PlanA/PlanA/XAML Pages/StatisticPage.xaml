@@ -55,10 +55,8 @@
             <TextBlock x:Name="SiteDescription" HorizontalAlignment="Stretch" Margin="0,0,0,0" 
                        Text="Statistik" TextAlignment="Center" TextWrapping="Wrap" 
                        VerticalAlignment="Bottom" FontSize="20" TextDecorations="Underline" 
-                       LineHeight="6"/>
-            <!--<TextBox x:Name="SearchBar" Margin="0,0,10,0" HorizontalAlignment="Stretch" 
-                     VerticalAlignment="Bottom" Grid.Column="1" Grid.ColumnSpan="3" 
-                     PlaceholderText="Søg"/>-->
+                       LineHeight="6" Grid.Column="1" Grid.ColumnSpan="2"/>
+           
         </Grid>
         <Grid x:Name="CenterViewGrid" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" 
               Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1">
