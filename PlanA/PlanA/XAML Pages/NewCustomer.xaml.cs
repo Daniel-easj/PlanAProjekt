@@ -51,5 +51,8 @@ namespace PlanA.XAML_Pages
         {
             this.Frame.Navigate(typeof(MainPage), null);
         }
+
+        
+
     }
 }
