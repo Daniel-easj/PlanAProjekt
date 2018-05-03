@@ -45,7 +45,7 @@
                 <Image Source="../Assets/Statistic Not Selected.png"></Image>
             </Button>
         </Grid>
-        <Grid x:Name="TopPanel" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.ColumnSpan="4">
+        <Grid x:Name="TopPanel" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.ColumnSpan="4" BorderBrush="Black" BorderThickness="0,0,0,1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="25*"/>
                 <ColumnDefinition Width="25*"/>
@@ -54,14 +54,37 @@
             </Grid.ColumnDefinitions>
             <TextBlock x:Name="SiteDescription" HorizontalAlignment="Stretch" Margin="0,0,0,0" 
                        Text="Kunder" TextAlignment="Center" TextWrapping="Wrap" 
-                       VerticalAlignment="Bottom" FontSize="20" TextDecorations="Underline" 
-                       LineHeight="6"/>
-            <TextBox x:Name="SearchBar" Margin="0,0,10,0" HorizontalAlignment="Stretch" 
-                     VerticalAlignment="Bottom" Grid.Column="1" Grid.ColumnSpan="3" 
-                     PlaceholderText="Søg"/>
+                       VerticalAlignment="Bottom" FontSize="20"  
+                       LineHeight="6" Grid.Column="1" Grid.ColumnSpan="2"/>
         </Grid>
         <Grid x:Name="CenterViewGrid" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" 
               Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="12.5*"/>
+                <RowDefinition Height="12.5*"/>
+                <RowDefinition Height="12.5*"/>
+                <RowDefinition Height="12.5*"/>
+                <RowDefinition Height="12.5*"/>
+                <RowDefinition Height="12.5*"/>
+                <RowDefinition Height="12.5*"/>
+                <RowDefinition Height="12.5*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+            </Grid.ColumnDefinitions>
+            <ComboBox x:Name="Kundetype" HorizontalAlignment="Stretch" Margin="0,10,10,0" VerticalAlignment="Top" PlaceholderText="Kundetype" Grid.Column="2" Grid.ColumnSpan="2"/>
+            <TextBox x:Name="Fornavn" HorizontalAlignment="Stretch" Margin="10,0,0,0" Text="" VerticalAlignment="Top" Grid.Row="1" Grid.ColumnSpan="2" PlaceholderText="Fornavn"/>
+            <TextBox x:Name="Efternavn" HorizontalAlignment="Stretch" Margin="10,0,0,0" Text="" VerticalAlignment="Bottom" Grid.Row="1" Grid.ColumnSpan="3" PlaceholderText="Efternavn"/>
+            <TextBox x:Name="PostNummer" HorizontalAlignment="Stretch" Margin="0,0,10,0" Text="" VerticalAlignment="Bottom" Grid.Row="2" Grid.Column="3" PlaceholderText="PostNr."/>
+            <TextBox x:Name="ByNavn" HorizontalAlignment="Left" Margin="10,0,0,0" Text="" VerticalAlignment="Bottom" Grid.Row="2" Grid.ColumnSpan="3" Width="230" PlaceholderText="Bynavn"/>
+            <TextBox x:Name="Adresse" HorizontalAlignment="Left" Margin="10,0,0,0" Text="" VerticalAlignment="Top" Grid.Row="3" Grid.ColumnSpan="3" Width="230" PlaceholderText="Adresse"/>
+            <TextBox x:Name="HusNummer" HorizontalAlignment="Stretch" Margin="0,0,10,0" Text="" VerticalAlignment="Top" Grid.Row="3" Grid.Column="3" PlaceholderText="HusNr."/>
+            <TextBox x:Name="Email" HorizontalAlignment="Stretch" Margin="10,0,45,0" Text="" VerticalAlignment="Bottom" Grid.Row="4" Grid.ColumnSpan="4" PlaceholderText="E-mail"/>
+            <TextBox x:Name="Telefon" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="10,0,0,0" Text="" VerticalAlignment="Top" Grid.Row="4" PlaceholderText="Telefon"/>
+            <TextBox x:Name="CVR" HorizontalAlignment="Stretch" Margin="10,0,45,0" Text="" VerticalAlignment="Bottom" Grid.Row="5" Grid.ColumnSpan="4" PlaceholderText="CVR"/>
 
         </Grid>
 
