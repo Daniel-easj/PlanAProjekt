@@ -27,12 +27,11 @@ namespace PlanA.CommandClasses
                 return false;
             }
             return true;
-
         }
 
         public void Execute(object parameter)
         {
-            throw new NotImplementedException();
+            _productCatalog.AddProduct(_product.ProductID, _product);
         }
 
         public event EventHandler CanExecuteChanged;
