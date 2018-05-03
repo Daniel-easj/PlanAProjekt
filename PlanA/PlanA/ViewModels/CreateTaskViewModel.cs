@@ -5,13 +5,15 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using PlanA.TaskClasses;
 
 namespace PlanA.ViewModels
 {
     class CreateTaskViewModel : INotifyPropertyChanged
     {
 
-
+        private Tasks _tasks;
+        private 
 
 
 
