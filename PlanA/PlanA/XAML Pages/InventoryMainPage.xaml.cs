@@ -47,9 +47,9 @@ namespace PlanA.XAML_Pages
             this.Frame.Navigate(typeof(NewAssignment), null);
         }
 
-        private void GoToMainPage(object sender, RoutedEventArgs a)
+        private void GoToNewProduct(object sender, RoutedEventArgs a)
         {
-            this.Frame.Navigate(typeof(MainPage), null);
+            this.Frame.Navigate(typeof(NewProduct), null);
         }
     }
 }
