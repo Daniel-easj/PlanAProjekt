@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using PlanA.XAML_Pages;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -25,6 +26,21 @@ namespace PlanA
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        public void GoToInventoryMainpage(object sender, RoutedEventArgs a)
+        {
+            this.Frame.Navigate(typeof(InventoryMainPage), null);
+        }
+
+        public void GoToCustomerMainPage(object sender, RoutedEventArgs b)
+        {
+            this.Frame.Navigate(typeof(CustomerMainPage), null);
+        }
+
+        public void GoToStatisticPage(object sender, RoutedEventArgs c)
+        {
+            this.Frame.Navigate(typeof(StatisticPage), null);
         }
     }
 }
