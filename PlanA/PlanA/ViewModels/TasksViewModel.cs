@@ -13,6 +13,8 @@ namespace PlanA.ViewModels
 {
     class TasksViewModel : INotifyPropertyChanged
     {
+        // Denne klasse håndterer opgaveoversigten på forsiden. 
+
         private TaskCatalog _taskCatalog;
         private ObservableCollection<Tasks> _listOfTasks = new ObservableCollection<Tasks>();
 
