@@ -41,12 +41,12 @@
             </Grid.ColumnDefinitions>
             <Button x:Name="Assignment" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
                     Background="#00F30404" Margin="0,0,0,0" Click="GoToMainPage">
-                <Image Source="../Assets/Assignment Selected.png"></Image>
+                <Image Source="../Assets/Assignment Not Selected.png"></Image>
             </Button>
             <Button x:Name="Inventory" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
                     Background="#00F30404" Margin="0,0,0,0" Grid.Column="1"
                     Click="GoToInventoryMainPage">
-                <Image Source="../Assets/Inventory Not Selected.png"></Image>
+                <Image Source="../Assets/Inventory Selected.png"></Image>
             </Button>
             <Button x:Name="Customer" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
                     Background="#00F30404" Margin="0,0,0,0" Grid.Column="2"
