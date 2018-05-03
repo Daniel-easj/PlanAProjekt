@@ -97,6 +97,7 @@
     </Compile>
     <Compile Include="BaseClasses\CatalogBase.cs" />
     <Compile Include="BaseClasses\CustomerBase.cs" />
+    <Compile Include="BaseClasses\ProductBase.cs" />
     <Compile Include="CatalogClasses\CompanyCustomerCatalog.cs" />
     <Compile Include="CatalogClasses\HousingAssociationCustomerCatalog.cs" />
     <Compile Include="CatalogClasses\PrivateCustomerCatalog.cs" />

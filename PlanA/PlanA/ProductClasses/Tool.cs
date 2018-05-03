@@ -11,14 +11,15 @@ namespace PlanA.ProductClasses
     class Tool : IProduct, INotifyPropertyChanged
     {
         private string _productID;
-        private string _description;
+        private string _description = "Ingen beskrivelse";
         private int _quantity;
 
-        private ToolType _toolType;
+        private ToolType _toolType = ToolType.Default;
 
 
         public enum ToolType
         {
+            Default,
             Pensler,
             Sparteljern,
             Skruetrækker,
@@ -53,6 +54,10 @@ namespace PlanA.ProductClasses
                 _toolType = value;
                 OnPropertyChanged();
             }
+        }
+        public string SpecificTypeToString
+        {
+            get => _toolType.ToString();
         }
 
         // Kort beskrivelse af produktet som laves i Viewet således at der kan kendes forskel på de enkelte objekter med samme enum type

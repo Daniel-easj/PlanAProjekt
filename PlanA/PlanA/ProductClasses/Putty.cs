@@ -12,13 +12,14 @@ namespace PlanA.ProductClasses
     {
 
         private string _productID;
-        private string _description;
+        private string _description = "Ingen beskrivelse";
         private int _quantity;
 
-        private PuttyType _puttyType;
+        private PuttyType _puttyType = PuttyType.Default;
 
         public enum PuttyType
         {
+            Default,
             Vådrum,
             AlmindeligRum
         }
@@ -47,6 +48,11 @@ namespace PlanA.ProductClasses
                 _puttyType = value;
                 OnPropertyChanged();
             }
+        }
+
+        public string SpecificTypeToString
+        {
+            get => _puttyType.ToString();
         }
 
         // Kort beskrivelse af produktet som laves i Viewet således at der kan kendes forskel på de enkelte objekter med samme enum type
