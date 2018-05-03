@@ -9,7 +9,7 @@ using PlanA.TaskClasses;
 
 namespace PlanA.CatalogClasses
 {
-    class ProductCatalog
+    class ProductCatalog : CatalogBase<IProduct>
     {
         private Dictionary<string, IProduct> _productCatalog;
         
@@ -42,18 +42,7 @@ namespace PlanA.CatalogClasses
             //TODO: Tilføj fejlhåndtering i situationer hvor _productCatalog ikke indeholder "id / key"
         }
 
-        // *følger gammelt "reserved" logik
-
-        //public bool CheckAvailability(IProduct product)
-        //{
-        //    if (product.Quantity > 0 && !product.IsReserved)
-        //    {
-        //        return true;
-        //    }
-        //    return false;
-        //}
-
-        public bool CheckAvailabilityExistingProduct(string id, int quantity)
+       public bool CheckAvailabilityExistingProduct(string id, int quantity)
         {
             if (_productCatalog.ContainsKey(id) && _productCatalog[id].Quantity >= quantity)
             {
@@ -62,16 +51,8 @@ namespace PlanA.CatalogClasses
             return false;
         }
 
-        // *følger gammelt "reserved" logik
-
-        //public void ReserveObject(IProduct product, int quantity)
-        //{
-        //    if (CheckAvailability(product) && product.Quantity >= quantity )
-        //    {
-        //        product.IsReserved = true;
-        //    }
-        //}
-
+        // Når et produkt reserveres i forbindelse med en ny opgave kan der reserveres en mængde af materialer. 
+        // Metoden fratrækker en specifik mængde fra et specifikt produkt.
         public void ReserveProductAmount(IProduct product, int amount)
         {
             if (CheckAvailabilityExistingProduct(product.ProductID, amount))
@@ -82,17 +63,21 @@ namespace PlanA.CatalogClasses
             //TODO: Tilføj fejlhåndtering i situationer hvor CheckAvailabilityExistingProduct returnerer "false"
         }
 
-        public void ReturnProductAmount(string productId, int amount)
+        // Når en opgave annulleres bør opgave produkter returneres til lageret. 
+        // Her looper metoden alle de tilknyttede produkter fra en opgave igennem og tilføjer mængden af de reserverede produkter til lageret. 
+        public void CancelledTask(Tasks task, TaskCatalog taskCatalog)
         {
-            _productCatalog[productId].Quantity = _productCatalog[productId].Quantity + amount;
-        }
-
-        public void CancelledTask(Tasks tasks)
-        {
-            foreach (var t in tasks.ProductsAssociated)
+            foreach (var t in task.ProductsAssociated)
             {
                 ReturnProductAmount(t.Key, t.Value);
             }
+
+            taskCatalog.RemoveTask(task.RefNum);
+        }
+
+        public void ReturnProductAmount(string productId, int amount)
+        {
+            _productCatalog[productId].Quantity = _productCatalog[productId].Quantity + amount;
         }
 
     }
