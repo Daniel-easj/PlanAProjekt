@@ -45,7 +45,7 @@ namespace PlanA
 
         private void GoToNewAssignment(object sender, RoutedEventArgs d)
         {
-            this.Frame.Navigate(typeof(NewAssignment), null)
+            this.Frame.Navigate(typeof(NewAssignment), null);
         }
     }
 }
