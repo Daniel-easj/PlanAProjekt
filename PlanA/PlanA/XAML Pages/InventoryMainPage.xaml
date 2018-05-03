@@ -76,8 +76,8 @@
         </Grid>
         <Grid x:Name="CenterViewGrid" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" 
               Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1">
-            
-         <StackPanel Margin="0,30,0,60">
+            <StackPanel Margin="0,30,0,60">
+            <ScrollViewer VerticalScrollBarVisibility="auto" VerticalScrollMode="Enabled">
              <StackPanel>
                  <ListView ItemsSource="{Binding Products}">
                      <ListView.ItemTemplate>
@@ -91,7 +91,9 @@
                      </ListView.ItemTemplate>
                  </ListView>
              </StackPanel>
+            </ScrollViewer>
          </StackPanel>
+         
 
         </Grid>
 

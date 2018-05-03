@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using PlanA.CatalogClasses;
 using PlanA.CommandClasses;
 using PlanA.ProductClasses;
@@ -15,7 +16,9 @@ namespace PlanA.ViewModels
     class ProductViewModel : INotifyPropertyChanged
     {
         private ProductCatalog _productCatalog;
-        private IProduct _selectedProduct;
+
+        //TODO: Implementer detailed view af selectedProduct
+       // private IProduct _selectedProduct;
 
         private ObservableCollection<IProduct> _products = new ObservableCollection<IProduct>();
 
@@ -30,6 +33,11 @@ namespace PlanA.ViewModels
         }
 
         public ObservableCollection<IProduct> Products => _products;
+
+        public void Refresh()
+        {
+            OnPropertyChanged(nameof(Products));
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
 
