@@ -13,17 +13,16 @@ namespace PlanA.CatalogClasses
 
         private Dictionary<int, HousingAssociationCustomer> _housingAssociationCustomer;
 
-
-
+        
         public HousingAssociationCustomerCatalog()
         {
 
             _housingAssociationCustomer = new Dictionary<int, HousingAssociationCustomer>();
         }
 
-        public Dictionary<int, HousingAssociationCustomer> GetHousingAssociationCustomers;
+        public Dictionary<int, HousingAssociationCustomer> GetHousingAssociationCustomers => _housingAssociationCustomer;
 
-        public void AddHousingAsscoiationCustomer(int key, HousingAssociationCustomer housingAssociationCustomer)
+        public void AddHousingAssociationCustomer(int key, HousingAssociationCustomer  housingAssociationCustomer)
 
         {
 
@@ -35,7 +34,7 @@ namespace PlanA.CatalogClasses
         {
 
 
-            _housingAssociationCustomer.Add(key, housingAssociationCustomer);
+            _housingAssociationCustomer.Remove(key);
 
 
         }
