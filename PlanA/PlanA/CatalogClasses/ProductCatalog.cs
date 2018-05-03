@@ -17,6 +17,10 @@ namespace PlanA.CatalogClasses
         public ProductCatalog()
         {
             _productCatalog = new Dictionary<string, IProduct>();
+
+            AddProduct("p100", new Cover(20));
+            AddProduct("p101", new Paint(50));
+            AddProduct("p102", new Tool(1));
         }
 
         public Dictionary<string, IProduct> GetProductCatalog => _productCatalog;

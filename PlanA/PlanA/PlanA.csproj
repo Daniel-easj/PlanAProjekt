@@ -97,6 +97,7 @@
     </Compile>
     <Compile Include="BaseClasses\CatalogBase.cs" />
     <Compile Include="BaseClasses\CustomerBase.cs" />
+    <Compile Include="BaseClasses\ProductBase.cs" />
     <Compile Include="CatalogClasses\CompanyCustomerCatalog.cs" />
     <Compile Include="CatalogClasses\HousingAssociationCustomerCatalog.cs" />
     <Compile Include="CatalogClasses\PrivateCustomerCatalog.cs" />
@@ -107,6 +108,7 @@
     <Compile Include="CustomerClasses\CompanyCustomer.cs" />
     <Compile Include="CustomerClasses\PrivateCustomer.cs" />
     <Compile Include="ViewModels\ProductViewModel.cs" />
+    <Compile Include="ViewModels\TasksViewModel.cs" />
     <Compile Include="XAML Pages\CustomerMainPage.xaml.cs">
       <DependentUpon>CustomerMainPage.xaml</DependentUpon>
     </Compile>

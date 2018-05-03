@@ -11,13 +11,14 @@ namespace PlanA.ProductClasses
     class Cover : IProduct, INotifyPropertyChanged
     {
         private string _productID;
-        private string _description;
+        private string _description = "Ingen beskrivelse";
         private int _quantity;
 
-        private CoverType _coverType;
+        private CoverType _coverType = CoverType.Default;
 
         public enum CoverType
         {
+            Default,
             Tape,
             Plast,
             Pap
@@ -40,14 +41,15 @@ namespace PlanA.ProductClasses
             }
         }
 
+        public string SpecificTypeToString
+        {
+            get => _coverType.ToString();
+        }
+
         public CoverType SpecificType
         {
             get => _coverType;
-            set
-            {
-                _coverType = value;
-                OnPropertyChanged();
-            }
+            set { _coverType = value; }
         }
 
 

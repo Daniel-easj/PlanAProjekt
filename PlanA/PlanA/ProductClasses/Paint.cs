@@ -12,13 +12,14 @@ namespace PlanA.ProductClasses
     class Paint : IProduct, INotifyPropertyChanged
     {
         private string _productID;
-        private string _description;
+        private string _description = "Ingen beskrivelse";
         private int _quantity;
 
-        private PaintType _paintType;
+        private PaintType _paintType = PaintType.Default;
 
         public enum PaintType
         {
+            Default,
             Træmaling,
             Facademaling,
             Grunder
@@ -49,6 +50,11 @@ namespace PlanA.ProductClasses
                 _paintType = value;
                 OnPropertyChanged();
             }
+        }
+
+        public string SpecificTypeToString
+        {
+            get => _paintType.ToString();
         }
 
         // Kort beskrivelse af produktet som laves i Viewet således at der kan kendes forskel på de enkelte objekter med samme enum type
