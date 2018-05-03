@@ -42,5 +42,10 @@ namespace PlanA
         {
             this.Frame.Navigate(typeof(StatisticPage), null);
         }
+
+        private void GoToNewAssignment(object sender, RoutedEventArgs d)
+        {
+            this.Frame.Navigate(typeof(NewAssignment), null)
+        }
     }
 }
