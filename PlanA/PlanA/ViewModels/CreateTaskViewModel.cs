@@ -1,31 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-using PlanA.CatalogClasses;
+using PlanA.TaskClasses;
 
 namespace PlanA.ViewModels
-/*
- {
-
-
-    class HousingAssociationViewModel : INotifyPropertyChanged
-
+{
+    class CreateTaskViewModel : INotifyPropertyChanged
     {
-        private HousingAssociationCustomerCatalog _housingAssociationCustomerCatalog;
-        private ObservableCollection<HousingAssociationCustomer> _listOfHousingAssociationCustomers = new ObservableCollection<HousingAssociationCustomer>();
+
+        private Tasks _tasks;
+        private 
 
 
-        public HousingAssociationViewModel()
-        {
-           
-        }
-
-    /*
 
 
 
@@ -36,10 +26,4 @@ namespace PlanA.ViewModels
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
-    
-
-
-
-
-    
 }
