@@ -79,11 +79,13 @@
                     <ListView ItemsSource="{Binding Products}" Height="477">
                         <ListView.ItemTemplate>
                             <DataTemplate>
-                                <StackPanel Height="90" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,0,0,0" Padding="0,0,0,0" BorderBrush="Black" BorderThickness="2,2,2,2" Width="330">
-                                    <TextBlock Text="Navn" Height="30" Margin="10,0,0,0"/>
-                                    <TextBlock Text="Telefon-nummer" Height="30" Margin="10,0,0,0"/>
-                                    <TextBlock Text="Adresse" Height="30" Margin="10,0,0,0"/>
-                                </StackPanel>
+                                <StackPanel Height="90" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,11,0,0" Padding="0,0,0,0" BorderBrush="Black" BorderThickness="0,0,0,0" Width="330">
+                                    <Grid Height="90" BorderBrush="Black" BorderThickness="2,2,2,2">
+                                        <TextBlock Text="Navn" Height="30" Margin="10,0,0,0" VerticalAlignment="Top"/>
+                                        <TextBlock Text="Telefon-nummer" Height="30" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                                        <TextBlock Text="Adresse" Height="30" Margin="10,0,0,0" VerticalAlignment="Bottom"/>
+                                    </Grid>
+                                 </StackPanel>
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
