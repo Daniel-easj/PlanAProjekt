@@ -22,9 +22,10 @@ namespace PlanA.ProductClasses
             set;
         }
 
-        string SpecificTypeToString
+        string SpecificType
         {
             get;
+            set;
         }
 
     }

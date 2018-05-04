@@ -50,5 +50,10 @@ namespace PlanA.XAML_Pages
         {
             this.Frame.Navigate(typeof(NewCustomer), null);
         }
+
+        private void ListView_SelectionChanged()
+        {
+
+        }
     }
 }

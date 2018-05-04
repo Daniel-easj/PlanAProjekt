@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using PlanA.CatalogClasses;
 using PlanA.ProductClasses;
+using PlanA.ViewModels;
 
 namespace PlanA.CommandClasses
 {
@@ -13,11 +14,13 @@ namespace PlanA.CommandClasses
     {
         private IProduct _product;
         private ProductCatalog _productCatalog;
+        private CreateProductViewModel _cpvm;
 
-        public CreateProductCommand(IProduct product, ProductCatalog productCatalog)
+        public CreateProductCommand(IProduct product, ProductCatalog productCatalog, CreateProductViewModel cpvm)
         {
             _product = product;
             _productCatalog = productCatalog;
+            _cpvm = cpvm;
         }
 
         public bool CanExecute(object parameter)
