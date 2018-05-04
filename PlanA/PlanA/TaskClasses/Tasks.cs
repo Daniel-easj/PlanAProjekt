@@ -90,6 +90,14 @@ namespace PlanA.TaskClasses
            AndenOpgave
         }
 
+        public enum TaskSource
+        {
+            ByggeTilbud3,
+            EjerForeningDanmark,
+            Anmeldhaandvaerker,
+            EgetNetværk,
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)

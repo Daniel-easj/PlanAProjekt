@@ -30,7 +30,7 @@
             </Grid.ColumnDefinitions>
             <Button x:Name="Assignment" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
                     Background="#00F30404" Margin="0,0,0,0" Click="GoToMainPage">
-                <Image Source="../Assets/Assignment Selected.png"></Image>
+                <Image Source="../Assets/Assignment Not Selected.png"></Image>
             </Button>
             <Button x:Name="Inventory" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
                     Background="#00F30404" Margin="0,0,0,0" Grid.Column="1"
@@ -40,7 +40,7 @@
             <Button x:Name="Customer" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
                     Background="#00F30404" Margin="0,0,0,0" Grid.Column="2"
                     Click="GoToCustomerMainPage">
-                <Image Source="../Assets/People Not Selected.png"></Image>
+                <Image Source="../Assets/People Selected.png"></Image>
             </Button>
             <Button x:Name="Statistics"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
                     Background="#00F30404" Margin="0,0,0,0" Grid.Column="3"
@@ -63,14 +63,16 @@
         <Grid x:Name="CenterViewGrid" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" 
               Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="12.5*"/>
-                <RowDefinition Height="12.5*"/>
-                <RowDefinition Height="12.5*"/>
-                <RowDefinition Height="12.5*"/>
-                <RowDefinition Height="12.5*"/>
-                <RowDefinition Height="12.5*"/>
-                <RowDefinition Height="12.5*"/>
-                <RowDefinition Height="12.5*"/>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="5*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="25*"/>
@@ -81,13 +83,15 @@
             <ComboBox x:Name="Kundetype" HorizontalAlignment="Stretch" Margin="0,10,10,0" VerticalAlignment="Top" PlaceholderText="Kundetype" Grid.Column="2" Grid.ColumnSpan="2"/>
             <TextBox x:Name="Fornavn" HorizontalAlignment="Stretch" Margin="10,0,0,0" Text="" VerticalAlignment="Top" Grid.Row="1" Grid.ColumnSpan="2" PlaceholderText="Fornavn"/>
             <TextBox x:Name="Efternavn" HorizontalAlignment="Stretch" Margin="10,0,0,0" Text="" VerticalAlignment="Bottom" Grid.Row="1" Grid.ColumnSpan="3" PlaceholderText="Efternavn"/>
-            <TextBox x:Name="PostNummer" HorizontalAlignment="Stretch" Margin="0,0,10,0" Text="" VerticalAlignment="Bottom" Grid.Row="2" Grid.Column="3" PlaceholderText="PostNr."/>
-            <TextBox x:Name="ByNavn" HorizontalAlignment="Left" Margin="10,0,0,0" Text="" VerticalAlignment="Bottom" Grid.Row="2" Grid.ColumnSpan="3" Width="230" PlaceholderText="Bynavn"/>
-            <TextBox x:Name="Adresse" HorizontalAlignment="Left" Margin="10,0,0,0" Text="" VerticalAlignment="Top" Grid.Row="3" Grid.ColumnSpan="3" Width="230" PlaceholderText="Adresse"/>
-            <TextBox x:Name="HusNummer" HorizontalAlignment="Stretch" Margin="0,0,10,0" Text="" VerticalAlignment="Top" Grid.Row="3" Grid.Column="3" PlaceholderText="HusNr."/>
-            <TextBox x:Name="Email" HorizontalAlignment="Stretch" Margin="10,0,45,0" Text="" VerticalAlignment="Bottom" Grid.Row="4" Grid.ColumnSpan="4" PlaceholderText="E-mail"/>
-            <TextBox x:Name="Telefon" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="10,0,0,0" Text="" VerticalAlignment="Top" Grid.Row="4" PlaceholderText="Telefon"/>
-            <TextBox x:Name="CVR" HorizontalAlignment="Stretch" Margin="10,0,45,0" Text="" VerticalAlignment="Bottom" Grid.Row="5" Grid.ColumnSpan="4" PlaceholderText="CVR"/>
+            <TextBox x:Name="PostNummer" HorizontalAlignment="Stretch" Margin="0,0,10,0" Text="" VerticalAlignment="Top" Grid.Row="3" Grid.Column="3" PlaceholderText="PostNr."/>
+            <TextBox x:Name="ByNavn" HorizontalAlignment="Stretch" Margin="10,0,45,0" Text="" VerticalAlignment="Top" Grid.Row="3" Grid.ColumnSpan="3" PlaceholderText="Bynavn"/>
+            <TextBox x:Name="Adresse" HorizontalAlignment="Stretch" Margin="10,0,45,0" Text="" VerticalAlignment="Bottom" Grid.Row="3" Grid.ColumnSpan="3" PlaceholderText="Adresse"/>
+            <TextBox x:Name="HusNummer" HorizontalAlignment="Stretch" Margin="0,0,10,0" Text="" VerticalAlignment="Bottom" Grid.Row="3" Grid.Column="3" PlaceholderText="HusNr."/>
+            <TextBox x:Name="Email" HorizontalAlignment="Stretch" Margin="10,0,45,0" Text="" VerticalAlignment="Bottom" Grid.Row="5" Grid.ColumnSpan="4" PlaceholderText="E-mail"/>
+            <TextBox x:Name="Telefon" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="10,0,0,0" Text="" VerticalAlignment="Top" Grid.Row="5" PlaceholderText="Telefon"/>
+            <TextBox x:Name="CVR" HorizontalAlignment="Stretch" Margin="10,0,45,0" Text="" VerticalAlignment="Bottom" Grid.Row="6" Grid.ColumnSpan="4" PlaceholderText="CVR"/>
+            <Button Content="Button" HorizontalAlignment="Stretch" Margin="10,0,5,0" VerticalAlignment="Stretch" Grid.Row="8" Grid.ColumnSpan="2"/>
+            <Button Content="Button" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="5,0,10,0" VerticalAlignment="Stretch" Grid.Row="8" Grid.Column="2"/>
 
         </Grid>
 

@@ -104,10 +104,11 @@
     <Compile Include="CatalogClasses\ProductCatalog.cs" />
     <Compile Include="CatalogClasses\TaskCatalog.cs" />
     <Compile Include="CommandClasses\CreateProductCommand.cs" />
+    <Compile Include="CommandClasses\CreateTaskCommand.cs" />
     <Compile Include="CustomerClasses\HousingAssociationCustomer.cs" />
     <Compile Include="CustomerClasses\CompanyCustomer.cs" />
     <Compile Include="CustomerClasses\PrivateCustomer.cs" />
-    <Compile Include="ViewModels\HousingAssociationViewModel.cs" />
+    <Compile Include="ViewModels\CreateTaskViewModel.cs" />
     <Compile Include="ViewModels\ProductViewModel.cs" />
     <Compile Include="ViewModels\TasksViewModel.cs" />
     <Compile Include="XAML Pages\CustomerMainPage.xaml.cs">
