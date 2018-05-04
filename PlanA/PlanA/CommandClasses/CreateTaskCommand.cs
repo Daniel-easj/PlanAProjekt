@@ -12,6 +12,7 @@ namespace PlanA.CommandClasses
 {
     class CreateTaskCommand : ICommand
     {
+
         private Tasks _task;
         private TaskCatalog _taskCatalog;
 
@@ -33,7 +34,7 @@ namespace PlanA.CommandClasses
 
         public void Execute(object parameter)
         {
-           _taskCatalog.AddTask(_task.RefNum, _task );
+           _taskCatalog.AddTask(_task.RefNum, _task ); 
         }
 
         public event EventHandler CanExecuteChanged;
