@@ -36,7 +36,10 @@ namespace PlanA.ProductClasses
             }
         }
 
-
+        public override string ToString()
+        {
+            return "Værktøj";
+        }
 
         //private string _productID;
         //private string _description = "Ingen beskrivelse";

@@ -61,7 +61,27 @@
                        LineHeight="6" Grid.Column="1" Grid.ColumnSpan="2"/>
         </Grid>
         <Grid x:Name="CenterViewGrid" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" 
-              Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1"/>
+              Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+            </Grid.ColumnDefinitions>
+            <ComboBox HorizontalAlignment="Stretch" Margin="0,0,10,0" VerticalAlignment="Bottom" Grid.Column="2" Grid.ColumnSpan="2" PlaceholderText="Produkttype"/>
+        </Grid>
 
     </Grid>
 </Page>

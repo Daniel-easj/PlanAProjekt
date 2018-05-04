@@ -7,6 +7,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using PlanA.BaseClasses;
 using PlanA.CatalogClasses;
 using PlanA.CommandClasses;
 using PlanA.ProductClasses;
@@ -20,7 +21,7 @@ namespace PlanA.ViewModels
         //TODO: Implementer detailed view af selectedProduct
        // private IProduct _selectedProduct;
 
-        private ObservableCollection<IProduct> _products = new ObservableCollection<IProduct>();
+        private ObservableCollection<ProductBase> _products = new ObservableCollection<ProductBase>();
 
         public ProductViewModel()
         {
@@ -32,7 +33,7 @@ namespace PlanA.ViewModels
             }
         }
 
-        public ObservableCollection<IProduct> Products => _products;
+        public ObservableCollection<ProductBase> Products => _products;
 
         public void Refresh()
         {
