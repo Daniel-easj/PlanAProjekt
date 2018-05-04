@@ -32,7 +32,10 @@ namespace PlanA.ProductClasses
             }
         }
 
-
+        public override string ToString()
+        {
+            return "Vægbeklædning";
+        }
 
 
         //private string _productID;

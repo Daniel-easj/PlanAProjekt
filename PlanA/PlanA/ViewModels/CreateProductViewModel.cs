@@ -32,8 +32,11 @@ namespace PlanA.ViewModels
             _allProductTypes.Add("Tool", new Tool());
             _allProductTypes.Add("WallCovering", new WallCovering());
 
+            _createProductCommand = new CreateProductCommand(_selectedProductType, _productCatalog);
+
         }
         public Dictionary<string, ProductBase> AllProductTypes => _allProductTypes;
+        public CreateProductCommand CreateProductCommand => _createProductCommand;
 
         public ProductBase SelectedProductType
         {

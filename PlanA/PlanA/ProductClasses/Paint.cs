@@ -38,6 +38,11 @@ namespace PlanA.ProductClasses
         public override bool InDoor { get => _inDoor; set => _inDoor = value; }
         public override int Gloss { get => _gloss; set => _gloss = value; }
 
+        public override string ToString()
+        {
+            return "Maling";
+        }
+
 
         //private string _productID;
         //private string _description = "Ingen beskrivelse";
