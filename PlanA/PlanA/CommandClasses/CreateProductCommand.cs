@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using PlanA.BaseClasses;
 using PlanA.CatalogClasses;
 using PlanA.ProductClasses;
 using PlanA.ViewModels;
@@ -12,15 +13,13 @@ namespace PlanA.CommandClasses
 {
     class CreateProductCommand : ICommand
     {
-        private IProduct _product;
+        private ProductBase _product;
         private ProductCatalog _productCatalog;
-        private CreateProductViewModel _cpvm;
 
-        public CreateProductCommand(IProduct product, ProductCatalog productCatalog, CreateProductViewModel cpvm)
+        public CreateProductCommand(ProductBase product, ProductCatalog productCatalog)
         {
             _product = product;
             _productCatalog = productCatalog;
-            _cpvm = cpvm;
         }
 
         public bool CanExecute(object parameter)

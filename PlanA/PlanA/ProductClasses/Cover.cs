@@ -27,6 +27,11 @@ namespace PlanA.ProductClasses
             set { _coverType = value; }
         }
 
+        public override string ToString()
+        {
+            return "Afdækning";
+        }
+
         //private string _productID;
         //private string _description = "Ingen beskrivelse";
         //private int _quantity = 0;

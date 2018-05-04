@@ -78,7 +78,7 @@
                          <DataTemplate>
                                 <StackPanel Margin="10,10,10,10">
                                     <TextBlock Text="{Binding Description, Mode=OneWay}"/>
-                                    <TextBlock Text="{Binding SpecificTypeToString, Mode=OneWay}"/>
+                                    <TextBlock Text="{Binding SpecificType, Mode=OneWay}"/>
                                     <TextBlock Text="{Binding Quantity, Mode=OneWay}"/>
                                 </StackPanel>
                             </DataTemplate>

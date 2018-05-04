@@ -11,21 +11,32 @@ namespace PlanA.CatalogClasses
 {
     class ProductCatalog : CatalogBase<IProduct>
     {
-        private Dictionary<string, IProduct> _productCatalog;
+        private Dictionary<string, ProductBase> _productCatalog;
 
 
         public ProductCatalog()
         {
-            _productCatalog = new Dictionary<string, IProduct>();
+            _productCatalog = new Dictionary<string, ProductBase>();
 
-            AddProduct("p100", new Cover(20));
-            AddProduct("p101", new Paint(50));
-            AddProduct("p102", new Tool(1));
+            AddProduct("p100", new Cover());
+            AddProduct("p101", new Paint());
+            AddProduct("p102", new Tool());
+            AddProduct("p1023", new Tool());
+            AddProduct("p10452", new Tool());
+            AddProduct("p10345342", new Tool());
+            AddProduct("p10345342", new Tool());
+            AddProduct("p103452", new Tool());
+            AddProduct("p103453422", new Tool());
+            AddProduct("p10112", new Tool());
+            AddProduct("p10222", new Tool());
+            AddProduct("p10332", new Tool());
+            AddProduct("p10244", new Tool());
+            AddProduct("p15502", new Tool());
         }
 
-        public Dictionary<string, IProduct> GetProductCatalog => _productCatalog;
+        public Dictionary<string, ProductBase> GetProductCatalog => _productCatalog;
 
-        public void AddProduct(string id, IProduct product)
+        public void AddProduct(string id, ProductBase product)
         {
             if (!_productCatalog.ContainsKey(id))
             {
