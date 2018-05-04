@@ -11,21 +11,21 @@ namespace PlanA.CatalogClasses
     class PrivateCustomerCatalog : CatalogBase<PrivateCustomer>
     {
 
-        private Dictionary<int, PrivateCustomer> _privateCustomer;
+        private Dictionary<string, PrivateCustomer> _privateCustomer;
 
         public PrivateCustomerCatalog()
         {
-            _privateCustomer = new Dictionary<int, PrivateCustomer>();
+            _privateCustomer = new Dictionary<string, PrivateCustomer>();
         }
 
-        public Dictionary<int, PrivateCustomer> GetPrivateCustomers => _privateCustomer;
+        public Dictionary<string, PrivateCustomer> GetPrivateCustomers => _privateCustomer;
 
-        public void AddPrivateCustomer(int key, PrivateCustomer privateCustomer)
+        public void AddPrivateCustomer(string key, PrivateCustomer privateCustomer)
         {
           _privateCustomer.Add(key, privateCustomer);
         }
 
-        public void DeletePrivateCustomer(int key)
+        public void DeletePrivateCustomer(string key)
         {
             _privateCustomer.Remove(key);
         }

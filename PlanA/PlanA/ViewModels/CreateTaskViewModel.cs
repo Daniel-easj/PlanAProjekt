@@ -49,7 +49,7 @@ namespace PlanA.ViewModels
         }
 
         public ICommand CreateTaskCommand => _createTaskCommand;
-        
+         
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
