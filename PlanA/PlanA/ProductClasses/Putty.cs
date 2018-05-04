@@ -5,17 +5,15 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using PlanA.BaseClasses;
 
 namespace PlanA.ProductClasses
 {
-    class Putty : IProduct, INotifyPropertyChanged
+    class Putty : ProductBase
     {
 
-        private string _productID;
-        private string _description = "Ingen beskrivelse";
-        private int _quantity;
-
-        private PuttyType _puttyType = PuttyType.Default;
+        private string _coarseType = Coarse.Default.ToString();
+        private string _puttyType = PuttyType.Default.ToString();
 
         public enum PuttyType
         {
@@ -23,24 +21,18 @@ namespace PlanA.ProductClasses
             Vådrum,
             AlmindeligRum
         }
-        public Putty(int quantity)
+
+        public enum Coarse
         {
-            _quantity = quantity;
+            Default,
+            Light,
+            Medium,
+            Coarse
         }
 
-        public string ProductID { get { return _productID; } }
+        public string CoarseType { get { return _coarseType; } }
 
-        public int Quantity
-        {
-            get { return _quantity; }
-            set
-            {
-                _quantity = value;
-                OnPropertyChanged();
-            }
-        }
-
-        public PuttyType SpecificType
+        public override string SpecificType
         {
             get => _puttyType;
             set
@@ -50,27 +42,72 @@ namespace PlanA.ProductClasses
             }
         }
 
-        public string SpecificTypeToString
-        {
-            get => _puttyType.ToString();
-        }
 
-        // Kort beskrivelse af produktet som laves i Viewet således at der kan kendes forskel på de enkelte objekter med samme enum type
-        public string Description
-        {
-            get => _description;
-            set
-            {
-                _description = value;
-                OnPropertyChanged();
-            }
-        }
+        //private string _productID;
+        //private string _description = "Ingen beskrivelse";
+        //private int _quantity = 0;
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        //private string _coarseType = Coarse.Default.ToString();
+        //private string _puttyType = PuttyType.Default.ToString();
 
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
+        //public enum PuttyType
+        //{
+        //    Default,
+        //    Vådrum,
+        //    AlmindeligRum
+        //}
+
+        //public enum Coarse
+        //{
+        //    Default,
+        //    Light,
+        //    Medium, 
+        //    Coarse
+        //}
+
+        //public Putty()
+        //{
+        //}
+
+        //public string ProductID { get { return _productID; } }
+        //public string CoarseType { get { return _coarseType; } }
+
+        //public int Quantity
+        //{
+        //    get { return _quantity; }
+        //    set
+        //    {
+        //        _quantity = value;
+        //        OnPropertyChanged();
+        //    }
+        //}
+
+        //public string SpecificType
+        //{
+        //    get => _puttyType;
+        //    set
+        //    {
+        //        _puttyType = value;
+        //        OnPropertyChanged();
+        //    }
+        //}
+
+        //// Kort beskrivelse af produktet som laves i Viewet således at der kan kendes forskel på de enkelte objekter med samme enum type
+        //public string Description
+        //{
+        //    get => _description;
+        //    set
+        //    {
+        //        _description = value;
+        //        OnPropertyChanged();
+        //    }
+        //}
+
+        //public event PropertyChangedEventHandler PropertyChanged;
+
+        //protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        //{
+        //    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        //}
     }
 }
