@@ -12,11 +12,6 @@ namespace PlanA.CatalogClasses
         //Todo
         public HousingAssociationCustomer(string name, string phone, string address, string email) : base(name, phone, address, email)
         {
-
-
-
         }
-
-
     }
 }
