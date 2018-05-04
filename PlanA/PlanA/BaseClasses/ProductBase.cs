@@ -10,9 +10,11 @@ namespace PlanA.BaseClasses
 {
     public abstract class ProductBase : INotifyPropertyChanged
     {
-        protected int _quantity;
-        protected string _description;
+        protected string _productID;
+        protected int _quantity = 0;
+        protected string _description = "Ingen Beskrivelse";
 
+        public virtual string ProductID { get; set; }
 
         public virtual int Quantity
         {
@@ -33,6 +35,18 @@ namespace PlanA.BaseClasses
                 OnPropertyChanged();
             }
         }
+
+        public abstract string SpecificType
+        {
+            get;
+            set;
+        }
+
+        // Nogle klasser har behov for yderligere properties som kan overrides i de klasser hvor behovet vil opstå.
+
+        public virtual int Gloss { get; set; }
+        public virtual bool InDoor { get; set; }
+        public virtual string Coarse { get; set; }
 
 
         public event PropertyChangedEventHandler PropertyChanged;
