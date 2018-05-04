@@ -65,6 +65,21 @@
         </Grid>
         <Grid x:Name="CenterViewGrid" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" 
               Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1">
+            <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <ComboBox HorizontalAlignment="Right" VerticalAlignment="Stretch" PlaceholderText="Sortering" Width="170" Margin="0,10,10,0"/>
+                <StackPanel VerticalAlignment="Top" Height="480">
+                    <ListView Height="480">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel HorizontalAlignment="Stretch" Height="90" VerticalAlignment="Center" Width="340" Margin="10,0,10,0">
+                                    <TextBlock />
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackPanel>
+            </StackPanel>
+
             <Button x:Name="NewAssignmentButton" HorizontalAlignment="Right" Margin="0,0,20,0" 
                 VerticalAlignment="Bottom" Click="GoToNewCustomer"
                 Width="65" Height="65" Background="#00F30404">
