@@ -150,11 +150,13 @@
   <ItemGroup>
     <Content Include="Assets\Assignment Not Selected.png" />
     <Content Include="Assets\Assignment Selected.png" />
+    <Content Include="Assets\Back.png" />
     <Content Include="Assets\Black Plus.png" />
     <Content Include="Assets\Inventory Not Selected.png" />
     <Content Include="Assets\Inventory Selected.png" />
     <Content Include="Assets\People Not Selected.png" />
     <Content Include="Assets\People Selected.png" />
+    <Content Include="Assets\Save.png" />
     <Content Include="Assets\Statistic Not Selected.png" />
     <Content Include="Assets\Statistic Selected.png" />
     <Content Include="Assets\White Plus.png" />
