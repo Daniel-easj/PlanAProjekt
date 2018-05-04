@@ -72,7 +72,7 @@
                 <RowDefinition Height="10*"/>
                 <RowDefinition Height="10*"/>
                 <RowDefinition Height="10*"/>
-                <RowDefinition Height="10*"/>
+                <RowDefinition Height="5*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="25*"/>
@@ -90,6 +90,8 @@
             <TextBox x:Name="Email" HorizontalAlignment="Stretch" Margin="10,0,45,0" Text="" VerticalAlignment="Bottom" Grid.Row="5" Grid.ColumnSpan="4" PlaceholderText="E-mail"/>
             <TextBox x:Name="Telefon" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="10,0,0,0" Text="" VerticalAlignment="Top" Grid.Row="5" PlaceholderText="Telefon"/>
             <TextBox x:Name="CVR" HorizontalAlignment="Stretch" Margin="10,0,45,0" Text="" VerticalAlignment="Bottom" Grid.Row="6" Grid.ColumnSpan="4" PlaceholderText="CVR"/>
+            <Button Content="Button" HorizontalAlignment="Stretch" Margin="10,0,5,0" VerticalAlignment="Stretch" Grid.Row="8" Grid.ColumnSpan="2"/>
+            <Button Content="Button" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="5,0,10,0" VerticalAlignment="Stretch" Grid.Row="8" Grid.Column="2"/>
 
         </Grid>
 
