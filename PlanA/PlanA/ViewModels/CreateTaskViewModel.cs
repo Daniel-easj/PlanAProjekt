@@ -29,8 +29,7 @@ namespace PlanA.ViewModels
         {
             _tasks = new Tasks();
             _taskCatalog = new TaskCatalog();
-            _createTaskCommand = new CreateTaskCommand(_tasks, _taskCatalog);
-           
+            _createTaskCommand = new CreateTaskCommand(_tasks, _taskCatalog);    
         }
 
         public string SelectedSource
