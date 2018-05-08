@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:viewModels="using:PlanA.ViewModels"
     mc:Ignorable="d">
-    
+
     <Page.DataContext>
         <viewModels:ProductViewModel/>
     </Page.DataContext>
@@ -53,7 +53,7 @@
                 <Image Source="../Assets/Statistic Not Selected.png"></Image>
             </Button>
         </Grid>
-        <Grid x:Name="TopPanel" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.ColumnSpan="4">
+        <Grid x:Name="TopPanel" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.ColumnSpan="4" BorderBrush="Black" BorderThickness="0,0,0,1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="25*"/>
                 <ColumnDefinition Width="25*"/>
@@ -62,35 +62,39 @@
             </Grid.ColumnDefinitions>
             <TextBlock x:Name="SiteDescription" HorizontalAlignment="Stretch" Margin="0,0,0,0" 
                        Text="Lager" TextAlignment="Center" TextWrapping="Wrap" 
-                       VerticalAlignment="Bottom" FontSize="20" TextDecorations="Underline" 
-                       LineHeight="6"/>
+                       VerticalAlignment="Bottom" FontSize="20" LineHeight="6"/>
             <TextBox x:Name="SearchBar" Margin="0,0,10,0" HorizontalAlignment="Stretch" 
                      VerticalAlignment="Bottom" Grid.Column="1" Grid.ColumnSpan="3" 
                      PlaceholderText="Søg"/>
         </Grid>
         <Grid x:Name="CenterViewGrid" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" 
               Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1">
-            
-         
-             <StackPanel Height="524">
-                 <ListView ItemsSource="{Binding Products}" Height="524">
-                     <ListView.ItemTemplate>
-                         <DataTemplate>
-                                <StackPanel Margin="10,10,10,10" Width="150">
-                                    <Grid Height="60" BorderBrush="Black" BorderThickness="2,2,2,2">
-                                        <TextBlock Text="{Binding Description, Mode=OneWay}" VerticalAlignment="Top" Margin="10,0,0,0"/>
-                                        <TextBlock Text="{Binding SpecificType, Mode=OneWay}" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0,0,0"/>
-                                        <TextBlock Text="{Binding Quantity, Mode=OneWay}" VerticalAlignment="Bottom" Margin="10,0,0,0"/>
-                                    </Grid>
-                                </StackPanel>
-                            </DataTemplate>
-                     </ListView.ItemTemplate>
-                 </ListView>
-             </StackPanel>
-         
-            <Button x:Name="NewAssignmentButton_Copy" HorizontalAlignment="Right" Margin="0,0,20,0" 
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="98*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+
+            <StackPanel VerticalAlignment="Stretch" Grid.Row="1" Grid.RowSpan="1">
+                <ListView ItemsSource="{Binding Products}" VerticalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" Height="524">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Margin="20,10,10,10" Width="300">
+                                <Grid Height="60" BorderBrush="Black" BorderThickness="2,2,2,2">
+                                    <TextBlock Text="{Binding Description, Mode=OneWay}" VerticalAlignment="Top" Margin="10,0,0,0"/>
+                                    <TextBlock Text="{Binding SpecificType, Mode=OneWay}" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                                    <TextBlock Text="{Binding Quantity, Mode=OneWay}" VerticalAlignment="Bottom" Margin="10,0,0,0"/>
+                                </Grid>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackPanel>
+
+            <Button x:Name="NewProduct" HorizontalAlignment="Right" Margin="0,0,20,0" 
              VerticalAlignment="Bottom" Width="65" Height="65" 
-             Background="#00F30404" Click="GoToNewProduct">
+             Background="#00F30404" Click="GoToNewProduct" Grid.Row="1" Grid.RowSpan="2">
                 <Image Source="../Assets/Black Plus.png"/>
             </Button>
 
