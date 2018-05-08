@@ -15,7 +15,7 @@ namespace PlanA.ViewModels
     class CreateProductViewModel : INotifyPropertyChanged
     {
         private CreateProductCommand _createProductCommand;
-        private ProductCatalog _productCatalog;
+        private ProductCatalog _productCatalog = ProductCatalog.SingletonInstance;
         private ProductBase _selectedProductType;
         private Dictionary<string, ProductBase> _allProductTypes;
 
@@ -24,13 +24,15 @@ namespace PlanA.ViewModels
 
         public CreateProductViewModel()
         {
-            _allProductTypes = new Dictionary<string, ProductBase>();
+            _allProductTypes = new Dictionary<string, ProductBase>
+            {
+                {"Cover", new Cover()},
+                {"Paint", new Paint()},
+                {"Putty", new Putty()},
+                {"Tool", new Tool()},
+                {"WallCovering", new WallCovering()}
+            };
 
-            _allProductTypes.Add("Cover", new Cover());
-            _allProductTypes.Add("Paint", new Paint());
-            _allProductTypes.Add("Putty", new Putty());
-            _allProductTypes.Add("Tool", new Tool());
-            _allProductTypes.Add("WallCovering", new WallCovering());
 
             _createProductCommand = new CreateProductCommand(_selectedProductType, _productCatalog);
 
@@ -83,7 +85,7 @@ namespace PlanA.ViewModels
             }
         }
 
-        public string SpecificTypeToString
+        public string SpecificType
         {
             get { return _selectedProductType.SpecificType; }
             set
