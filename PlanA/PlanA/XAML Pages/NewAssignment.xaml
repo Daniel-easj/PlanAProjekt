@@ -61,7 +61,49 @@
                        LineHeight="6" Grid.Column="1" Grid.ColumnSpan="2"/>
         </Grid>
         <Grid x:Name="CenterViewGrid" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" 
-              Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1"/>
+              Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1">
+            <ComboBox x:Name="Kundetype" HorizontalAlignment="Stretch" Margin="0,10,10,0" VerticalAlignment="Top" PlaceholderText="Kundetype" Grid.Column="2" Grid.ColumnSpan="2"/>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+            </Grid.ColumnDefinitions>
+
+            
+            <TextBox PlaceholderText="Opgavebeskrivelse" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" Margin="20,0,20,0" VerticalAlignment="Stretch" Grid.Row="2" Grid.RowSpan="2"/>
+            <TextBox PlaceholderText="Reference Nr." Grid.ColumnSpan="4" HorizontalAlignment="Stretch" Margin="20,0,20,0" VerticalAlignment="Top" Grid.Row="5"/>
+            <TextBlock TextAlignment="Center" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" Margin="0,0,20,0" Text="Slutdato" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="6" Grid.Column="2"/>
+            <TextBlock TextAlignment="Center" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="20,0,0,0" Text="Startdato" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="6"/>
+
+            <Button x:Name="Annuller" HorizontalAlignment="Stretch" Margin="10,0,5,0" VerticalAlignment="Stretch" Grid.Row="8" Grid.ColumnSpan="2" Background="#00000000" BorderBrush="Black" >
+                <StackPanel Margin="-10,-6,-10,-6" Orientation="Horizontal" Height="66" Width="165">
+                    <Image Source="../Assets/Back.png" Margin="5,10,0,10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <TextBlock x:Name="AnnullerTekst" Text="Annuller" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="15,0,0,0" FontSize="24"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="Gem" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="5,0,10,0" VerticalAlignment="Stretch" Grid.Row="8" Grid.Column="2" Background="#00000000" BorderBrush="#FF060606">
+                <StackPanel Margin="-10,-6,-10,-6" Orientation="Horizontal" Height="66" Width="165">
+                    <Image Source="../Assets/Save.png" Margin="5,10,0,10" Height="Auto"/>
+                    <TextBlock x:Name="GemTekst" Text="Gem" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20,0,0,0" FontSize="24"/>
+                </StackPanel>
+            </Button>
+
+
+        </Grid>
+        
 
     </Grid>
 </Page>
