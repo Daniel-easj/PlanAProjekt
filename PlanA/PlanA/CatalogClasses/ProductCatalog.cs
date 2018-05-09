@@ -11,13 +11,14 @@ namespace PlanA.CatalogClasses
 {
     class ProductCatalog : CatalogBase<IProduct>
     {
+        private static ProductCatalog _singletonInstance;
         private Dictionary<string, ProductBase> _productCatalog;
 
 
         public ProductCatalog()
         {
             _productCatalog = new Dictionary<string, ProductBase>();
-
+            
             AddProduct("p100", new Cover());
             AddProduct("p101", new Paint());
             AddProduct("p102", new Tool());
@@ -93,6 +94,16 @@ namespace PlanA.CatalogClasses
         public void ReturnProductAmount(string productId, int amount)
         {
             _productCatalog[productId].Quantity = _productCatalog[productId].Quantity + amount;
+        }
+
+        public static ProductCatalog SingletonInstance
+        {
+            get
+            {
+                if (_singletonInstance != null) return _singletonInstance;
+                _singletonInstance = new ProductCatalog();
+                return _singletonInstance;
+            }
         }
 
     }
