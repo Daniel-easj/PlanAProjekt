@@ -22,6 +22,8 @@ namespace PlanA.ProductClasses
             Savsmuldstapet
         }
 
+        public override string ProductID { get { return "72" + "INDSÆT DB ID"; } }
+
         public override string SpecificType
         {
             get => _wallCoveringType;

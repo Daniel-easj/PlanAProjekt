@@ -14,7 +14,7 @@ namespace PlanA.BaseClasses
         protected int _quantity = 0;
         protected string _description = "Ingen Beskrivelse";
 
-        public virtual string ProductID { get; set; }
+        public abstract string ProductID { get;}
 
         public virtual int Quantity
         {
