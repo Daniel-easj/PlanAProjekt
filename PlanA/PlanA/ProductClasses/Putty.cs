@@ -30,6 +30,8 @@ namespace PlanA.ProductClasses
             Coarse
         }
 
+        public override string ProductID { get { return "52" + "INDSÆT DB ID"; } }
+
         public string CoarseType { get { return _coarseType; } }
 
         public override string SpecificType

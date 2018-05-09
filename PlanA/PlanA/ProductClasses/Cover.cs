@@ -21,6 +21,8 @@ namespace PlanA.ProductClasses
             Pap
         }
 
+        public override string ProductID { get { return "32" + "INDSÆT DB ID"; }}
+
         public override string SpecificType
         {
             get => _coverType;

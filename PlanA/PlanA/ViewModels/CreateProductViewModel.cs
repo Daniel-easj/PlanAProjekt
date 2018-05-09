@@ -46,6 +46,7 @@ namespace PlanA.ViewModels
             set
             {
                 _selectedProductType = value;
+                SetTextEnabled(_selectedProductType);
                 OnPropertyChanged();
             }
         }
