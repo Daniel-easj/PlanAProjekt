@@ -107,14 +107,23 @@
     <Compile Include="CommandClasses\CreateCustomerCommand.cs" />
     <Compile Include="CommandClasses\CreateProductCommand.cs" />
     <Compile Include="CommandClasses\CreateTaskCommand.cs" />
+    <Compile Include="Cover.cs" />
+    <Compile Include="Customer.cs" />
     <Compile Include="CustomerClasses\HousingAssociationCustomer.cs" />
     <Compile Include="CustomerClasses\CompanyCustomer.cs" />
     <Compile Include="CustomerClasses\PrivateCustomer.cs" />
+    <Compile Include="EFCoreSource.cs" />
+    <Compile Include="Paint.cs" />
+    <Compile Include="PlanadbContext.cs" />
+    <Compile Include="Putty.cs" />
+    <Compile Include="Task.cs" />
+    <Compile Include="Tool.cs" />
     <Compile Include="ViewModels\CreateCustomerViewModel.cs" />
     <Compile Include="ViewModels\CreateProductViewModel.cs" />
     <Compile Include="ViewModels\CreateTaskViewModel.cs" />
     <Compile Include="ViewModels\ProductViewModel.cs" />
     <Compile Include="ViewModels\TasksViewModel.cs" />
+    <Compile Include="Wallcover.cs" />
     <Compile Include="XAML Pages\CustomerMainPage.xaml.cs">
       <DependentUpon>CustomerMainPage.xaml</DependentUpon>
     </Compile>
@@ -149,6 +158,7 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <None Include="efpt.config.json" />
     <None Include="PlanA_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
