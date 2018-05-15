@@ -4,25 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using PlanA.BaseClasses;
 using PlanA.CatalogClasses;
 using PlanA.CustomerClasses;
 
 namespace PlanA.CommandClasses
 {
-    class CreatePrivateCustomerCommand : ICommand
+    class CreateCustomerCommand : ICommand
     {
-        private PrivateCustomer _privateCustomer;
+        private CustomerBase _customer;
         private PrivateCustomerCatalog _privateCustomerCatalog;
 
-        public CreatePrivateCustomerCommand(PrivateCustomer privateCustomer, PrivateCustomerCatalog privateCustomerCatalog)
+        public CreateCustomerCommand(CustomerBase customer, PrivateCustomerCatalog privateCustomerCatalog)
         {
-            _privateCustomer = privateCustomer;
+            _customer = customer;
             _privateCustomerCatalog = privateCustomerCatalog;
         }
 
         public bool CanExecute(object parameter)
         {
-            if (_privateCustomerCatalog.GetPrivateCustomers.ContainsKey(_privateCustomer.ID))
+            if (_privateCustomerCatalog.GetPrivateCustomers.ContainsKey(_customer.ID))
             {
                 return false;
             }
@@ -31,7 +32,7 @@ namespace PlanA.CommandClasses
 
         public void Execute(object parameter)
         {
-            _privateCustomerCatalog.AddPrivateCustomer(_privateCustomer.ID, _privateCustomer);
+            _privateCustomerCatalog.AddPrivateCustomer(_customer.ID, _customer);
         }
 
         public event EventHandler CanExecuteChanged;
