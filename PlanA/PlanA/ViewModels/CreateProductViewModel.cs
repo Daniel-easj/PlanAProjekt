@@ -24,14 +24,7 @@ namespace PlanA.ViewModels
 
         public CreateProductViewModel()
         {
-            _allProductTypes = new Dictionary<string, ProductBase>
-            {
-                {"Cover", new Cover()},
-                {"Paint", new Paint()},
-                {"Putty", new Putty()},
-                {"Tool", new Tool()},
-                {"WallCovering", new WallCovering()}
-            };
+            _allProductTypes = new Dictionary<string, ProductBase>();
 
 
             _createProductCommand = new CreateProductCommand(_selectedProductType, _productCatalog);
