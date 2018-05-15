@@ -18,21 +18,19 @@ namespace PlanA.ViewModels
     {
         private ProductCatalog _productCatalog = ProductCatalog.SingletonInstance;
 
+        private ObservableCollection<ProductBase> _products = new ObservableCollection<ProductBase>();
+
         //TODO: Implementer detailed view af selectedProduct
        // private IProduct _selectedProduct;
-
-        private ObservableCollection<ProductBase> _products;
-
         public ProductViewModel()
         {
-            _products = new ObservableCollection<ProductBase>();
             foreach (var product in _productCatalog.GetProductCatalog.Values)
             {
                 _products.Add(product);
                 //TODO: Product.ProductID mangler implementation før der kan laves en instance af ProductViewModel
                 //if (!_productCatalog.GetProductCatalog.ContainsKey(product.ProductID))
                 //{
-                    
+
                 //}
             }
         }

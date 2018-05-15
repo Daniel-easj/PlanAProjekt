@@ -25,6 +25,8 @@ namespace PlanA.ProductClasses
             Grunder
         }
 
+        public override string ProductID { get { return "42" + "INDSÆT DB ID"; } }
+
         public override string SpecificType
         {
             get => _paintType;

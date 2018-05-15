@@ -29,6 +29,32 @@ namespace PlanA
             this.InitializeComponent();
         }
 
+        //private void AutoSuggestBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
+        //{
+        //    if (args.Reason == AutoSuggestBoxTextChangedReason.UserInput)
+        //    {
+        //        sender.ItemsSource = //TODO
+        //    }
+        //}
+
+        //private void AutoSuggestBox_SuggestionChosen(AutoSuggestBox sender,
+        //    AutoSuggestBoxSuggestionChosenEventArgs args)
+        //{
+        //    sender.Text //TODO
+        //}
+
+        //private void AutoSuggestBox_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
+        //{
+        //    if (args.ChosenSuggestion != null)
+        //    {
+        //        //TODO
+        //    }
+        //    else
+        //    {
+        //        //TODO
+        //    }
+        //}
+
         public void GoToInventoryMainPage(object sender, RoutedEventArgs a)
         {
             this.Frame.Navigate(typeof(InventoryMainPage), null);

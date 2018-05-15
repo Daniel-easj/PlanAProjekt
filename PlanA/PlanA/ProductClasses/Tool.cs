@@ -26,6 +26,8 @@ namespace PlanA.ProductClasses
             Sandpapir
         }
 
+        public override string ProductID { get { return "62" + "INDSÆT DB ID"; } }
+
         public override string SpecificType
         {
             get => _toolType;
