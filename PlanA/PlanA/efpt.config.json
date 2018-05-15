@@ -1,0 +1,1 @@
+﻿{"ContextClassName":"PlanadbContext","DefaultDacpacSchema":null,"IdReplace":false,"IncludeConnectionString":true,"OutputPath":"","ProjectRootNamespace":"PlanA","SelectedToBeGenerated":0,"Tables":["dbo.Cover","dbo.Customer","dbo.Paint","dbo.Putty","dbo.Task","dbo.Tool","dbo.Wallcover"],"UseDatabaseNames":false,"UseFluentApiOnly":true,"UseHandleBars":false,"UseInflector":true}
