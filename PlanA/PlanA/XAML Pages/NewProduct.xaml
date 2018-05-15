@@ -59,10 +59,10 @@
                        Text="Lager" TextAlignment="Center" TextWrapping="Wrap" 
                        VerticalAlignment="Bottom" FontSize="20" 
                        LineHeight="6" Grid.Column="1" Grid.ColumnSpan="2"/>
-            
+
         </Grid>
         <Grid x:Name="CenterViewGrid" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" 
-              Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1">
+              Margin="0,0,0,0" VerticalAlignment="Bottom" Grid.Row="1" Height="524">
             <Grid.RowDefinitions>
                 <RowDefinition Height="8*"/>
                 <RowDefinition Height="9*"/>
@@ -82,9 +82,6 @@
                 <ColumnDefinition Width="25*"/>
             </Grid.ColumnDefinitions>
             <ComboBox x:Name="Produkttype" HorizontalAlignment="Stretch" Margin="0,0,10,0" VerticalAlignment="Bottom" Grid.Column="2" Grid.ColumnSpan="2" PlaceholderText="Produkttype"/>
-            <TextBox x:Name="Varenavn" HorizontalAlignment="Stretch" Margin="10,0,0,0" VerticalAlignment="Top" Grid.Row="3" Grid.ColumnSpan="3" PlaceholderText="Varenavn"/>
-            <ComboBox x:Name="SpecifikType" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" Margin="10,0,0,0" VerticalAlignment="Bottom" Grid.Row="1" PlaceholderText="Specifik type"/>
-            <TextBox x:Name="VareAntal" HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Top" Grid.Row="3" Grid.ColumnSpan="3" PlaceholderText="Antal" Grid.Column="3"/>
 
             <Button x:Name="Annuller" HorizontalAlignment="Stretch" Margin="10,0,5,0" VerticalAlignment="Stretch" Grid.Row="8" Grid.ColumnSpan="2" Background="#00000000" BorderBrush="Black" >
                 <StackPanel Margin="-10,-6,-10,-6" Orientation="Horizontal" Height="66" Width="165">
@@ -98,6 +95,47 @@
                     <TextBlock x:Name="GemTekst" Text="Gem" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20,0,0,0" FontSize="24"/>
                 </StackPanel>
             </Button>
+            <Grid x:Name="MalingGrid" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1" Grid.RowSpan="7" Grid.ColumnSpan="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="25*"/>
+                    <ColumnDefinition Width="25*"/>
+                    <ColumnDefinition Width="25*"/>
+                    <ColumnDefinition Width="25*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="59*"/>
+                    <RowDefinition Height="33*"/>
+                    <RowDefinition Height="59*"/>
+                    <RowDefinition Height="33*"/>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="65*"/>
+                    <RowDefinition Height="65*"/>
+                </Grid.RowDefinitions>
+                <TextBox x:Name="Varenavn" HorizontalAlignment="Stretch" Margin="10,0,0,0" VerticalAlignment="Top" Grid.Row="2" Grid.ColumnSpan="3" PlaceholderText="Varenavn" Grid.RowSpan="2"/>
+                <ComboBox x:Name="SpecifikType" HorizontalAlignment="Stretch" Margin="10,0,0,0" VerticalAlignment="Bottom" PlaceholderText="Specifik type" Grid.ColumnSpan="3"/>
+                <TextBox x:Name="VareAntal" HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Top" Grid.Row="2" PlaceholderText="Antal" Grid.Column="3" Grid.RowSpan="2"/>
+            </Grid>
+            <Grid x:Name="PuttyGrid" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1" Grid.RowSpan="7" Grid.ColumnSpan="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="25*"/>
+                    <ColumnDefinition Width="25*"/>
+                    <ColumnDefinition Width="25*"/>
+                    <ColumnDefinition Width="25*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="59*"/>
+                    <RowDefinition Height="33*"/>
+                    <RowDefinition Height="59*"/>
+                    <RowDefinition Height="33*"/>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="65*"/>
+                    <RowDefinition Height="65*"/>
+                </Grid.RowDefinitions>
+                <TextBox x:Name="Varenavn1" HorizontalAlignment="Stretch" Margin="10,0,0,0" VerticalAlignment="Top" Grid.Row="3" Grid.ColumnSpan="3" PlaceholderText="Varenavn" Grid.RowSpan="2"/>
+                <ComboBox x:Name="SpecifikType1" HorizontalAlignment="Stretch" Margin="10,0,0,0" VerticalAlignment="Bottom" PlaceholderText="Specifik type" Grid.ColumnSpan="3"/>
+                <TextBox x:Name="VareAntal1" HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Top" Grid.Row="3" PlaceholderText="Antal" Grid.Column="3" Grid.RowSpan="2"/>
+                <ComboBox x:Name="Grovhed" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" Margin="10,0,0,0" VerticalAlignment="Top" Grid.Row="2" PlaceholderText="Grovhed"/>
+            </Grid>
 
         </Grid>
 
