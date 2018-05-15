@@ -59,6 +59,7 @@
                        Text="Lager" TextAlignment="Center" TextWrapping="Wrap" 
                        VerticalAlignment="Bottom" FontSize="20" 
                        LineHeight="6" Grid.Column="1" Grid.ColumnSpan="2"/>
+            
         </Grid>
         <Grid x:Name="CenterViewGrid" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" 
               Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1">
