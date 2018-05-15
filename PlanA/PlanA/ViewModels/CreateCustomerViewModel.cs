@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace PlanA.ViewModels
 {
-    class CreateCustomerViewModel : INotifyPropertyChanged
+    public class CreateCustomerViewModel : INotifyPropertyChanged
     {
         private bool _cVRenabled;
 
@@ -37,15 +37,15 @@ namespace PlanA.ViewModels
         {
             if (value == CustomerChosen.Privat)
             {
-                _cVRenabled = false;
+                CVRenabled = false;
             }
             else if (value == CustomerChosen.Offentlig)
             {
-                _cVRenabled = false;
+                CVRenabled = false;
             }
             else if (value == CustomerChosen.Erhverv)
             {
-                _cVRenabled = true;
+                CVRenabled = true;
             }
         }
 
