@@ -8,9 +8,9 @@
     xmlns:viewModels="using:PlanA.ViewModels"
     mc:Ignorable="d">
     
-    <Page.DataContext>
+    <!--<Page.DataContext>
         <viewModels:CreateCustomerViewModel/>
-    </Page.DataContext>
+    </Page.DataContext>-->
     
   
 
