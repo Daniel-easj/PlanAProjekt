@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -28,6 +29,12 @@ namespace PlanA.ViewModels
 
 
             _createProductCommand = new CreateProductCommand(_selectedProductType, _productCatalog);
+
+            _ProductChosens = new ObservableCollection<ProductChosen>
+            {
+                ProductChosen.Maling,
+                ProductChosen.Spartel
+            };
 
         }
         public Dictionary<string, ProductBase> AllProductTypes => _allProductTypes;
@@ -167,6 +174,10 @@ namespace PlanA.ViewModels
             get => _spartelGridIsVisible;
             set { _spartelGridIsVisible = value; OnPropertyChanged(); }
         }
+
+        public ObservableCollection<ProductChosen> _ProductChosens;
+
+        public ObservableCollection<ProductChosen> ProductChosens => _ProductChosens;
 
 
         public event PropertyChangedEventHandler PropertyChanged;
