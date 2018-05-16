@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PlanA.BaseClasses
 {
-    public abstract class ProductBase : INotifyPropertyChanged
+    public abstract class ProductBase : DomainBase
     {
         protected string _productID;
         protected int _quantity = 0;
@@ -22,7 +22,6 @@ namespace PlanA.BaseClasses
             set
             {
                 _quantity = value;
-                OnPropertyChanged();
             }
         }
 
@@ -32,7 +31,6 @@ namespace PlanA.BaseClasses
             set
             {
                 _description = value;
-                OnPropertyChanged();
             }
         }
 
@@ -47,13 +45,5 @@ namespace PlanA.BaseClasses
         public virtual int Gloss { get; set; }
         public virtual bool InDoor { get; set; }
         public virtual string Coarse { get; set; }
-
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
     }
 }
