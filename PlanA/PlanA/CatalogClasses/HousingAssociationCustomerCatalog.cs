@@ -8,37 +8,9 @@ using PlanA.ProductClasses;
 
 namespace PlanA.CatalogClasses
 {
-    class HousingAssociationCustomerCatalog : CatalogBase<HousingAssociationCustomer>
+    class HousingAssociationCustomerCatalog : CatalogAppBase<HousingAssociationCustomer>
     {
-
-        private Dictionary<int, HousingAssociationCustomer> _housingAssociationCustomer;
-
         
-        public HousingAssociationCustomerCatalog()
-        {
-
-            _housingAssociationCustomer = new Dictionary<int, HousingAssociationCustomer>();
-        }
-
-        public Dictionary<int, HousingAssociationCustomer> GetHousingAssociationCustomers => _housingAssociationCustomer;
-
-        public void AddHousingAssociationCustomer(int key, HousingAssociationCustomer  housingAssociationCustomer)
-
-        {
-
-            _housingAssociationCustomer.Add(key, housingAssociationCustomer);
-
-        }
-
-        public void RemoveHousingAssociationCustomer(int key, HousingAssociationCustomer housingAssociationCustomer)
-        {
-
-
-            _housingAssociationCustomer.Remove(key);
-
-
-        }
-
     }
 
 

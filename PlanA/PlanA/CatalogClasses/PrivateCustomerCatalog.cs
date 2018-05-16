@@ -8,30 +8,8 @@ using PlanA.CustomerClasses;
 
 namespace PlanA.CatalogClasses
 {
-    class PrivateCustomerCatalog : CatalogBase<PrivateCustomer>
+    class PrivateCustomerCatalog : CatalogAppBase<PrivateCustomer>
     {
-
-        private Dictionary<string, PrivateCustomer> _privateCustomer;
-
-        public PrivateCustomerCatalog()
-        {
-            _privateCustomer = new Dictionary<string, PrivateCustomer>();
-        }
-
-        public Dictionary<string, PrivateCustomer> GetPrivateCustomers => _privateCustomer;
-
-        public void AddPrivateCustomer(string key, PrivateCustomer privateCustomer)
-        {
-          _privateCustomer.Add(key, privateCustomer);
-        }
-
-        public void DeletePrivateCustomer(string key)
-        {
-            _privateCustomer.Remove(key);
-        }
-
-
-
 
     }
 }

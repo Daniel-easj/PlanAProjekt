@@ -16,6 +16,17 @@ namespace PlanA.CustomerClasses
             _cVR = cVR;
         }
 
+        public CompanyCustomer() : base("","","","")
+        {
+            CVR = "";
+        }
+
+
         public string CVR { get; set; }
+        public override void SetDefaultValues()
+        {
+            base.SetDefaultValues();
+            CVR = "";
+        }
     }
 }

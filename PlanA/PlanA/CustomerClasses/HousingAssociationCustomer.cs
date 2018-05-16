@@ -9,14 +9,27 @@ namespace PlanA.CatalogClasses
 {
     class HousingAssociationCustomer : CustomerBase
     {
-        //Todo
-        public HousingAssociationCustomer(string name, string phone, string address, string email) : base(name, phone, address, email)
+        private string _cVR;
+        public HousingAssociationCustomer(string name, string phone, string address, string email, string cVr) : base(name, phone, address, email)
         {
 
-
+            _cVR = CVR;
 
         }
 
+
+        public HousingAssociationCustomer() : base("", "", "", "")
+        {
+            CVR = "";
+        }
+
+
+        public string CVR { get; set; }
+        public override void SetDefaultValues()
+        {
+            base.SetDefaultValues();
+            CVR = "";
+        }
 
     }
 }

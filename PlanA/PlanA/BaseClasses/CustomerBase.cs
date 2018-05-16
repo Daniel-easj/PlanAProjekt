@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PlanA.BaseClasses
 {
-    public abstract class CustomerBase
+    public abstract class CustomerBase : DomainBase
     {
         private string _name;
         private string _phone;
@@ -34,6 +34,14 @@ namespace PlanA.BaseClasses
         {
             get { return _iD.ToString(); }
             
+        }
+
+        public override void SetDefaultValues()
+        {
+            Name = "";
+            Phone = "";
+            Address = "";
+            Email = "";
         }
 
     }
