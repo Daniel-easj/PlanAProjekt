@@ -169,6 +169,7 @@
     <Content Include="Assets\Black Plus.png" />
     <Content Include="Assets\Inventory Not Selected.png" />
     <Content Include="Assets\Inventory Selected.png" />
+    <Content Include="Assets\Next.png" />
     <Content Include="Assets\People Not Selected.png" />
     <Content Include="Assets\People Selected.png" />
     <Content Include="Assets\Save.png" />
