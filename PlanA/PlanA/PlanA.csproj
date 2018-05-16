@@ -98,6 +98,7 @@
     <Compile Include="BaseClasses\CatalogBase.cs" />
     <Compile Include="BaseClasses\CustomerBase.cs" />
     <Compile Include="BaseClasses\ProductBase.cs" />
+    <Compile Include="CatalogAppBase.cs" />
     <Compile Include="CatalogClasses\CompanyCustomerCatalog.cs" />
     <Compile Include="CatalogClasses\CustomerCatalog.cs" />
     <Compile Include="CatalogClasses\HousingAssociationCustomerCatalog.cs" />
@@ -231,7 +232,32 @@
       <Version>1.0.0</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="AddOns">
+      <HintPath>..\MVVMStarterLibrary2018-master\MVVMStarterLibrary2018DLLs\AddOns.dll</HintPath>
+    </Reference>
+    <Reference Include="Commands">
+      <HintPath>..\MVVMStarterLibrary2018-master\MVVMStarterLibrary2018DLLs\Commands.dll</HintPath>
+    </Reference>
+    <Reference Include="Controllers">
+      <HintPath>..\MVVMStarterLibrary2018-master\MVVMStarterLibrary2018DLLs\Controllers.dll</HintPath>
+    </Reference>
+    <Reference Include="Data">
+      <HintPath>..\MVVMStarterLibrary2018-master\MVVMStarterLibrary2018DLLs\Data.dll</HintPath>
+    </Reference>
+    <Reference Include="DataSources">
+      <HintPath>..\MVVMStarterLibrary2018-master\MVVMStarterLibrary2018DLLs\DataSources.dll</HintPath>
+    </Reference>
+    <Reference Include="Extensions">
+      <HintPath>..\MVVMStarterLibrary2018-master\MVVMStarterLibrary2018DLLs\Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Model">
+      <HintPath>..\MVVMStarterLibrary2018-master\MVVMStarterLibrary2018DLLs\Model.dll</HintPath>
+    </Reference>
+    <Reference Include="ViewModel">
+      <HintPath>..\MVVMStarterLibrary2018-master\MVVMStarterLibrary2018DLLs\ViewModel.dll</HintPath>
+    </Reference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
