@@ -120,6 +120,54 @@ namespace PlanA.ViewModels
             }
         }
 
+        private bool _malingGridIsVisible;
+        private bool _spartelGridIsVisible;
+
+        public enum ProductChosen
+        {
+            Maling,
+            Spartel
+        }
+
+        private ProductChosen _selectedProduct;
+
+        public ProductChosen EnummProductStatus
+        {
+            get => _selectedProduct;
+            set
+            {
+                _selectedProduct = value;
+                SetGridShown(value);
+                OnPropertyChanged();
+            }
+        }
+
+        public void SetGridShown(ProductChosen value)
+        {
+            if (value == ProductChosen.Maling)
+            {
+                MalingGridIsVisible = true;
+                SpartelGridIsVisible = false;
+            }
+            else if (value == ProductChosen.Spartel)
+            {
+                MalingGridIsVisible = false;
+                SpartelGridIsVisible = true;
+            }
+        }
+
+        public bool MalingGridIsVisible
+        {
+            get => _malingGridIsVisible;
+            set { _malingGridIsVisible = value; OnPropertyChanged(); }
+        }
+
+        public bool SpartelGridIsVisible
+        {
+            get => _spartelGridIsVisible;
+            set { _spartelGridIsVisible = value; OnPropertyChanged(); }
+        }
+
 
         public event PropertyChangedEventHandler PropertyChanged;
 
