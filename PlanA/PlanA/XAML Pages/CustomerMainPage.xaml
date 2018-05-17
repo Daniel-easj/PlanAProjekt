@@ -8,9 +8,9 @@
     xmlns:viewModels="using:PlanA.ViewModels"
     mc:Ignorable="d">
 
-    <Page.DataContext>
+    <!--<Page.DataContext>
         <viewModels:ProductViewModel/>
-    </Page.DataContext>
+    </Page.DataContext>-->
 
     <Grid x:Name="MainGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.ColumnDefinitions>

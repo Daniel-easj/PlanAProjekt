@@ -97,13 +97,17 @@
     </Compile>
     <Compile Include="BaseClasses\CatalogBase.cs" />
     <Compile Include="BaseClasses\CustomerBase.cs" />
+    <Compile Include="BaseClasses\DomainBase.cs" />
     <Compile Include="BaseClasses\ProductBase.cs" />
     <Compile Include="CatalogAppBase.cs" />
     <Compile Include="CatalogClasses\CompanyCustomerCatalog.cs" />
     <Compile Include="CatalogClasses\CustomerCatalog.cs" />
     <Compile Include="CatalogClasses\HousingAssociationCustomerCatalog.cs" />
+    <Compile Include="CatalogClasses\PaintCatalog.cs" />
     <Compile Include="CatalogClasses\PrivateCustomerCatalog.cs" />
     <Compile Include="CatalogClasses\ProductCatalog.cs" />
+    <Compile Include="CatalogClasses\ProductCatalogs\CoverCatalog.cs" />
+    <Compile Include="CatalogClasses\ProductCatalogs\PaintCatalog.cs" />
     <Compile Include="CatalogClasses\TaskCatalog.cs" />
     <Compile Include="CommandClasses\CreateCustomerCommand.cs" />
     <Compile Include="CommandClasses\CreateProductCommand.cs" />
@@ -113,7 +117,6 @@
     <Compile Include="CustomerClasses\HousingAssociationCustomer.cs" />
     <Compile Include="CustomerClasses\CompanyCustomer.cs" />
     <Compile Include="CustomerClasses\PrivateCustomer.cs" />
-    <Compile Include="EFCoreSource.cs" />
     <Compile Include="Paint.cs" />
     <Compile Include="PlanadbContext.cs" />
     <Compile Include="Putty.cs" />
@@ -135,7 +138,6 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ProductClasses\Cover.cs" />
-    <Compile Include="ProductClasses\IProduct.cs" />
     <Compile Include="ProductClasses\Paint.cs" />
     <Compile Include="ProductClasses\Putty.cs" />
     <Compile Include="ProductClasses\Tool.cs" />
@@ -170,6 +172,7 @@
     <Content Include="Assets\Black Plus.png" />
     <Content Include="Assets\Inventory Not Selected.png" />
     <Content Include="Assets\Inventory Selected.png" />
+    <Content Include="Assets\Next.png" />
     <Content Include="Assets\People Not Selected.png" />
     <Content Include="Assets\People Selected.png" />
     <Content Include="Assets\Save.png" />

@@ -65,7 +65,7 @@ namespace PlanA.TaskClasses
             }
         }
 
-        public void AddAssociatedProducts(IProduct product, int quantity)
+        public void AddAssociatedProducts(ProductBase product, int quantity)
         {
             if (!_productsAssociated.ContainsKey(product.ProductID))
             {

@@ -9,9 +9,13 @@ namespace PlanA.CustomerClasses
 {
     class PrivateCustomer : CustomerBase
     {
-        //TODO
         public PrivateCustomer(string name, string phone, string address, string email) : base(name, phone, address, email)
         {
+        }
+
+        public PrivateCustomer() : base("","","","")
+        {
+            
         }
     }
 }

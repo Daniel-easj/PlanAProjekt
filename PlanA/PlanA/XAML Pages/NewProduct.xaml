@@ -5,7 +5,12 @@
     xmlns:local="using:PlanA.XAML_Pages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewModels="using:PlanA.ViewModels"
     mc:Ignorable="d">
+
+    <!--<Page.DataContext>
+        <viewModels:CreateProductViewModel/>
+    </Page.DataContext>-->
 
     <Grid x:Name="MainGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.ColumnDefinitions>
@@ -91,8 +96,8 @@
             </Button>
             <Button x:Name="Gem" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="5,0,10,0" VerticalAlignment="Stretch" Grid.Row="8" Grid.Column="2" Background="#00000000" BorderBrush="#FF060606">
                 <StackPanel Margin="-10,-6,-10,-6" Orientation="Horizontal" Height="66" Width="165">
-                    <Image Source="../Assets/Save.png" Margin="5,10,0,10" Height="Auto"/>
                     <TextBlock x:Name="GemTekst" Text="Gem" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20,0,0,0" FontSize="24"/>
+                    <Image Source="../Assets/Save.png" Margin="40,10,0,10" Height="Auto"/>
                 </StackPanel>
             </Button>
             <Grid x:Name="MalingGrid" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1" Grid.RowSpan="7" Grid.ColumnSpan="4">
@@ -111,9 +116,9 @@
                     <RowDefinition Height="65*"/>
                     <RowDefinition Height="65*"/>
                 </Grid.RowDefinitions>
-                <TextBox x:Name="Varenavn" HorizontalAlignment="Stretch" Margin="10,0,0,0" VerticalAlignment="Top" Grid.Row="2" Grid.ColumnSpan="3" PlaceholderText="Varenavn" Grid.RowSpan="2"/>
-                <ComboBox x:Name="SpecifikType" HorizontalAlignment="Stretch" Margin="10,0,0,0" VerticalAlignment="Bottom" PlaceholderText="Specifik type" Grid.ColumnSpan="3"/>
-                <TextBox x:Name="VareAntal" HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Top" Grid.Row="2" PlaceholderText="Antal" Grid.Column="3" Grid.RowSpan="2"/>
+                <TextBox x:Name="MalingVarenavn" HorizontalAlignment="Stretch" Margin="10,0,0,0" VerticalAlignment="Top" Grid.Row="2" Grid.ColumnSpan="3" PlaceholderText="Varenavn" Grid.RowSpan="2"/>
+                <ComboBox x:Name="MalingSpecifikType" HorizontalAlignment="Stretch" Margin="10,0,0,0" VerticalAlignment="Bottom" PlaceholderText="Specifik type" Grid.ColumnSpan="3"/>
+                <TextBox x:Name="MalingVareAntal" HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Top" Grid.Row="2" PlaceholderText="Antal" Grid.Column="3" Grid.RowSpan="2"/>
             </Grid>
             <Grid x:Name="PuttyGrid" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1" Grid.RowSpan="7" Grid.ColumnSpan="4">
                 <Grid.ColumnDefinitions>
@@ -131,10 +136,70 @@
                     <RowDefinition Height="65*"/>
                     <RowDefinition Height="65*"/>
                 </Grid.RowDefinitions>
-                <TextBox x:Name="Varenavn1" HorizontalAlignment="Stretch" Margin="10,0,0,0" VerticalAlignment="Top" Grid.Row="3" Grid.ColumnSpan="3" PlaceholderText="Varenavn" Grid.RowSpan="2"/>
-                <ComboBox x:Name="SpecifikType1" HorizontalAlignment="Stretch" Margin="10,0,0,0" VerticalAlignment="Bottom" PlaceholderText="Specifik type" Grid.ColumnSpan="3"/>
-                <TextBox x:Name="VareAntal1" HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Top" Grid.Row="3" PlaceholderText="Antal" Grid.Column="3" Grid.RowSpan="2"/>
+                <TextBox x:Name="PuttyVarenavn" HorizontalAlignment="Stretch" Margin="10,0,0,0" VerticalAlignment="Top" Grid.Row="3" Grid.ColumnSpan="3" PlaceholderText="Varenavn" Grid.RowSpan="2"/>
+                <ComboBox x:Name="PuttySpecifikType" HorizontalAlignment="Stretch" Margin="10,0,0,0" VerticalAlignment="Bottom" PlaceholderText="Specifik type" Grid.ColumnSpan="3"/>
+                <TextBox x:Name="PuttyVareAntal" HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Top" Grid.Row="3" PlaceholderText="Antal" Grid.Column="3" Grid.RowSpan="2"/>
                 <ComboBox x:Name="Grovhed" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" Margin="10,0,0,0" VerticalAlignment="Top" Grid.Row="2" PlaceholderText="Grovhed"/>
+            </Grid>
+            <Grid x:Name="Covering" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1" Grid.RowSpan="7" Grid.ColumnSpan="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="25*"/>
+                    <ColumnDefinition Width="25*"/>
+                    <ColumnDefinition Width="25*"/>
+                    <ColumnDefinition Width="25*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="59*"/>
+                    <RowDefinition Height="33*"/>
+                    <RowDefinition Height="59*"/>
+                    <RowDefinition Height="33*"/>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="65*"/>
+                    <RowDefinition Height="65*"/>
+                </Grid.RowDefinitions>
+                <TextBox x:Name="CoveringVarenavn" HorizontalAlignment="Stretch" Margin="10,0,0,0" VerticalAlignment="Top" Grid.Row="2" Grid.ColumnSpan="3" PlaceholderText="Varenavn" Grid.RowSpan="2"/>
+                <ComboBox x:Name="CoveringSpecifikType" HorizontalAlignment="Stretch" Margin="10,0,0,0" VerticalAlignment="Bottom" PlaceholderText="Specifik type" Grid.ColumnSpan="3"/>
+                <TextBox x:Name="CoveringVareAntal" HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Top" Grid.Row="2" PlaceholderText="Antal" Grid.Column="3" Grid.RowSpan="2"/>
+            </Grid>
+            <Grid x:Name="WallCovering" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1" Grid.RowSpan="7" Grid.ColumnSpan="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="25*"/>
+                    <ColumnDefinition Width="25*"/>
+                    <ColumnDefinition Width="25*"/>
+                    <ColumnDefinition Width="25*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="59*"/>
+                    <RowDefinition Height="33*"/>
+                    <RowDefinition Height="59*"/>
+                    <RowDefinition Height="33*"/>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="65*"/>
+                    <RowDefinition Height="65*"/>
+                </Grid.RowDefinitions>
+                <TextBox x:Name="WallCoveringVarenavn" HorizontalAlignment="Stretch" Margin="10,0,0,0" VerticalAlignment="Top" Grid.Row="2" Grid.ColumnSpan="3" PlaceholderText="Varenavn" Grid.RowSpan="2"/>
+                <ComboBox x:Name="WallCoveringSpecifikType" HorizontalAlignment="Stretch" Margin="10,0,0,0" VerticalAlignment="Bottom" PlaceholderText="Specifik type" Grid.ColumnSpan="3"/>
+                <TextBox x:Name="WallCoveringVareAntal" HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Top" Grid.Row="2" PlaceholderText="Antal" Grid.Column="3" Grid.RowSpan="2"/>
+            </Grid>
+            <Grid x:Name="Tools" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1" Grid.RowSpan="7" Grid.ColumnSpan="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="25*"/>
+                    <ColumnDefinition Width="25*"/>
+                    <ColumnDefinition Width="25*"/>
+                    <ColumnDefinition Width="25*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="59*"/>
+                    <RowDefinition Height="33*"/>
+                    <RowDefinition Height="59*"/>
+                    <RowDefinition Height="33*"/>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="65*"/>
+                    <RowDefinition Height="65*"/>
+                </Grid.RowDefinitions>
+                <TextBox x:Name="ToolsVarenavn" HorizontalAlignment="Stretch" Margin="10,0,0,0" VerticalAlignment="Top" Grid.Row="2" Grid.ColumnSpan="3" PlaceholderText="Varenavn" Grid.RowSpan="2"/>
+                <ComboBox x:Name="ToolsSpecifikType" HorizontalAlignment="Stretch" Margin="10,0,0,0" VerticalAlignment="Bottom" PlaceholderText="Specifik type" Grid.ColumnSpan="3"/>
+                <TextBox x:Name="ToolsVareAntal" HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Top" Grid.Row="2" PlaceholderText="Antal" Grid.Column="3" Grid.RowSpan="2"/>
             </Grid>
 
         </Grid>
