@@ -106,6 +106,8 @@
     <Compile Include="CatalogClasses\PaintCatalog.cs" />
     <Compile Include="CatalogClasses\PrivateCustomerCatalog.cs" />
     <Compile Include="CatalogClasses\ProductCatalog.cs" />
+    <Compile Include="CatalogClasses\ProductCatalogs\CoverCatalog.cs" />
+    <Compile Include="CatalogClasses\ProductCatalogs\PaintCatalog.cs" />
     <Compile Include="CatalogClasses\TaskCatalog.cs" />
     <Compile Include="CommandClasses\CreateCustomerCommand.cs" />
     <Compile Include="CommandClasses\CreateProductCommand.cs" />
