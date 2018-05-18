@@ -94,10 +94,11 @@
                     <TextBlock x:Name="AnnullerTekst" Text="Annuller" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="10,0,0,0" FontSize="24"/>
                 </StackPanel>
             </Button>
-            <Button x:Name="Næste" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="5,0,10,0" VerticalAlignment="Stretch" Grid.Row="8" Grid.Column="2" Background="#00000000" BorderBrush="#FF060606" HorizontalContentAlignment="Right">
+            <Button x:Name="Næste" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="5,0,10,0" VerticalAlignment="Stretch"
+                    Grid.Row="8" Grid.Column="2" Background="#00000000" BorderBrush="#FF060606" HorizontalContentAlignment="Right" Click="GoToChooseCustomer">
                 <StackPanel Margin="-10,-6,-10,-6" Orientation="Horizontal" Height="66" Width="165" HorizontalAlignment="Stretch">
-                    <TextBlock x:Name="GemTekst" Text="Gem" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20,0,0,0" FontSize="24"/>
-                    <Image Source="../Assets/Next.png" Margin="40,10,0,10" Height="Auto" HorizontalAlignment="Stretch"/>
+                    <TextBlock x:Name="GemTekst" Text="Næste" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20,0,0,0" FontSize="24"/>
+                    <Image Source="../Assets/Next.png" Margin="20,10,0,10" Height="Auto" HorizontalAlignment="Stretch"/>
                 </StackPanel>
             </Button>
 

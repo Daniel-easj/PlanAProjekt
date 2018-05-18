@@ -26,5 +26,30 @@ namespace PlanA.XAML_Pages
         {
             this.InitializeComponent();
         }
+
+        public void GoToInventoryMainPage(object sender, RoutedEventArgs a)
+        {
+            this.Frame.Navigate(typeof(InventoryMainPage), null);
+        }
+
+        public void GoToCustomerMainPage(object sender, RoutedEventArgs a)
+        {
+            this.Frame.Navigate(typeof(CustomerMainPage), null);
+        }
+
+        public void GoToStatisticPage(object sender, RoutedEventArgs a)
+        {
+            this.Frame.Navigate(typeof(StatisticPage), null);
+        }
+
+        private void GoToNewAssignment(object sender, RoutedEventArgs a)
+        {
+            this.Frame.Navigate(typeof(NewAssignment), null);
+        }
+
+        private void GoToMainPage(object sender, RoutedEventArgs a)
+        {
+            this.Frame.Navigate(typeof(MainPage), null);
+        }
     }
 }
