@@ -128,6 +128,10 @@
     <Compile Include="ViewModels\Data\Customer\HousingAssociationCustomerDataViewModel.cs" />
     <Compile Include="ViewModels\Data\Customer\PrivateCustomerDataViewModel.cs" />
     <Compile Include="ViewModels\Data\Product\CoverDataViewModel.cs" />
+    <Compile Include="ViewModels\Data\Product\PaintDataViewModel.cs" />
+    <Compile Include="ViewModels\Data\Product\PuttyDataViewModel.cs" />
+    <Compile Include="ViewModels\Data\Product\ToolDataViewModel.cs" />
+    <Compile Include="ViewModels\Data\Product\WallCoverDataViewModel.cs" />
     <Compile Include="ViewModels\Page\CustomerPageViewmodels\CompanyCustomerPageViewModel.cs" />
     <Compile Include="ViewModels\Page\CustomerPageViewmodels\HousingAssociationCustomerPageViewModel.cs" />
     <Compile Include="ViewModels\Page\CustomerPageViewmodels\PrivateCustomerPageViewModel.cs" />

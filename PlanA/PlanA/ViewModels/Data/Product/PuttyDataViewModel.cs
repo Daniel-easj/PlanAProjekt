@@ -7,20 +7,20 @@ using PlanA.Data.Domain.ExtendedClasses;
 
 namespace PlanA.ViewModels.Data.Product
 {
-    class CoverDataViewModel : DataViewModelAppBase<Cover>
+    class PuttyDataViewModel : DataViewModelAppBase<Putty>
     {
-        public CoverDataViewModel(Cover obj) : base(obj)
+        public PuttyDataViewModel(Putty obj) : base(obj)
         {
         }
 
-        public int? Quantity
+        public int Quantity
         {
             get { return DataObject.Quantity; }
             set
             {
                 DataObject.Quantity = value;
                 OnPropertyChanged();
-            }     
+            }
         }
 
         public string Description
@@ -32,15 +32,25 @@ namespace PlanA.ViewModels.Data.Product
                 OnPropertyChanged();
             }
         }
-        
+
         public int SpecificType
-        { 
+        {
             get { return DataObject.SpecificType; }
             set
             {
                 DataObject.SpecificType = value;
                 OnPropertyChanged();
             }
+        }
 
-    }   }
+        public string Coarse
+        {
+            get { return DataObject.Coarse; }
+            set
+            {
+                DataObject.Coarse = value;
+                OnPropertyChanged();
+            }
+        }
+    }
 }

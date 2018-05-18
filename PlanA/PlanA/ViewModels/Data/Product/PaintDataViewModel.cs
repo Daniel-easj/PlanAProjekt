@@ -3,24 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.Devices.Bluetooth.Advertisement;
 using PlanA.Data.Domain.ExtendedClasses;
 
 namespace PlanA.ViewModels.Data.Product
 {
-    class CoverDataViewModel : DataViewModelAppBase<Cover>
+    class PaintDataViewModel : DataViewModelAppBase<Paint>
     {
-        public CoverDataViewModel(Cover obj) : base(obj)
+        public PaintDataViewModel(Paint obj) : base(obj)
         {
         }
 
-        public int? Quantity
+        public int Quantity
         {
             get { return DataObject.Quantity; }
             set
             {
                 DataObject.Quantity = value;
                 OnPropertyChanged();
-            }     
+            }   
         }
 
         public string Description
@@ -32,15 +33,42 @@ namespace PlanA.ViewModels.Data.Product
                 OnPropertyChanged();
             }
         }
-        
+
         public int SpecificType
-        { 
+        {
             get { return DataObject.SpecificType; }
             set
             {
                 DataObject.SpecificType = value;
                 OnPropertyChanged();
             }
+        }
 
-    }   }
+        public int Gloss
+        {
+            get { return DataObject.Gloss; }
+            set
+            {
+                DataObject.Gloss = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public string InDoor
+        {
+            get
+            {
+                if (DataObject.InDoor.ToString().ToLower() == "true")
+                {
+
+                    return "Ja";
+                }
+                else
+                {
+                    return "Nej";
+                }
+            }
+        }
+        
+    }
 }
