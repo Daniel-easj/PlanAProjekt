@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace PlanAData.Domain.ExtendedClasses
+namespace PlanA.Data.Domain.ExtendedClasses
 {
     public partial class Cover
     {
