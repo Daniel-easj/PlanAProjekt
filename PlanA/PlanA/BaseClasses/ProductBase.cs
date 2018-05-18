@@ -14,14 +14,17 @@ namespace PlanA.BaseClasses
         protected string _description;
         protected int _specificType;
 
-        public ProductBase(int quantity, string description, int specificType)
+        protected ProductBase(int quantity, string description, int specificType)
         {
             _quantity = quantity;
             _description = description;
             _specificType = specificType;
         }
 
-
+        protected ProductBase()
+        {
+            
+        }
         public override void SetDefaultValues()
         {
             _quantity = 0;

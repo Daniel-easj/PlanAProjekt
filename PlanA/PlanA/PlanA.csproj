@@ -123,7 +123,7 @@
     <Compile Include="Data\Domain\Wallcover.cs" />
     <Compile Include="ViewModels\Base\DataViewModelAppBase.cs" />
     <Compile Include="ViewModels\Base\PageViewModelAppBase.cs" />
-    <Compile Include="ViewModels\Data\CompanyCustomerDataViewModel.cs" />
+    <Compile Include="ViewModels\Data\Customer\CompanyCustomerDataViewModel.cs" />
     <Compile Include="ViewModels\Page\CompanyCustomerDataViewModel.cs" />
     <Compile Include="XAML Pages\ChooseCustomer.xaml.cs">
       <DependentUpon>ChooseCustomer.xaml</DependentUpon>
@@ -288,6 +288,8 @@
   <ItemGroup>
     <Folder Include="CommandClasses\" />
     <Folder Include="TaskClasses\" />
+    <Folder Include="ViewModels\Data\Product\" />
+    <Folder Include="ViewModels\Data\Task\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

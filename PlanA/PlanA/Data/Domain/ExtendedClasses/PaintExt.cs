@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using PlanA.BaseClasses;
 
-namespace PlanA.ProductClasses
+namespace PlanA.Data.Domain.ExtendedClasses
 {
     public partial class Paint : ProductBase
     {
@@ -17,6 +17,11 @@ namespace PlanA.ProductClasses
 
         public Paint(int quantity, string description, int specificType) : base(quantity, description, specificType)
         {
+        }
+
+        public Paint()
+        {
+            
         }
 
         public override void SetDefaultValues()

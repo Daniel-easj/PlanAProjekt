@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PlanA.CatalogClasses.ProductCatalogs
 {
-    class PuttyCatalog
+    public class PuttyCatalog
     {
     }
 }
