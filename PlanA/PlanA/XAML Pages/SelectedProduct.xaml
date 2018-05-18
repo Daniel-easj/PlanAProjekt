@@ -8,7 +8,101 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid x:Name="MainGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="25*"/>
+            <ColumnDefinition Width="25*"/>
+            <ColumnDefinition Width="25*"/>
+            <ColumnDefinition Width="25*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="63*"/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="BottomPanel" HorizontalAlignment="Stretch" Margin="0,0,0,0" 
+              VerticalAlignment="Stretch" Grid.ColumnSpan="4" Grid.Row="2" 
+              BorderBrush="Black" BorderThickness="0,3,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="Assignment" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                    Background="#00F30404" Margin="0,0,0,0">
+                <Image Source="../Assets/Assignment Not Selected.png"/>
+            </Button>
+            <Button x:Name="Inventory" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                    Background="#00F30404" Margin="0,0,0,0" Grid.Column="1">
+                <Image Source="../Assets/Inventory Selected.png"/>
+            </Button>
+            <Button x:Name="Customer" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                    Background="#00F30404" Margin="0,0,0,0" Grid.Column="2">
+                <Image Source="../Assets/People Not Selected.png"/>
+            </Button>
+            <Button x:Name="Statistics"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                    Background="#00F30404" Margin="0,0,0,0" Grid.Column="3">
+                <Image Source="../Assets/Statistic Not Selected.png"/>
+            </Button>
+        </Grid>
+        <Grid x:Name="TopPanel" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.ColumnSpan="4" BorderBrush="Black" BorderThickness="0,0,0,1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="SiteDescription" HorizontalAlignment="Stretch" Margin="0,0,0,0" 
+                       Text="Opgaver" TextAlignment="Center" TextWrapping="Wrap" 
+                       VerticalAlignment="Bottom" FontSize="20" LineHeight="6"/>
+            <!--<AutoSuggestBox x:Name="SearchBar" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" Margin="0,0,10,0" 
+                            VerticalAlignment="Bottom" Grid.Column="1" PlaceholderText="Søg" TextChanged="AutoSuggestionsBox_TextChanged"
+                            QuerySubmitted="AutoSuggestBox_QuerySubmitted"  SuggestionChosen="AutoSuggestBox_SuggestionChosen"/>-->
+        </Grid>
+        <Grid x:Name="CenterViewGrid" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" 
+              Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="Tilbage" HorizontalAlignment="Stretch" Margin="10,0,5,0" VerticalAlignment="Stretch" Grid.Row="8" Grid.ColumnSpan="2" Background="#00000000" BorderBrush="Black" >
+                <StackPanel Margin="-10,-6,-10,-6" Orientation="Horizontal" Height="66" Width="165">
+                    <Image Source="../Assets/Back.png" Margin="5,10,0,10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <TextBlock x:Name="AnnullerTekst" Text="Tilbage" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="15,0,0,0" FontSize="24"/>
+                </StackPanel>
+            </Button>
+            <ListView ItemsSource="{Binding Products}" Margin="0,0,0,0" Grid.RowSpan="8" Grid.ColumnSpan="4">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Height="90" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,11,0,0" Padding="0,0,0,0" BorderBrush="Black" BorderThickness="0,0,0,0" Width="330">
+                            <Grid Height="90" BorderBrush="Black" BorderThickness="2,2,2,2">
+                                <TextBlock Text="Opgavebeskrivelse" Height="30" Margin="10,0,0,0" VerticalAlignment="Top"/>
+                                <TextBlock Text="Reference-nummer" Height="30" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                                <TextBlock Text="Startdato" Height="30" Margin="10,0,0,0" VerticalAlignment="Bottom"/>
+                            </Grid>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+
+
+        </Grid>
 
     </Grid>
 </Page>
