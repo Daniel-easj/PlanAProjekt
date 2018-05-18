@@ -125,6 +125,9 @@
     <Compile Include="ViewModels\Base\DataViewModelAppBase.cs" />
     <Compile Include="ViewModels\Base\PageViewModelAppBase.cs" />
     <Compile Include="ViewModels\Data\Customer\CompanyCustomerDataViewModel.cs" />
+    <Compile Include="ViewModels\Data\Customer\HousingAssociationCustomerDataViewModel.cs" />
+    <Compile Include="ViewModels\Data\Customer\PrivateCustomerDataViewModel.cs" />
+    <Compile Include="ViewModels\Data\Customer\ProductDataViewModel.cs" />
     <Compile Include="ViewModels\Page\CompanyCustomerDataViewModel.cs" />
     <Compile Include="XAML Pages\ChooseCustomer.xaml.cs">
       <DependentUpon>ChooseCustomer.xaml</DependentUpon>
