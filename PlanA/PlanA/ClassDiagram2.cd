@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="FullSignature">
+  <Class Name="PlanA.XAML_Pages.CustomerMainPage" Collapsed="true">
+    <Position X="42.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAgQAAAAAAAAAAIAAAAAAAAAAAAAoAAA=</HashCode>
+      <FileName>XAML Pages\CustomerMainPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlanA.XAML_Pages.InventoryMainPage" Collapsed="true">
+    <Position X="44.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAgAAAAAAAAAAAIAAAAAAAAAAAAAoAAA=</HashCode>
+      <FileName>XAML Pages\InventoryMainPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlanA.XAML_Pages.NewAssignment" Collapsed="true">
+    <Position X="40.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAIAAAAAAAAAAAAAoAAA=</HashCode>
+      <FileName>XAML Pages\NewAssignment.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlanA.XAML_Pages.NewCustomer" Collapsed="true">
+    <Position X="42.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAIAAAAAAAAAAAAAoAAA=</HashCode>
+      <FileName>XAML Pages\NewCustomer.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlanA.XAML_Pages.NewProduct" Collapsed="true">
+    <Position X="44.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAIAAAAAAAAAAAAAoAAA=</HashCode>
+      <FileName>XAML Pages\NewProduct.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlanA.XAML_Pages.StatisticPage" Collapsed="true">
+    <Position X="40.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAIAAAAAAAAAAAAAoAAA=</HashCode>
+      <FileName>XAML Pages\StatisticPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlanA.MainPage" Collapsed="true">
+    <Position X="39" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgQAAAAAAAAAAIAAAAAAAAAAAAAoAAA=</HashCode>
+      <FileName>XAML Pages\MainPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlanA.ViewModels.CreateCustomerViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="40.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAEBIABAAAAAgAAAAIAAAAAAACAAAAA=</HashCode>
+      <FileName>ViewModels\CreateCustomerViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PlanA.ViewModels.CreateProductViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="44.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAJBAABCAAhAAQEAIJACAAAD0gBAABAAEAACgACABAA=</HashCode>
+      <FileName>ViewModels\CreateProductViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PlanA.ViewModels.CreateTaskViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="40.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAoAAAAAAAAIQAAAIAAAAAAAgAAIAAAAAAIAAAAACAA=</HashCode>
+      <FileName>ViewModels\CreateTaskViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PlanA.ViewModels.ProductViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="39" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAIAAAAAAAgAAAAAAAAIAAAACAAAQ=</HashCode>
+      <FileName>ViewModels\ProductViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PlanA.ViewModels.TasksViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="44.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAIEAAAAAAgAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>ViewModels\TasksViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PlanA.TaskClasses.Tasks" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="42.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAABAIAAAAoAAAIAAAAAAAgAAAIAAAgEAAAEDAIEA=</HashCode>
+      <FileName>TaskClasses\Tasks.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PlanA.ProductClasses.Cover">
+    <Position X="5.75" Y="13.25" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="PlanA.ProductClasses.Cover.CoverType">
+        <TypeIdentifier>
+          <NewMemberFileName>ProductClasses\Cover.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>EAABAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>ProductClasses\Cover.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlanA.ProductClasses.Paint">
+    <Position X="12.25" Y="13.25" Width="2.5" />
+    <NestedTypes>
+      <Enum Name="PlanA.ProductClasses.Paint.PaintType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ProductClasses\Paint.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>EABBAAACAAAAAAAEAAAAAAAAEAAAAAAAAAAAACAgAAA=</HashCode>
+      <FileName>ProductClasses\Paint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlanA.ProductClasses.Putty">
+    <Position X="18.75" Y="13.25" Width="2.5" />
+    <NestedTypes>
+      <Enum Name="PlanA.ProductClasses.Putty.PuttyType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ProductClasses\Putty.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="PlanA.ProductClasses.Putty.Coarse" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ProductClasses\Putty.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>EAABAAAAAAgAAAAEAAAAAAAAAAAAAIAAAAAAAgAAAAA=</HashCode>
+      <FileName>ProductClasses\Putty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlanA.ProductClasses.Tool">
+    <Position X="9" Y="13.25" Width="2.5" />
+    <NestedTypes>
+      <Enum Name="PlanA.ProductClasses.Tool.ToolType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ProductClasses\Tool.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>EAABAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ProductClasses\Tool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlanA.ProductClasses.WallCovering">
+    <Position X="15.5" Y="13.25" Width="2.5" />
+    <NestedTypes>
+      <Enum Name="PlanA.ProductClasses.WallCovering.WallCoveringType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ProductClasses\WallCovering.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>EAARAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProductClasses\WallCovering.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlanA.CustomerClasses.CompanyCustomer">
+    <Position X="11.5" Y="21" Width="5.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>CustomerClasses\CompanyCustomer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlanA.CustomerClasses.PrivateCustomer">
+    <Position X="6" Y="21" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CustomerClasses\PrivateCustomer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlanA.CatalogClasses.HousingAssociationCustomer">
+    <Position X="17.75" Y="21" Width="5.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CustomerClasses\HousingAssociationCustomer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlanA.CommandClasses.CreateCustomerCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="39" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAACAIQAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CommandClasses\CreateCustomerCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PlanA.CommandClasses.CreateProductCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="42.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAQAAEAAAAAAAAAAAAAAAIAAAACAAAA=</HashCode>
+      <FileName>CommandClasses\CreateProductCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PlanA.CommandClasses.CreateTaskCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="39" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAACAAQAAEAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>CommandClasses\CreateTaskCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PlanA.CatalogClasses.CompanyCustomerCatalog">
+    <Position X="12.25" Y="4.25" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAIAAAEIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CatalogClasses\CompanyCustomerCatalog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlanA.CatalogClasses.CustomerCatalog">
+    <Position X="18" Y="4.25" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>CatalogClasses\CustomerCatalog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlanA.CatalogClasses.HousingAssociationCustomerCatalog">
+    <Position X="31" Y="4.25" Width="7" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAIAAAAAAAAAAAAIAAAAAAAABA=</HashCode>
+      <FileName>CatalogClasses\HousingAssociationCustomerCatalog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlanA.CatalogClasses.PrivateCustomerCatalog">
+    <Position X="6.75" Y="4.25" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIQAAAAAAAAAAAAAAIAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CatalogClasses\PrivateCustomerCatalog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlanA.CatalogClasses.ProductCatalog">
+    <Position X="22.5" Y="4.25" Width="4" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAIAAAAIAAIQAAAgAAAAAAAAAASQACAAAA=</HashCode>
+      <FileName>CatalogClasses\ProductCatalog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlanA.CatalogClasses.TaskCatalog">
+    <Position X="27.25" Y="4.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAgABCAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CatalogClasses\TaskCatalog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlanA.BaseClasses.CatalogBase&lt;TCatalog&gt;">
+    <Position X="20.75" Y="2" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BaseClasses\CatalogBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlanA.BaseClasses.CustomerBase">
+    <Position X="12.25" Y="17" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAACAAgAAAAABAAAQAAAAAAAACAAAAIEAAABE=</HashCode>
+      <FileName>BaseClasses\CustomerBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlanA.BaseClasses.ProductBase">
+    <Position X="11.75" Y="9" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>EAABAAACAAAgAAAFIIAAAAAAgAAAACAAAAAAgAAgAAA=</HashCode>
+      <FileName>BaseClasses\ProductBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="PlanA.ProductClasses.IProduct" Collapsed="true">
+    <Position X="39" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAABAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>ProductClasses\IProduct.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

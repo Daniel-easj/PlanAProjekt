@@ -20,44 +20,16 @@ namespace PlanA.XAML_Pages
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class NewCustomer : Page
+    public sealed partial class TotalAssignmentOverview : Page
     {
-        public NewCustomer()
+        public TotalAssignmentOverview()
         {
             this.InitializeComponent();
-        }
-
-        public void GoToInventoryMainPage(object sender, RoutedEventArgs a)
-        {
-            this.Frame.Navigate(typeof(InventoryMainPage), null);
-        }
-
-        public void GoToCustomerMainPage(object sender, RoutedEventArgs a)
-        {
-            this.Frame.Navigate(typeof(CustomerMainPage), null);
-        }
-
-        public void GoToStatisticPage(object sender, RoutedEventArgs a)
-        {
-            this.Frame.Navigate(typeof(StatisticPage), null);
-        }
-
-        private void GoToMainPage(object sender, RoutedEventArgs a)
-        {
-            this.Frame.Navigate(typeof(MainPage), null);
-        }
-
-        private void GoToChooseCustomer(object sender, RoutedEventArgs a)
-        {
-            this.Frame.Navigate(typeof(ChooseCustomer), null);
         }
 
         private void GoToSelectedProduct(object sender, RoutedEventArgs a)
         {
             this.Frame.Navigate(typeof(SelectedProduct), null);
         }
-
-
-
     }
 }
