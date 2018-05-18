@@ -7,7 +7,7 @@ using PlanA.Data.Domain.ExtendedClasses;
 
 namespace PlanA.ViewModels.Data.Product
 {
-    class CoverDataViewModel : DataViewModelAppBase<PlanAData.Domain.ExtendedClasses.Cover>
+    class CoverDataViewModel : DataViewModelAppBase<Cover>
     {
         public CoverDataViewModel(Cover obj) : base(obj)
         {
