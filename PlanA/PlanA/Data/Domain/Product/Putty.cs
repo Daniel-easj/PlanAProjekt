@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace PlanA
+// ReSharper disable once CheckNamespace
+namespace PlanA.Data.Domain.ExtendedClasses
 {
     public partial class Putty
     {

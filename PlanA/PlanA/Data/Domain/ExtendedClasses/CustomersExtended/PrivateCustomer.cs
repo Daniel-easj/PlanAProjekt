@@ -5,15 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using PlanA.BaseClasses;
 
-namespace PlanA.CustomerClasses
+namespace PlanA.Data.Domain.ExtendedClasses
 {
-    class PrivateCustomer : CustomerBase
+    public partial class PrivateCustomer : CustomerBase
     {
         public PrivateCustomer(string name, string phone, string address, string email) : base(name, phone, address, email)
         {
         }
 
-        public PrivateCustomer() : base("","","","")
+        public PrivateCustomer()
         {
             
         }

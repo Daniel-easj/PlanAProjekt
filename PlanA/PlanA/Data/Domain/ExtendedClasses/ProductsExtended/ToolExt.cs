@@ -7,12 +7,17 @@ using System.Text;
 using System.Threading.Tasks;
 using PlanA.BaseClasses;
 
-namespace PlanA.ProductClasses
+namespace PlanA.Data.Domain.ExtendedClasses
 {
     public partial class Tool : ProductBase
     {
         public Tool(int quantity, string description, int specificType) : base(quantity, description, specificType)
         {
+        }
+
+        public Tool()
+        {
+            
         }
 
     }

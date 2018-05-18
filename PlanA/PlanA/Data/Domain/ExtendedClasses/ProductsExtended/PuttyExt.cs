@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using PlanA.BaseClasses;
 
-namespace PlanA.ProductClasses
+namespace PlanA.Data.Domain.ExtendedClasses
 {
     public partial class Putty : ProductBase
     {
@@ -19,6 +19,10 @@ namespace PlanA.ProductClasses
             _coarseType = "";
         }
 
+        public Putty()
+        {
+            
+        }
 
         public override void SetDefaultValues()
         {

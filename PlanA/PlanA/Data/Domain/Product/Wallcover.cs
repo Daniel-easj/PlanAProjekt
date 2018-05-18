@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace PlanA
+// ReSharper disable once CheckNamespace
+namespace PlanA.Data.Domain.ExtendedClasses
 {
-    public partial class Tool
+    public partial class Wallcover
     {
-        public int ToolId { get; set; }
+        public int WallcoverId { get; set; }
         public int? Quantity { get; set; }
         public string Description { get; set; }
         public int SpecificType { get; set; }

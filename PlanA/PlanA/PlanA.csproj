@@ -100,8 +100,9 @@
     <Compile Include="CatalogClasses\ProductCatalogs\ToolCatalog.cs" />
     <Compile Include="CatalogClasses\ProductCatalogs\WallCoverCatalog.cs" />
     <Compile Include="CatalogClasses\TaskCatalog\TaskCatalog.cs" />
-    <Compile Include="Data\Domain\CompanyCustomer.cs" />
-    <Compile Include="Data\Domain\Cover.cs" />
+    <Compile Include="Data\Domain\Customer\CompanyCustomer.cs" />
+    <Compile Include="Data\Domain\ExtendedClasses\ProductsExtended\WallCoverExt.cs" />
+    <Compile Include="Data\Domain\Product\Cover.cs" />
     <Compile Include="Data\Base\DomainBase.cs" />
     <Compile Include="BaseClasses\ProductBase.cs" />
     <Compile Include="BaseClasses\CatalogAppBase.cs" />
@@ -110,17 +111,17 @@
     <Compile Include="CatalogClasses\CustomerCatalogs\PrivateCustomerCatalog.cs" />
     <Compile Include="CatalogClasses\ProductCatalogs\CoverCatalog.cs" />
     <Compile Include="CatalogClasses\ProductCatalogs\PaintCatalog.cs" />
-    <Compile Include="CustomerClasses\HousingAssociationCustomer.cs" />
-    <Compile Include="CustomerClasses\CompanyCustomer.cs" />
-    <Compile Include="CustomerClasses\PrivateCustomer.cs" />
-    <Compile Include="Data\Domain\HousingAssociationCustomer.cs" />
-    <Compile Include="Data\Domain\Paint.cs" />
+    <Compile Include="Data\Domain\ExtendedClasses\CustomersExtended\HousingAssociationCustomer.cs" />
+    <Compile Include="Data\Domain\ExtendedClasses\CustomersExtended\CompanyCustomer.cs" />
+    <Compile Include="Data\Domain\ExtendedClasses\CustomersExtended\PrivateCustomer.cs" />
+    <Compile Include="Data\Domain\Customer\HousingAssociationCustomer.cs" />
+    <Compile Include="Data\Domain\Product\Paint.cs" />
     <Compile Include="Data\Persistent\PlanadbContext.cs" />
-    <Compile Include="Data\Domain\PrivateCustomer.cs" />
-    <Compile Include="Data\Domain\Putty.cs" />
-    <Compile Include="Data\Domain\Task.cs" />
-    <Compile Include="Data\Domain\Tool.cs" />
-    <Compile Include="Data\Domain\Wallcover.cs" />
+    <Compile Include="Data\Domain\Customer\PrivateCustomer.cs" />
+    <Compile Include="Data\Domain\Product\Putty.cs" />
+    <Compile Include="Data\Domain\Task\Task.cs" />
+    <Compile Include="Data\Domain\Product\Tool.cs" />
+    <Compile Include="Data\Domain\Product\Wallcover.cs" />
     <Compile Include="ViewModels\Base\DataViewModelAppBase.cs" />
     <Compile Include="ViewModels\Base\PageViewModelAppBase.cs" />
     <Compile Include="ViewModels\Data\Customer\CompanyCustomerDataViewModel.cs" />
@@ -140,11 +141,10 @@
     <Compile Include="XAML Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Data\Domain\ExtendedClasses\CoverExt.cs" />
-    <Compile Include="Data\Domain\ExtendedClasses\PaintExt.cs" />
-    <Compile Include="Data\Domain\ExtendedClasses\PuttyExt.cs" />
-    <Compile Include="Data\Domain\ExtendedClasses\ToolExt.cs" />
-    <Compile Include="Data\Domain\ExtendedClasses\WallCoveringExt.cs" />
+    <Compile Include="Data\Domain\ExtendedClasses\ProductsExtended\CoverExt.cs" />
+    <Compile Include="Data\Domain\ExtendedClasses\ProductsExtended\PaintExt.cs" />
+    <Compile Include="Data\Domain\ExtendedClasses\ProductsExtended\PuttyExt.cs" />
+    <Compile Include="Data\Domain\ExtendedClasses\ProductsExtended\ToolExt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="XAML Pages\NewAssignment.xaml.cs">
       <DependentUpon>NewAssignment.xaml</DependentUpon>

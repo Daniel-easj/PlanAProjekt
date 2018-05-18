@@ -21,6 +21,11 @@ namespace PlanA.BaseClasses
             _email = email;
         }
 
+        public CustomerBase()
+        {
+            
+        }
+
         public override void SetDefaultValues()
         {
             _name = "(Not set)";

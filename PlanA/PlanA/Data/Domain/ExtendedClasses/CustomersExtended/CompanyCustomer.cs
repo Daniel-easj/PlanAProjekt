@@ -5,22 +5,19 @@ using System.Text;
 using System.Threading.Tasks;
 using PlanA.BaseClasses;
 
-namespace PlanA.CatalogClasses
+namespace PlanA.Data.Domain.ExtendedClasses
 {
-    class HousingAssociationCustomer : CustomerBase
+    public partial class CompanyCustomer : CustomerBase
     {
         private string _cVR;
-        public HousingAssociationCustomer(string name, string phone, string address, string email, string cVr) : base(name, phone, address, email)
+
+        public CompanyCustomer(string name, string phone, string address, string email, string cVR) : base(name, phone, address, email)
         {
-
-            _cVR = CVR;
-
+            _cVR = cVR;
         }
 
-
-        public HousingAssociationCustomer() : base("", "", "", "")
+        public CompanyCustomer()
         {
-            CVR = "";
         }
 
 
@@ -30,6 +27,5 @@ namespace PlanA.CatalogClasses
             base.SetDefaultValues();
             CVR = "";
         }
-
     }
 }

@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using PlanA.BaseClasses;
-using PlanA.CustomerClasses;
+using PlanA.Data.Domain.ExtendedClasses;
 
-namespace PlanA.CatalogClasses
+namespace PlanA.CatalogClasses.CustomerCatalogs
 {
-    public class PrivateCustomerCatalog
+    public class PrivateCustomerCatalog : CatalogAppBase<PrivateCustomer>
     {
 
     }

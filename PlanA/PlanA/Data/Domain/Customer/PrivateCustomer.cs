@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace PlanA
+namespace PlanA.Data.Domain.ExtendedClasses
 {
     public partial class PrivateCustomer
     {
