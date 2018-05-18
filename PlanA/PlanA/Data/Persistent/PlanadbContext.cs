@@ -6,9 +6,11 @@ namespace PlanA
 {
     public partial class PlanadbContext : DbContext
     {
+        public virtual DbSet<CompanyCustomer> CompanyCustomers { get; set; }
         public virtual DbSet<Cover> Covers { get; set; }
-        public virtual DbSet<Customer> Customers { get; set; }
+        public virtual DbSet<HousingAssociationCustomer> HousingAssociationCustomers { get; set; }
         public virtual DbSet<Paint> Paints { get; set; }
+        public virtual DbSet<PrivateCustomer> PrivateCustomers { get; set; }
         public virtual DbSet<Putty> Putties { get; set; }
         public virtual DbSet<Task> Tasks { get; set; }
         public virtual DbSet<Tool> Tools { get; set; }
@@ -25,6 +27,27 @@ namespace PlanA
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<CompanyCustomer>(entity =>
+            {
+                entity.HasKey(e => e.CompanyCustomer1);
+
+                entity.ToTable("CompanyCustomer");
+
+                entity.Property(e => e.CompanyCustomer1).HasColumnName("CompanyCustomer");
+
+                entity.Property(e => e.Address).HasColumnType("nchar(100)");
+
+                entity.Property(e => e.Cvr)
+                    .HasColumnName("CVR")
+                    .HasColumnType("nchar(100)");
+
+                entity.Property(e => e.Email).HasColumnType("nchar(100)");
+
+                entity.Property(e => e.Name).HasColumnType("nchar(100)");
+
+                entity.Property(e => e.Phone).HasColumnType("nchar(100)");
+            });
+
             modelBuilder.Entity<Cover>(entity =>
             {
                 entity.ToTable("Cover");
@@ -42,28 +65,23 @@ namespace PlanA
                     .HasDefaultValueSql("((0))");
             });
 
-            modelBuilder.Entity<Customer>(entity =>
+            modelBuilder.Entity<HousingAssociationCustomer>(entity =>
             {
-                entity.ToTable("Customer");
+                entity.ToTable("HousingAssociationCustomer");
 
-                entity.Property(e => e.Address)
-                    .IsRequired()
-                    .HasColumnType("nchar(30)");
+                entity.Property(e => e.HousingAssociationCustomerId).HasColumnName("HousingAssociationCustomer Id");
 
-                entity.Property(e => e.City)
-                    .IsRequired()
-                    .HasColumnType("nchar(50)");
+                entity.Property(e => e.Address).HasColumnType("nchar(100)");
 
-                entity.Property(e => e.CustomerName)
-                    .IsRequired()
-                    .HasColumnName("Customer Name")
-                    .HasColumnType("nchar(50)");
+                entity.Property(e => e.Cvr)
+                    .HasColumnName("CVR")
+                    .HasColumnType("nchar(100)");
 
-                entity.Property(e => e.Mail).HasColumnType("nchar(50)");
+                entity.Property(e => e.Email).HasColumnType("nchar(100)");
 
-                entity.Property(e => e.PhoneNumber).HasColumnName("Phone Number");
+                entity.Property(e => e.Name).HasColumnType("nchar(100)");
 
-                entity.Property(e => e.ZipCode).HasColumnName("Zip  Code");
+                entity.Property(e => e.Phone).HasColumnType("nchar(100)");
             });
 
             modelBuilder.Entity<Paint>(entity =>
@@ -81,6 +99,21 @@ namespace PlanA
                 entity.Property(e => e.SpecificType)
                     .HasColumnName("Specific Type")
                     .HasDefaultValueSql("((0))");
+            });
+
+            modelBuilder.Entity<PrivateCustomer>(entity =>
+            {
+                entity.ToTable("PrivateCustomer");
+
+                entity.Property(e => e.PrivateCustomerId).HasColumnName("PrivateCustomer Id");
+
+                entity.Property(e => e.Address).HasColumnType("nchar(100)");
+
+                entity.Property(e => e.Email).HasColumnType("nchar(100)");
+
+                entity.Property(e => e.Name).HasColumnType("nchar(100)");
+
+                entity.Property(e => e.Phone).HasColumnType("nchar(100)");
             });
 
             modelBuilder.Entity<Putty>(entity =>

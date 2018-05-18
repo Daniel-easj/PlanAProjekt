@@ -8,7 +8,7 @@ using PlanA.CustomerClasses;
 
 namespace PlanA.CatalogClasses
 {
-    class CompanyCustomerCatalog : CatalogAppBase<CompanyCustomer>
+    public class PrivateCustomerCatalog
     {
 
     }

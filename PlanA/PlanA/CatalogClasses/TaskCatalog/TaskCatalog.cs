@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PlanA.CatalogClasses.ProductCatalogs
+namespace PlanA.CatalogClasses.TaskCatalog
 {
-    public class PaintCatalog : CatalogAppBase<Paint>
+    class TaskCatalog
     {
     }
 }

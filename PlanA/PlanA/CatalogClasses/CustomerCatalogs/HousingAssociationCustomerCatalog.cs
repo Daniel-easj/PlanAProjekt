@@ -5,13 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using PlanA.BaseClasses;
 using PlanA.ProductClasses;
-using PlanA.TaskClasses;
 
 namespace PlanA.CatalogClasses
 {
-    public class ProductCatalog
+    public class HousingAssociationCustomerCatalog : CatalogAppBase<HousingAssociationCustomer>
     {
-       
-
+        
     }
+
+
+
 }

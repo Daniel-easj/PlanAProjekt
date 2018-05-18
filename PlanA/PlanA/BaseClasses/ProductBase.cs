@@ -10,40 +10,24 @@ namespace PlanA.BaseClasses
 {
     public abstract class ProductBase : DomainBase
     {
-        protected string _productID;
-        protected int _quantity = 0;
-        protected string _description = "Ingen Beskrivelse";
+        protected int _quantity;
+        protected string _description;
+        protected int _specificType;
 
-        public abstract string ProductID { get;}
-
-        public virtual int Quantity
+        public ProductBase(int quantity, string description, int specificType)
         {
-            get { return _quantity; }
-            set
-            {
-                _quantity = value;
-            }
+            _quantity = quantity;
+            _description = description;
+            _specificType = specificType;
         }
 
-        public virtual string Description
+
+        public override void SetDefaultValues()
         {
-            get => _description;
-            set
-            {
-                _description = value;
-            }
+            _quantity = 0;
+            _description = "(Not set)";
+            _specificType = 0;
         }
 
-        public abstract string SpecificType
-        {
-            get;
-            set;
-        }
-
-        // Nogle klasser har behov for yderligere properties som kan overrides i de klasser hvor behovet vil opstå.
-
-        public virtual int Gloss { get; set; }
-        public virtual bool InDoor { get; set; }
-        public virtual string Coarse { get; set; }
     }
 }

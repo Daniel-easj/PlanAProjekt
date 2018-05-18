@@ -12,7 +12,6 @@ namespace PlanA.BaseClasses
         private string _phone;
         private string _address;
         private string _email;
-        private int _iD = 10000;
 
         public CustomerBase(string name, string phone, string address, string email)
         {
@@ -22,26 +21,12 @@ namespace PlanA.BaseClasses
             _email = email;
         }
 
-        public string Name { get; set; }
-
-        public string Phone { get; set; }
-
-        public string Address { get; set; }
-
-        public string Email { get; set; }
-
-        public string ID
-        {
-            get { return _iD.ToString(); }
-            
-        }
-
         public override void SetDefaultValues()
         {
-            Name = "";
-            Phone = "";
-            Address = "";
-            Email = "";
+            _name = "(Not set)";
+            _phone = "(Not set)";
+            _address = "(Not set)";
+            _email = "(Not set)";
         }
 
     }

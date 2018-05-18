@@ -95,39 +95,36 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="BaseClasses\CatalogBase.cs" />
     <Compile Include="BaseClasses\CustomerBase.cs" />
-    <Compile Include="BaseClasses\DomainBase.cs" />
+    <Compile Include="CatalogClasses\ProductCatalogs\PuttyCatalog.cs" />
+    <Compile Include="CatalogClasses\ProductCatalogs\ToolCatalog.cs" />
+    <Compile Include="CatalogClasses\ProductCatalogs\WallCoverCatalog.cs" />
+    <Compile Include="CatalogClasses\TaskCatalog\TaskCatalog.cs" />
+    <Compile Include="Data\Domain\CompanyCustomer.cs" />
+    <Compile Include="Data\Domain\Cover.cs" />
+    <Compile Include="Data\Base\DomainBase.cs" />
     <Compile Include="BaseClasses\ProductBase.cs" />
-    <Compile Include="CatalogAppBase.cs" />
-    <Compile Include="CatalogClasses\CompanyCustomerCatalog.cs" />
-    <Compile Include="CatalogClasses\CustomerCatalog.cs" />
-    <Compile Include="CatalogClasses\HousingAssociationCustomerCatalog.cs" />
-    <Compile Include="CatalogClasses\PaintCatalog.cs" />
-    <Compile Include="CatalogClasses\PrivateCustomerCatalog.cs" />
-    <Compile Include="CatalogClasses\ProductCatalog.cs" />
+    <Compile Include="BaseClasses\CatalogAppBase.cs" />
+    <Compile Include="CatalogClasses\CustomerCatalogs\CompanyCustomerCatalog.cs" />
+    <Compile Include="CatalogClasses\CustomerCatalogs\HousingAssociationCustomerCatalog.cs" />
+    <Compile Include="CatalogClasses\CustomerCatalogs\PrivateCustomerCatalog.cs" />
     <Compile Include="CatalogClasses\ProductCatalogs\CoverCatalog.cs" />
     <Compile Include="CatalogClasses\ProductCatalogs\PaintCatalog.cs" />
-    <Compile Include="CatalogClasses\TaskCatalog.cs" />
-    <Compile Include="CommandClasses\CreateCustomerCommand.cs" />
-    <Compile Include="CommandClasses\CreateProductCommand.cs" />
-    <Compile Include="CommandClasses\CreateTaskCommand.cs" />
-    <Compile Include="Cover.cs" />
-    <Compile Include="Customer.cs" />
     <Compile Include="CustomerClasses\HousingAssociationCustomer.cs" />
     <Compile Include="CustomerClasses\CompanyCustomer.cs" />
     <Compile Include="CustomerClasses\PrivateCustomer.cs" />
-    <Compile Include="Paint.cs" />
-    <Compile Include="PlanadbContext.cs" />
-    <Compile Include="Putty.cs" />
-    <Compile Include="Task.cs" />
-    <Compile Include="Tool.cs" />
-    <Compile Include="ViewModels\CreateCustomerViewModel.cs" />
-    <Compile Include="ViewModels\CreateProductViewModel.cs" />
-    <Compile Include="ViewModels\CreateTaskViewModel.cs" />
-    <Compile Include="ViewModels\ProductViewModel.cs" />
-    <Compile Include="ViewModels\TasksViewModel.cs" />
-    <Compile Include="Wallcover.cs" />
+    <Compile Include="Data\Domain\HousingAssociationCustomer.cs" />
+    <Compile Include="Data\Domain\Paint.cs" />
+    <Compile Include="Data\Persistent\PlanadbContext.cs" />
+    <Compile Include="Data\Domain\PrivateCustomer.cs" />
+    <Compile Include="Data\Domain\Putty.cs" />
+    <Compile Include="Data\Domain\Task.cs" />
+    <Compile Include="Data\Domain\Tool.cs" />
+    <Compile Include="Data\Domain\Wallcover.cs" />
+    <Compile Include="ViewModels\Base\DataViewModelAppBase.cs" />
+    <Compile Include="ViewModels\Base\PageViewModelAppBase.cs" />
+    <Compile Include="ViewModels\Data\CompanyCustomerDataViewModel.cs" />
+    <Compile Include="ViewModels\Page\CompanyCustomerDataViewModel.cs" />
     <Compile Include="XAML Pages\CustomerMainPage.xaml.cs">
       <DependentUpon>CustomerMainPage.xaml</DependentUpon>
     </Compile>
@@ -137,13 +134,12 @@
     <Compile Include="XAML Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ProductClasses\Cover.cs" />
-    <Compile Include="ProductClasses\Paint.cs" />
-    <Compile Include="ProductClasses\Putty.cs" />
-    <Compile Include="ProductClasses\Tool.cs" />
-    <Compile Include="ProductClasses\WallCovering.cs" />
+    <Compile Include="Data\Domain\ExtendedClasses\CoverExt.cs" />
+    <Compile Include="Data\Domain\ExtendedClasses\PaintExt.cs" />
+    <Compile Include="Data\Domain\ExtendedClasses\PuttyExt.cs" />
+    <Compile Include="Data\Domain\ExtendedClasses\ToolExt.cs" />
+    <Compile Include="Data\Domain\ExtendedClasses\WallCoveringExt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TaskClasses\Tasks.cs" />
     <Compile Include="XAML Pages\NewAssignment.xaml.cs">
       <DependentUpon>NewAssignment.xaml</DependentUpon>
     </Compile>
@@ -260,6 +256,10 @@
     <Reference Include="ViewModel">
       <HintPath>..\MVVMStarterLibrary2018-master\MVVMStarterLibrary2018DLLs\ViewModel.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CommandClasses\" />
+    <Folder Include="TaskClasses\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
