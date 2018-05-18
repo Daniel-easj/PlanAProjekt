@@ -57,6 +57,11 @@ namespace PlanA.XAML_Pages
             this.Frame.Navigate(typeof(CustomerOverview), null);
         }
 
+        private void GoToNewAssignment(object sender, RoutedEventArgs a)
+        {
+            this.Frame.Navigate(typeof(NewAssignment), null);
+        }
+
 
     }
 }
