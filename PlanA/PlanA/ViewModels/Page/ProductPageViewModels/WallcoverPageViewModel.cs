@@ -12,16 +12,16 @@ using PlanA.ViewModels.Data.Product;
 
 namespace PlanA.ViewModels.Page.ProductPageViewModels
 {
-    public class ToolPageViewModel : PageViewModelAppBase<Tool>
+    public class WallcoverPageViewModel : PageViewModelAppBase<Wallcover>
     {
-        public ToolPageViewModel() 
-            : base(DomainModel.Catalogs.ToolCatalog, new List<string>(), new List<string>())
+        public WallcoverPageViewModel() 
+            : base(DomainModel.Catalogs.WallCoverCatalog, new List<string>(), new List<string>())
         {
         }
 
-        public override IDataWrapper<Tool> CreateDataViewModel(Tool obj)
+        public override IDataWrapper<Wallcover> CreateDataViewModel(Wallcover obj)
         {
-            return new ToolDataViewModel(obj);
+            return new WallCoverDataViewModel(obj);
         }
     }
 }

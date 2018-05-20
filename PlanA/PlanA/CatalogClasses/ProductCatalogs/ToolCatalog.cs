@@ -7,7 +7,7 @@ using PlanA.Data.Domain.ExtendedClasses;
 
 namespace PlanA.CatalogClasses.ProductCatalogs
 {
-    class ToolCatalog : CatalogAppBase<Tool>
+    public class ToolCatalog : CatalogAppBase<Tool>
     {
     }
 }

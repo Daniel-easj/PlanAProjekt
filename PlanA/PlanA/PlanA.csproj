@@ -96,6 +96,8 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="BaseClasses\CustomerBase.cs" />
+    <Compile Include="CatalogClasses\CombinedCatalogs\CustomersCatalog.cs" />
+    <Compile Include="CatalogClasses\CombinedCatalogs\ProductsCatalog.cs" />
     <Compile Include="CatalogClasses\ProductCatalogs\PuttyCatalog.cs" />
     <Compile Include="CatalogClasses\ProductCatalogs\ToolCatalog.cs" />
     <Compile Include="CatalogClasses\ProductCatalogs\WallCoverCatalog.cs" />
@@ -122,8 +124,11 @@
     <Compile Include="Data\Domain\Task\Task.cs" />
     <Compile Include="Data\Domain\Product\Tool.cs" />
     <Compile Include="Data\Domain\Product\Wallcover.cs" />
+    <Compile Include="Model\DomainModel.cs" />
     <Compile Include="ViewModels\Base\DataViewModelAppBase.cs" />
     <Compile Include="ViewModels\Base\PageViewModelAppBase.cs" />
+    <Compile Include="ViewModels\Data\CombinedCustomers\CustomersDataViewmodel.cs" />
+    <Compile Include="ViewModels\Data\CombinedProducts\ProductsDataViewmodel.cs" />
     <Compile Include="ViewModels\Data\Customer\CompanyCustomerDataViewModel.cs" />
     <Compile Include="ViewModels\Data\Customer\HousingAssociationCustomerDataViewModel.cs" />
     <Compile Include="ViewModels\Data\Customer\PrivateCustomerDataViewModel.cs" />
@@ -132,10 +137,16 @@
     <Compile Include="ViewModels\Data\Product\PuttyDataViewModel.cs" />
     <Compile Include="ViewModels\Data\Product\ToolDataViewModel.cs" />
     <Compile Include="ViewModels\Data\Product\WallCoverDataViewModel.cs" />
+    <Compile Include="ViewModels\Page\CustomerPageViewmodels\CombinedCustomersPageViewmodel.cs" />
     <Compile Include="ViewModels\Page\CustomerPageViewmodels\CompanyCustomerPageViewModel.cs" />
     <Compile Include="ViewModels\Page\CustomerPageViewmodels\HousingAssociationCustomerPageViewModel.cs" />
     <Compile Include="ViewModels\Page\CustomerPageViewmodels\PrivateCustomerPageViewModel.cs" />
+    <Compile Include="ViewModels\Page\ProductPageViewModels\CombinedProductsPageViewModel.cs" />
+    <Compile Include="ViewModels\Page\ProductPageViewModels\CoverPageViewModel.cs" />
+    <Compile Include="ViewModels\Page\ProductPageViewModels\PaintPageViewModel.cs" />
+    <Compile Include="ViewModels\Page\ProductPageViewModels\PuttyPageViewModel.cs" />
     <Compile Include="ViewModels\Page\ProductPageViewModels\ToolPageViewModel.cs" />
+    <Compile Include="ViewModels\Page\ProductPageViewModels\WallcoverPageViewModel.cs" />
     <Compile Include="XAML Pages\ChooseCustomer.xaml.cs">
       <DependentUpon>ChooseCustomer.xaml</DependentUpon>
     </Compile>

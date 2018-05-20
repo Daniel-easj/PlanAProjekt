@@ -6,11 +6,12 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:viewModels="using:PlanA.ViewModels"
+    xmlns:customerPageViewModels="using:PlanA.ViewModels.Page.CustomerPageViewmodels"
     mc:Ignorable="d">
 
-    <!--<Page.DataContext>
-        <viewModels:ProductViewModel/>
-    </Page.DataContext>-->
+    <Page.DataContext>
+        <customerPageViewModels:CombinedCustomersPageViewmodel/>
+    </Page.DataContext>
 
     <Grid x:Name="MainGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.ColumnDefinitions>
@@ -74,14 +75,14 @@
                 <RowDefinition Height="91*"/>
             </Grid.RowDefinitions>
             <ComboBox HorizontalAlignment="Right" VerticalAlignment="Stretch" PlaceholderText="Sortering" Width="170" Margin="0,10,10,4" Height="32" />
-            <ListView ItemsSource="{Binding Products}" Margin="0,0,0,0" Grid.RowSpan="2" Grid.Row="1">
+            <ListView ItemsSource="{Binding ItemCollection}" SelectedItem="{Binding ItemSelected, Mode=TwoWay}" Margin="0,0,0,0" Grid.RowSpan="2" Grid.Row="1">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Height="90" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,11,0,0" Padding="0,0,0,0" BorderBrush="Black" BorderThickness="0,0,0,0" Width="330">
                             <Grid Height="90" BorderBrush="Black" BorderThickness="2,2,2,2">
-                                <TextBlock Text="Navn" Height="30" Margin="10,0,0,0" VerticalAlignment="Top"/>
-                                <TextBlock Text="Telefon-nummer" Height="30" Margin="10,0,0,0" VerticalAlignment="Center"/>
-                                <TextBlock Text="Adresse" Height="30" Margin="10,0,0,0" VerticalAlignment="Bottom"/>
+                                <TextBlock Text="{Binding DataObject.Name}" Height="30" Margin="10,0,0,0" VerticalAlignment="Top"/>
+                                <TextBlock Text="{Binding DataObject.Address}" Height="30" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                                <TextBlock Text="{Binding DataObject.Phone}" Height="30" Margin="10,0,0,0" VerticalAlignment="Bottom"/>
                             </Grid>
                         </StackPanel>
                     </DataTemplate>

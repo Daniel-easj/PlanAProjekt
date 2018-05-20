@@ -8,28 +8,28 @@ using System.Threading.Tasks;
 
 namespace PlanA.BaseClasses
 {
-    public abstract class ProductBase : DomainBase
+    public class ProductBase : DomainBase
     {
-        protected int _quantity;
-        protected string _description;
-        protected int _specificType;
+        public int Quantity { get; set; }
+        public string Description { get; set; }
+        public int SpecificType { get; set; }
 
         protected ProductBase(int quantity, string description, int specificType)
         {
-            _quantity = quantity;
-            _description = description;
-            _specificType = specificType;
+            Quantity = quantity;
+            Description = description;
+            SpecificType = specificType;
         }
 
-        protected ProductBase()
+        public ProductBase()
         {
             
         }
         public override void SetDefaultValues()
         {
-            _quantity = 0;
-            _description = "(Not set)";
-            _specificType = 0;
+            Quantity = 0;
+            Description = "(Not set)";
+            SpecificType = 0;
         }
 
     }

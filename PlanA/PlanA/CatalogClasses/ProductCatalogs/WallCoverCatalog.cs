@@ -7,7 +7,7 @@ using PlanA.Data.Domain.ExtendedClasses;
 
 namespace PlanA.CatalogClasses.ProductCatalogs
 {
-    class WallCoverCatalog : CatalogAppBase<Wallcover>
+    public class WallCoverCatalog : CatalogAppBase<Wallcover>
     {
     }
 }

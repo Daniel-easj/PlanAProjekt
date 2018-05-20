@@ -6,16 +6,23 @@ using System.Threading.Tasks;
 using Data.Transformed.Interfaces;
 using Model.Interfaces;
 using PlanA.Data.Domain.ExtendedClasses;
+using PlanA.Model;
 using PlanA.ViewModels.Base;
 using PlanA.ViewModels.Data;
 
-namespace PlanA.ViewModels.Page.CustomerPageViewModels
+namespace PlanA.ViewModels.Page.CustomerPageViewmodels
 {
     class CompanyCustomerPageViewModel : PageViewModelAppBase<CompanyCustomer>
     {
-        public CompanyCustomerPageViewModel(ICatalog<CompanyCustomer> catalog, List<string> immutableControls, List<string> mutableControls) : base(catalog, immutableControls, mutableControls)
+
+        // TODO: Lav en "Domainklasse" hvor alle cataloger samles (singleton)
+        
+        public CompanyCustomerPageViewModel() 
+            : base(DomainModel.Catalogs.CompanyCustomers, new List<string>(), new List<string>())
         {
         }
+
+        //TODO: Saml alle de relevante lister i en ny klasse hvor man kalder en metode til en ny list (property)
 
         public override IDataWrapper<CompanyCustomer> CreateDataViewModel(CompanyCustomer obj)
         {

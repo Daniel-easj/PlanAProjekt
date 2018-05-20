@@ -32,7 +32,6 @@ namespace PlanA.ViewModels.Data.Product
                 OnPropertyChanged();
             }
         }
-        
         public int SpecificType
         { 
             get { return DataObject.SpecificType; }
@@ -41,6 +40,5 @@ namespace PlanA.ViewModels.Data.Product
                 DataObject.SpecificType = value;
                 OnPropertyChanged();
             }
-
     }   }
 }

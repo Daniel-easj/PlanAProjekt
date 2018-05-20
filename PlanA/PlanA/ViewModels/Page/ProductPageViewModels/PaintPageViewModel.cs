@@ -9,19 +9,21 @@ using PlanA.Data.Domain.ExtendedClasses;
 using PlanA.Model;
 using PlanA.ViewModels.Base;
 using PlanA.ViewModels.Data.Product;
+using Remotion.Linq.Utilities;
+using ViewModel.Page.Implementation;
 
 namespace PlanA.ViewModels.Page.ProductPageViewModels
 {
-    public class ToolPageViewModel : PageViewModelAppBase<Tool>
+    public class PaintPageViewModel : PageViewModelAppBase<Paint>
     {
-        public ToolPageViewModel() 
-            : base(DomainModel.Catalogs.ToolCatalog, new List<string>(), new List<string>())
+        public PaintPageViewModel() 
+            : base(DomainModel.Catalogs.PaintCatalog, new List<string>(), new List<string>())
         {
         }
 
-        public override IDataWrapper<Tool> CreateDataViewModel(Tool obj)
+        public override IDataWrapper<Paint> CreateDataViewModel(Paint obj)
         {
-            return new ToolDataViewModel(obj);
+            return new PaintDataViewModel(obj);
         }
     }
 }

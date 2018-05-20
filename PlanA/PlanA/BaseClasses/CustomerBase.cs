@@ -6,32 +6,35 @@ using System.Threading.Tasks;
 
 namespace PlanA.BaseClasses
 {
-    public abstract class CustomerBase : DomainBase
+    public class CustomerBase : DomainBase
     {
-        private string _name;
-        private string _phone;
-        private string _address;
-        private string _email;
+        public string Name { get; private set; }
+        public string Phone { get; private set; }
+        public string Address { get; private set; }
+        public string Email { get; private set; }
 
-        public CustomerBase(string name, string phone, string address, string email)
+
+        protected CustomerBase(string name, string phone, string address, string email)
         {
-            _name = name;
-            _phone = phone;
-            _address = address;
-            _email = email;
+            Name = name;
+            Phone = phone;
+            Address = address;
+            Email = email;
         }
 
         public CustomerBase()
         {
-            
+
         }
+
+
 
         public override void SetDefaultValues()
         {
-            _name = "(Not set)";
-            _phone = "(Not set)";
-            _address = "(Not set)";
-            _email = "(Not set)";
+            Name = "(Not set)";
+            Phone = "(Not set)";
+            Address = "(Not set)";
+            Email = "(Not set)";
         }
 
     }
