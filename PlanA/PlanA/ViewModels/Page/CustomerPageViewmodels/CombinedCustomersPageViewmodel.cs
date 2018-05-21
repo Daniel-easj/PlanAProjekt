@@ -25,7 +25,6 @@ namespace PlanA.ViewModels.Page.CustomerPageViewmodels
             {
                 if (!DomainModel.Catalogs.CustomersCatalog.All.Contains(customer))
                 {
-                    DomainModel.Catalogs.CustomersCatalog.CreatePersistentDataObject(customer);
                 }
                 
             }
@@ -34,7 +33,6 @@ namespace PlanA.ViewModels.Page.CustomerPageViewmodels
             {
                 if (!DomainModel.Catalogs.CustomersCatalog.All.Contains(customer))
                 {
-                    DomainModel.Catalogs.CustomersCatalog.CreatePersistentDataObject(customer);
                 }
                 
             }
@@ -43,10 +41,20 @@ namespace PlanA.ViewModels.Page.CustomerPageViewmodels
             {
                 if (!DomainModel.Catalogs.CustomersCatalog.All.Contains(customer))
                 {
-                    DomainModel.Catalogs.CustomersCatalog.CreatePersistentDataObject(customer);
+                    DomainModel.Catalogs.CustomersCatalog.CreateViewDataObject(customer);
                 }
             }
 
+        }
+
+        public async Task Load()
+        {
+            await DomainModel.Instance.LoadAsync();
+        }
+
+        public async Task Save()
+        {
+            await DomainModel.Instance.SaveAsync();
         }
 
         public override IDataWrapper<CustomerBase> CreateDataViewModel(CustomerBase obj)

@@ -125,6 +125,7 @@
     <Compile Include="Data\Domain\Product\Tool.cs" />
     <Compile Include="Data\Domain\Product\Wallcover.cs" />
     <Compile Include="Model\DomainModel.cs" />
+    <Compile Include="ViewModels\App\AppViewModel.cs" />
     <Compile Include="ViewModels\Base\DataViewModelAppBase.cs" />
     <Compile Include="ViewModels\Base\PageViewModelAppBase.cs" />
     <Compile Include="ViewModels\Data\CombinedCustomers\CustomersDataViewmodel.cs" />

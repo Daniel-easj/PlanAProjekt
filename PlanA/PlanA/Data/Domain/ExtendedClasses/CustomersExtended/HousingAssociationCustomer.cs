@@ -13,7 +13,7 @@ namespace PlanA.Data.Domain.ExtendedClasses
         public HousingAssociationCustomer(string name, string phone, string address, string email, string cVr) : base(name, phone, address, email)
         {
 
-            _cVR = CVR;
+            _cVR = cVr;
 
         }
 
@@ -22,12 +22,10 @@ namespace PlanA.Data.Domain.ExtendedClasses
         {
         }
 
-
-        public string CVR { get; set; }
         public override void SetDefaultValues()
         {
             base.SetDefaultValues();
-            CVR = "";
+            Cvr = "";
         }
 
     }

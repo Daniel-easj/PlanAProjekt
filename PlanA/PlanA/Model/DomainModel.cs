@@ -58,6 +58,16 @@ namespace PlanA.Model
             _productsCatalog = new ProductsCatalog();
         }
 
+        public async Task LoadAsync()
+        {
+            await _companyCustomerCatalog.LoadAsync();
+        }
+
+        public async Task SaveAsync()
+        {
+            await _companyCustomerCatalog.SaveAsync();
+        }
+
         public CompanyCustomerCatalog CompanyCustomers => _companyCustomerCatalog;
         public HousingAssociationCustomerCatalog HousingAssociationCustomer => _housingAssociationCustomerCatalog;
         public PrivateCustomerCatalog PrivateCustomerCatalog => _privateCustomerCatalog;

@@ -20,12 +20,10 @@ namespace PlanA.Data.Domain.ExtendedClasses
         {
         }
 
-
-        public string CVR { get; set; }
         public override void SetDefaultValues()
         {
             base.SetDefaultValues();
-            CVR = "";
+            Cvr = "";
         }
     }
 }

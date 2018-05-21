@@ -6,11 +6,12 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:viewModels="using:PlanA.ViewModels"
+    xmlns:app="using:PlanA.ViewModels.App"
     mc:Ignorable="d">
 
-    <!--<Page.DataContext>
-        <viewModels:ProductViewModel/>
-    </Page.DataContext>-->
+    <Page.DataContext>
+        <app:AppViewModel/>
+    </Page.DataContext>
 
     <Grid x:Name="MainGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.ColumnDefinitions>
@@ -63,13 +64,26 @@
             <TextBlock x:Name="SiteDescription" HorizontalAlignment="Stretch" Margin="0,0,0,0" 
                        Text="Opgaver" TextAlignment="Center" TextWrapping="Wrap" 
                        VerticalAlignment="Bottom" FontSize="20" LineHeight="6"/>
+            
+            
             <!--<AutoSuggestBox x:Name="SearchBar" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" Margin="0,0,10,0" 
                             VerticalAlignment="Bottom" Grid.Column="1" PlaceholderText="Søg" TextChanged="AutoSuggestionsBox_TextChanged"
                             QuerySubmitted="AutoSuggestBox_QuerySubmitted"  SuggestionChosen="AutoSuggestBox_SuggestionChosen"/>-->
         </Grid>
+        <Grid Column="1" Row="0">
+            <Button Content="LOAD" HorizontalAlignment="Center" Command="{Binding NavigationCommands[Load]}"/>
+        </Grid>
+        
+        <Grid Column="2" Row="0">
+            <Button Content="SAVE" HorizontalAlignment="Center"/>
+        </Grid>
         <Grid x:Name="CenterViewGrid" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" 
               Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1">
-            <ListView ItemsSource="{Binding Products}" Margin="0,0,0,0" Grid.RowSpan="2" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="247*"/>
+                <ColumnDefinition Width="113*"/>
+            </Grid.ColumnDefinitions>
+            <ListView ItemsSource="{Binding Products}" Margin="0,0,0,0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Height="90" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,11,0,0" Padding="0,0,0,0" BorderBrush="Black" BorderThickness="0,0,0,0" Width="330">
@@ -84,7 +98,7 @@
             </ListView>
             <Button x:Name="NewAssignmentButton" HorizontalAlignment="Right" Margin="0,0,20,0" 
                 VerticalAlignment="Bottom" Width="65" Height="65" 
-                Background="#00F30404" Click="GoToNewAssignment">
+                Background="#00F30404" Click="GoToNewAssignment" Grid.Column="1">
                 <Image Source="../Assets/Black Plus.png"/>
             </Button>
 
