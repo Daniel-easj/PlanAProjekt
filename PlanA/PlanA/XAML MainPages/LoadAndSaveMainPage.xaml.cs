@@ -5,7 +5,6 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
-using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -13,51 +12,21 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using PlanA.XAML_MainPages;
 using PlanA.XAML_Pages;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace PlanA
+namespace PlanA.XAML_MainPages
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class LoadAndSaveMainPage : Page
     {
-        public MainPage()
+        public LoadAndSaveMainPage()
         {
             this.InitializeComponent();
         }
-
-        
-
-
-        //private void AutoSuggestBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
-        //{
-        //    if (args.Reason == AutoSuggestBoxTextChangedReason.UserInput)
-        //    {
-        //        sender.ItemsSource = //TODO
-        //    }
-        //}
-
-        //private void AutoSuggestBox_SuggestionChosen(AutoSuggestBox sender,
-        //    AutoSuggestBoxSuggestionChosenEventArgs args)
-        //{
-        //    sender.Text //TODO
-        //}
-
-        //private void AutoSuggestBox_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
-        //{
-        //    if (args.ChosenSuggestion != null)
-        //    {
-        //        //TODO
-        //    }
-        //    else
-        //    {
-        //        //TODO
-        //    }
-        //}
 
         public void GoToInventoryMainPage(object sender, RoutedEventArgs a)
         {
@@ -82,11 +51,6 @@ namespace PlanA
         private void GoToMainPage(object sender, RoutedEventArgs a)
         {
             this.Frame.Navigate(typeof(MainPage), null);
-        }
-
-        private void GoToLoadAndSaveMainPage(object sender, RoutedEventArgs a)
-        {
-            this.Frame.Navigate(typeof(LoadAndSaveMainPage), null);
         }
     }
 }

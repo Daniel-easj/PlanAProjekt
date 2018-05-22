@@ -148,6 +148,9 @@
     <Compile Include="ViewModels\Page\ProductPageViewModels\PuttyPageViewModel.cs" />
     <Compile Include="ViewModels\Page\ProductPageViewModels\ToolPageViewModel.cs" />
     <Compile Include="ViewModels\Page\ProductPageViewModels\WallcoverPageViewModel.cs" />
+    <Compile Include="XAML MainPages\LoadAndSaveMainPage.xaml.cs">
+      <DependentUpon>LoadAndSaveMainPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="XAML Pages\ChooseCustomer.xaml.cs">
       <DependentUpon>ChooseCustomer.xaml</DependentUpon>
     </Compile>
@@ -223,6 +226,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="XAML MainPages\LoadAndSaveMainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="XAML Pages\ChooseCustomer.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

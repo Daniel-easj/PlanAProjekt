@@ -64,26 +64,18 @@
             <TextBlock x:Name="SiteDescription" HorizontalAlignment="Stretch" Margin="0,0,0,0" 
                        Text="Opgaver" TextAlignment="Center" TextWrapping="Wrap" 
                        VerticalAlignment="Bottom" FontSize="20" LineHeight="6"/>
-            
-            
+            <Button x:Name="LoadAndSaveButton" Content="Temporary" Grid.Column="3" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch"
+                    Background="#00000000" BorderBrush="Black" BorderThickness="2,2,2,0" Click="GoToLoadAndSaveMainPage"/>
+
+
             <!--<AutoSuggestBox x:Name="SearchBar" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" Margin="0,0,10,0" 
                             VerticalAlignment="Bottom" Grid.Column="1" PlaceholderText="Søg" TextChanged="AutoSuggestionsBox_TextChanged"
                             QuerySubmitted="AutoSuggestBox_QuerySubmitted"  SuggestionChosen="AutoSuggestBox_SuggestionChosen"/>-->
         </Grid>
-        <Grid Column="1" Row="0">
-            <Button Content="LOAD" HorizontalAlignment="Center" Command="{Binding NavigationCommands[Load]}"/>
-        </Grid>
-        
-        <Grid Column="2" Row="0">
-            <Button Content="SAVE" HorizontalAlignment="Center"/>
-        </Grid>
+
         <Grid x:Name="CenterViewGrid" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" 
               Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="247*"/>
-                <ColumnDefinition Width="113*"/>
-            </Grid.ColumnDefinitions>
-            <ListView ItemsSource="{Binding Products}" Margin="0,0,0,0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <ListView ItemsSource="{Binding Products}" Margin="0,0,0,0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Height="90" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,11,0,0" Padding="0,0,0,0" BorderBrush="Black" BorderThickness="0,0,0,0" Width="330">
