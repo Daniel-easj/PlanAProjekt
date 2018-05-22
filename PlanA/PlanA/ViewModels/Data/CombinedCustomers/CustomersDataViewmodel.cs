@@ -15,22 +15,22 @@ namespace PlanA.ViewModels.Data.CombinedCustomers
 
         public string Name
         {
-            get { return DataObject.Name; }
+            get { return DataObject.Name.TrimEnd(); }
         }
 
         public string Phone
         {
-            get { return DataObject.Phone; }
+            get { return DataObject.Phone.TrimEnd(); }
         }
 
         public string Address
         {
-            get { return DataObject.Address; }
+            get { return DataObject.Address.TrimEnd(); }
         }
 
         public string Email
         {
-            get { return DataObject.Email; }
+            get { return DataObject.Email.TrimEnd(); }
         }
     }
 }

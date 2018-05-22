@@ -20,7 +20,7 @@ namespace PlanA.ViewModels.Data.CombinedProducts
 
         public string Description
         {
-            get { return DataObject.Description; }
+            get { return DataObject.Description.TrimEnd(); }
         }
 
         public int SpecificType

@@ -23,12 +23,24 @@ namespace PlanA
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=PlanADB;Integrated Security=True");
+                //optionsBuilder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=PlanADB;Integrated Security=True");
+                optionsBuilder.UseSqlServer(@"Server=tcp:danielbsqlserver.database.windows.net,1433;Initial Catalog=PlanADB;Persist Security Info=False;User ID=DanielB;Password=202020Design?;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
             }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<CompanyCustomer>().Ignore(item => item.Key);
+            modelBuilder.Entity<Cover>().Ignore(item => item.Key);
+            modelBuilder.Entity<HousingAssociationCustomer>().Ignore(item => item.Key);
+            modelBuilder.Entity<Paint>().Ignore(item => item.Key);
+            modelBuilder.Entity<PrivateCustomer>().Ignore(item => item.Key);
+            modelBuilder.Entity<Putty>().Ignore(item => item.Key);
+            //TODO: Når Task implemeteres i GUI skal nedenstående kode anvendes
+            //modelBuilder.Entity<Task>().Ignore(item => item.Key);
+            modelBuilder.Entity<Tool>().Ignore(item => item.Key);
+            modelBuilder.Entity<Wallcover>().Ignore(item => item.Key);
+
             modelBuilder.Entity<CompanyCustomer>(entity =>
             {
                 entity.HasKey(e => e.CompanyCustomer1);
