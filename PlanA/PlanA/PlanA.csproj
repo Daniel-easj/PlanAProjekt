@@ -151,16 +151,16 @@
     <Compile Include="XAML Pages\ChooseCustomer.xaml.cs">
       <DependentUpon>ChooseCustomer.xaml</DependentUpon>
     </Compile>
-    <Compile Include="XAML Pages\CustomerMainPage.xaml.cs">
+    <Compile Include="XAML MainPages\CustomerMainPage.xaml.cs">
       <DependentUpon>CustomerMainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="XAML Pages\CustomerOverview.xaml.cs">
       <DependentUpon>CustomerOverview.xaml</DependentUpon>
     </Compile>
-    <Compile Include="XAML Pages\InventoryMainPage.xaml.cs">
+    <Compile Include="XAML MainPages\InventoryMainPage.xaml.cs">
       <DependentUpon>InventoryMainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="XAML Pages\MainPage.xaml.cs">
+    <Compile Include="XAML MainPages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Data\Domain\ExtendedClasses\ProductsExtended\CoverExt.cs" />
@@ -180,7 +180,7 @@
     <Compile Include="XAML Pages\SelectedProduct.xaml.cs">
       <DependentUpon>SelectedProduct.xaml</DependentUpon>
     </Compile>
-    <Compile Include="XAML Pages\StatisticPage.xaml.cs">
+    <Compile Include="XAML MainPages\StatisticPage.xaml.cs">
       <DependentUpon>StatisticPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="XAML Pages\TotalAssignmentOverview.xaml.cs">
@@ -227,7 +227,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="XAML Pages\CustomerMainPage.xaml">
+    <Page Include="XAML MainPages\CustomerMainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -235,11 +235,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="XAML Pages\InventoryMainPage.xaml">
+    <Page Include="XAML MainPages\InventoryMainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="XAML Pages\MainPage.xaml">
+    <Page Include="XAML MainPages\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -259,7 +259,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="XAML Pages\StatisticPage.xaml">
+    <Page Include="XAML MainPages\StatisticPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

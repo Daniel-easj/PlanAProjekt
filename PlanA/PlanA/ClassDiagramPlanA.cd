@@ -350,6 +350,7 @@
       <HashCode>AAAAAAAAAAAAAgQAAAAAAAAAAIAABAAAAAAAAAAoAAA=</HashCode>
       <FileName>XAML Pages\ChooseCustomer.xaml.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="PlanA.XAML_Pages.CustomerMainPage" Collapsed="true">
     <Position X="67.75" Y="1.5" Width="1.5" />
@@ -357,6 +358,7 @@
       <HashCode>AAAAAAAAAAgAAgQAAAAAAAAAAIAAAAAAAAAAAAAoAAA=</HashCode>
       <FileName>XAML Pages\CustomerMainPage.xaml.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="PlanA.XAML_Pages.CustomerOverview" Collapsed="true">
     <Position X="69.5" Y="1.5" Width="1.5" />
@@ -364,6 +366,7 @@
       <HashCode>AAAAAAAAAAAAAgQAAAAAAAAAAIAAAAAAAAAAAAAoACA=</HashCode>
       <FileName>XAML Pages\CustomerOverview.xaml.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="PlanA.XAML_Pages.InventoryMainPage" Collapsed="true">
     <Position X="66" Y="2.5" Width="1.5" />
@@ -371,6 +374,7 @@
       <HashCode>AAAAAAAAQAAAAgAAAAAAAAAAAIAAAAAAAAAAAAAoAAA=</HashCode>
       <FileName>XAML Pages\InventoryMainPage.xaml.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="PlanA.XAML_Pages.NewAssignment" Collapsed="true">
     <Position X="69.5" Y="2.5" Width="1.5" />
@@ -378,6 +382,7 @@
       <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAIAAAAAAAAAAAAAoACA=</HashCode>
       <FileName>XAML Pages\NewAssignment.xaml.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="PlanA.XAML_Pages.NewCustomer" Collapsed="true">
     <Position X="64.25" Y="3.5" Width="1.5" />
@@ -385,6 +390,7 @@
       <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAIAACAAAAAAAAAAoACA=</HashCode>
       <FileName>XAML Pages\NewCustomer.xaml.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="PlanA.XAML_Pages.NewProduct" Collapsed="true">
     <Position X="66" Y="3.5" Width="1.5" />
@@ -392,6 +398,7 @@
       <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAIAAAAAAAAAAAAAoAAA=</HashCode>
       <FileName>XAML Pages\NewProduct.xaml.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="PlanA.XAML_Pages.SelectedProduct" Collapsed="true">
     <Position X="69.5" Y="3.5" Width="1.5" />
@@ -399,6 +406,7 @@
       <HashCode>AAAAAAAAAAAAAgQAAAAAAAAAAIAAAAAAAAAAAAAoACA=</HashCode>
       <FileName>XAML Pages\SelectedProduct.xaml.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="PlanA.XAML_Pages.StatisticPage" Collapsed="true">
     <Position X="64.25" Y="4.5" Width="1.5" />
@@ -406,6 +414,7 @@
       <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAIAAAAAAAAAAAAAoAAA=</HashCode>
       <FileName>XAML Pages\StatisticPage.xaml.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="PlanA.XAML_Pages.TotalAssignmentOverview" Collapsed="true">
     <Position X="69.5" Y="4.5" Width="1.5" />
@@ -413,6 +422,7 @@
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
       <FileName>XAML Pages\TotalAssignmentOverview.xaml.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="PlanA.MainPage" Collapsed="true">
     <Position X="67.75" Y="2.5" Width="1.5" />
@@ -420,6 +430,7 @@
       <HashCode>AAAAAAAAAAAAAgQAAAAAAAAAAIAAAAAAAAAAAAAoAAA=</HashCode>
       <FileName>XAML Pages\MainPage.xaml.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
