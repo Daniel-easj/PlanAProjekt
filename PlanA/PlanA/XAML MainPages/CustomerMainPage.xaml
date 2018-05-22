@@ -10,7 +10,7 @@
     mc:Ignorable="d">
 
     <Page.DataContext>
-        <customerPageViewModels:CombinedCustomersPageViewmodel/>
+        <customerPageViewModels:PrivateCustomerPageViewModel/>
     </Page.DataContext>
 
     <Grid x:Name="MainGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">

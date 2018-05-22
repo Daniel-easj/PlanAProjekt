@@ -29,6 +29,9 @@ namespace PlanA
             this.InitializeComponent();
         }
 
+        
+
+
         //private void AutoSuggestBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
         //{
         //    if (args.Reason == AutoSuggestBoxTextChangedReason.UserInput)
