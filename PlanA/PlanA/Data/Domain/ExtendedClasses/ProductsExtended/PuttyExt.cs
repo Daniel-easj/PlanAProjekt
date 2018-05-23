@@ -24,10 +24,10 @@ namespace PlanA.Data.Domain.ExtendedClasses
             
         }
 
-        public override void SetDefaultValues()
+        public override int Key
         {
-            base.SetDefaultValues();
-            _coarseType = "";
+            get { return PuttyId; }
+            set { PuttyId = value; }
         }
     }
 }

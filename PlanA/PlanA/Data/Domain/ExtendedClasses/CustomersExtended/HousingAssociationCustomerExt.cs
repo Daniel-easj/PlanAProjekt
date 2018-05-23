@@ -22,11 +22,10 @@ namespace PlanA.Data.Domain.ExtendedClasses
         {
         }
 
-        public override void SetDefaultValues()
+        public override int Key
         {
-            base.SetDefaultValues();
-            Cvr = "";
+            get { return HousingAssociationCustomerId; }
+            set { HousingAssociationCustomerId = value; }
         }
-
     }
 }

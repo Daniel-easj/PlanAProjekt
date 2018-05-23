@@ -25,12 +25,11 @@ namespace PlanA.BaseClasses
         {
             
         }
-        public override void SetDefaultValues()
-        {
-            Quantity = 0;
-            Description = "(Not set)";
-            SpecificType = 0;
-        }
 
+        public override int Key
+        {
+            get { throw new Exception(); }
+            set { throw new Exception(); }
+        }
     }
 }

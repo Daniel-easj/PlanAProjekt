@@ -24,11 +24,10 @@ namespace PlanA.Data.Domain.ExtendedClasses
             
         }
 
-        public override void SetDefaultValues()
+        public override int Key
         {
-            base.SetDefaultValues();
-            _gloss = 0;
-            _inDoor = true;
+            get { return PaintId; }
+            set { PaintId = value; }
         }
     }
 }

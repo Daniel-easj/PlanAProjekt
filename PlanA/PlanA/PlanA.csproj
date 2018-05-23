@@ -113,9 +113,9 @@
     <Compile Include="CatalogClasses\CustomerCatalogs\PrivateCustomerCatalog.cs" />
     <Compile Include="CatalogClasses\ProductCatalogs\CoverCatalog.cs" />
     <Compile Include="CatalogClasses\ProductCatalogs\PaintCatalog.cs" />
-    <Compile Include="Data\Domain\ExtendedClasses\CustomersExtended\HousingAssociationCustomer.cs" />
-    <Compile Include="Data\Domain\ExtendedClasses\CustomersExtended\CompanyCustomer.cs" />
-    <Compile Include="Data\Domain\ExtendedClasses\CustomersExtended\PrivateCustomer.cs" />
+    <Compile Include="Data\Domain\ExtendedClasses\CustomersExtended\HousingAssociationCustomerExt.cs" />
+    <Compile Include="Data\Domain\ExtendedClasses\CustomersExtended\CompanyCustomerExt.cs" />
+    <Compile Include="Data\Domain\ExtendedClasses\CustomersExtended\PrivateCustomerExt.cs" />
     <Compile Include="Data\Domain\Customer\HousingAssociationCustomer.cs" />
     <Compile Include="Data\Domain\Product\Paint.cs" />
     <Compile Include="Data\Persistent\PlanadbContext.cs" />

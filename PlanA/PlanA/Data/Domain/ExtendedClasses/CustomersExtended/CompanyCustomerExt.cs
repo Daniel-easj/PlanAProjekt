@@ -20,10 +20,10 @@ namespace PlanA.Data.Domain.ExtendedClasses
         {
         }
 
-        public override void SetDefaultValues()
+        public override int Key
         {
-            base.SetDefaultValues();
-            Cvr = "";
+            get { return CompanyCustomer1; }
+            set { CompanyCustomer1 = value; }
         }
     }
 }

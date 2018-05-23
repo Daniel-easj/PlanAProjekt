@@ -27,15 +27,10 @@ namespace PlanA.BaseClasses
 
         }
 
-
-
-        public override void SetDefaultValues()
+        public override int Key
         {
-            Name = "(Not set)";
-            Phone = "(Not set)";
-            Address = "(Not set)";
-            Email = "(Not set)";
+            get {  throw new Exception();}
+            set { throw new Exception(); }
         }
-
     }
 }

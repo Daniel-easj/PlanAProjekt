@@ -60,7 +60,9 @@ namespace PlanA.Model
 
         public async Task LoadAsync()
         {
-            await PrivateCustomerCatalog.LoadAsync();
+            await _companyCustomerCatalog.LoadAsync();
+            await _privateCustomerCatalog.LoadAsync();
+
         }
 
         public async Task SaveAsync()

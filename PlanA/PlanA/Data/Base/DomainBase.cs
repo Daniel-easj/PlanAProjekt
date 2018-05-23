@@ -10,7 +10,7 @@ using Data.Transformed.Implementation;
 
 namespace PlanA.BaseClasses
 {
-    public abstract class DomainBase : CopyableWithDefaultValuesBase, INotifyPropertyChanged
+    public abstract class DomainBase : INotifyPropertyChanged, IStorable, ICopyable
     {
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -19,6 +19,13 @@ namespace PlanA.BaseClasses
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
+        public ICopyable Copy()
+        {
+            return (MemberwiseClone() as ICopyable);
+        }
+
+        public abstract int Key { get; set; }
     }
 
 

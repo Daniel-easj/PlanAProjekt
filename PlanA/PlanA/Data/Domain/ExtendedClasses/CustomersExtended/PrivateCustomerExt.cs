@@ -15,7 +15,12 @@ namespace PlanA.Data.Domain.ExtendedClasses
 
         public PrivateCustomer()
         {
-            
+        }
+
+        public override int Key
+        {
+            get { return PrivateCustomerId; }
+            set { PrivateCustomerId = value; }
         }
     }
 }

@@ -20,5 +20,10 @@ namespace PlanA.Data.Domain.ExtendedClasses
             
         }
 
+        public override int Key
+        {
+            get { return ToolId; }
+            set { ToolId = value; }
+        }
     }
 }

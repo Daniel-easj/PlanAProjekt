@@ -20,5 +20,11 @@ namespace PlanA.Data.Domain.ExtendedClasses
             
         }
 
+        public override int Key
+        {
+            get { return CoverId; }
+            set { CoverId = value; }
+        }
+
     }
 }
