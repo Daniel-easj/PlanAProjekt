@@ -7,10 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:viewModels="using:PlanA.ViewModels"
     xmlns:customerPageViewModels="using:PlanA.ViewModels.Page.CustomerPageViewmodels"
+    xmlns:page="using:PlanA.ViewModels.Page"
     mc:Ignorable="d">
 
     <Page.DataContext>
-        <customerPageViewModels:CombinedCustomersPageViewmodel/>
+        <page:CustomersViewModel/>
     </Page.DataContext>
 
     <Grid x:Name="MainGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -75,7 +76,7 @@
                 <RowDefinition Height="91*"/>
             </Grid.RowDefinitions>
             <ComboBox HorizontalAlignment="Right" VerticalAlignment="Stretch" PlaceholderText="Sortering" Width="170" Margin="0,10,10,4" Height="32" />
-            <ListView ItemsSource="{Binding ItemCollection}" SelectedItem="{Binding ItemSelected, Mode=TwoWay}" Margin="0,0,0,0" Grid.Row="1">
+            <ListView ItemsSource="{Binding Customers}" Margin="0,0,0,0" Grid.Row="1">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Height="90" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,11,0,0" Padding="0,0,0,0" BorderBrush="Black" BorderThickness="0,0,0,0" Width="330">

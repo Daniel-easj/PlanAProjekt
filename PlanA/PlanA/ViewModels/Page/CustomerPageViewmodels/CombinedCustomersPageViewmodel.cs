@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,7 +19,6 @@ namespace PlanA.ViewModels.Page.CustomerPageViewmodels
             : base(DomainModel.Catalogs.CustomersCatalog, new List<string>(), new List<string>())
         {
             CombineCustomerCatalogs();
-
 
             int count = DomainModel.Catalogs.CustomersCatalog.All.Count;
             int b = count;

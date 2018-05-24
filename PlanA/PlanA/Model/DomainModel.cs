@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PlanA.BaseClasses;
 using PlanA.CatalogClasses.CombinedCatalogs;
 using PlanA.CatalogClasses.CustomerCatalogs;
 using PlanA.CatalogClasses.ProductCatalogs;
@@ -18,6 +20,7 @@ namespace PlanA.Model
 
         // Combined CustomerCatalog
         private CustomersCatalog _customersCatalog;
+        private ObservableCollection<CustomerBase> _customers;
 
         // ToolCatalogs
         private PuttyCatalog _puttyCatalog;
@@ -48,6 +51,7 @@ namespace PlanA.Model
             _privateCustomerCatalog = new PrivateCustomerCatalog();
 
             _customersCatalog = new CustomersCatalog();
+            _customers = new ObservableCollection<CustomerBase>();
 
             _puttyCatalog = new PuttyCatalog();
             _toolCatalog = new ToolCatalog();
@@ -70,10 +74,24 @@ namespace PlanA.Model
             await _companyCustomerCatalog.SaveAsync();
         }
 
+        public bool IDExists(CustomerBase cb)
+        {
+            foreach (var item in _customers)
+            {
+                if (item.CustomerType.ToLower() == cb.CustomerType.ToLower() && cb.Key == item.Key)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
         public CompanyCustomerCatalog CompanyCustomersCatalog => _companyCustomerCatalog;
         public HousingAssociationCustomerCatalog HousingAssociationCustomerCatalog => _housingAssociationCustomerCatalog;
         public PrivateCustomerCatalog PrivateCustomerCatalog => _privateCustomerCatalog;
         public CustomersCatalog CustomersCatalog => _customersCatalog;
+        public ObservableCollection<CustomerBase> Customers => _customers;
 
 
         public PuttyCatalog PuttyCatalog => _puttyCatalog;

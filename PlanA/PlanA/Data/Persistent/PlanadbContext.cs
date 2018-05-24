@@ -22,14 +22,16 @@ namespace PlanA
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                //optionsBuilder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=PlanADB;Integrated Security=True");
                 optionsBuilder.UseSqlServer(@"Server=tcp:danielbsqlserver.database.windows.net,1433;Initial Catalog=PlanADB;Persist Security Info=False;User ID=DanielB;Password=202020Design?;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
             }
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+
+
+
+       protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
             modelBuilder.Entity<CompanyCustomer>().Ignore(item => item.Key);
             modelBuilder.Entity<CompanyCustomer>().Ignore(item => item.CustomerType);
 

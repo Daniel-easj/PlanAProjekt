@@ -145,6 +145,7 @@
     <Compile Include="ViewModels\Page\CustomerPageViewmodels\CompanyCustomerPageViewModel.cs" />
     <Compile Include="ViewModels\Page\CustomerPageViewmodels\HousingAssociationCustomerPageViewModel.cs" />
     <Compile Include="ViewModels\Page\CustomerPageViewmodels\PrivateCustomerPageViewModel.cs" />
+    <Compile Include="ViewModels\Page\CustomersViewModel.cs" />
     <Compile Include="ViewModels\Page\ProductPageViewModels\CombinedProductsPageViewModel.cs" />
     <Compile Include="ViewModels\Page\ProductPageViewModels\CoverPageViewModel.cs" />
     <Compile Include="ViewModels\Page\ProductPageViewModels\PaintPageViewModel.cs" />

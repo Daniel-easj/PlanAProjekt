@@ -9,7 +9,6 @@ namespace PlanA.CatalogClasses.CombinedCatalogs
 {
     public class CustomersCatalog : CatalogAppBase<CustomerBase>
     {
-
         public bool IDExists(CustomerBase cb)
         {
             foreach (var item in All)
