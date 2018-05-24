@@ -108,6 +108,8 @@
                 <TextBox x:Name="MalingVarenavn" HorizontalAlignment="Stretch" Margin="10,0,0,0" VerticalAlignment="Top" Grid.Row="2" Grid.ColumnSpan="3" PlaceholderText="Varenavn" Grid.RowSpan="2"/>
                 <ComboBox x:Name="MalingSpecifikType" HorizontalAlignment="Stretch" Margin="10,0,0,0" VerticalAlignment="Bottom" PlaceholderText="Specifik type" Grid.ColumnSpan="3"/>
                 <TextBox x:Name="MalingVareAntal" HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Top" Grid.Row="2" PlaceholderText="Antal" Grid.Column="3" Grid.RowSpan="2"/>
+                <TextBox Grid.ColumnSpan="3" HorizontalAlignment="Stretch" Margin="10,0,0,0" Grid.Row="3" VerticalAlignment="Top" Grid.RowSpan="1" PlaceholderText="Glans"/>
+                <CheckBox Content="Indendørs" HorizontalAlignment="Stretch" Margin="20,0,0,0" Grid.Row="4" VerticalAlignment="Bottom" Grid.ColumnSpan="2"/>
             </Grid>
             <Grid x:Name="PuttyGrid" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1" Grid.RowSpan="7" Grid.ColumnSpan="4" Visibility="{Binding PuttyEnabled}">
                 <Grid.ColumnDefinitions>
