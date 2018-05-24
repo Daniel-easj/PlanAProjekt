@@ -15,7 +15,7 @@ namespace PlanA.ViewModels.Page.CustomerPageViewmodels
     public class HousingAssociationCustomerPageViewModel : PageViewModelAppBase<HousingAssociationCustomer>
     {
         public HousingAssociationCustomerPageViewModel() 
-            : base(DomainModel.Catalogs.HousingAssociationCustomer, new List<string>(), new List<string>())
+            : base(DomainModel.Catalogs.HousingAssociationCustomerCatalog, new List<string>(), new List<string>())
         {
         }
 

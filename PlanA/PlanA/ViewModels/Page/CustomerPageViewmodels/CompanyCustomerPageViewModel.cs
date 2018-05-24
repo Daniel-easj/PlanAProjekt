@@ -18,7 +18,7 @@ namespace PlanA.ViewModels.Page.CustomerPageViewmodels
         // TODO: Lav en "Domainklasse" hvor alle cataloger samles (singleton)
         
         public CompanyCustomerPageViewModel() 
-            : base(DomainModel.Catalogs.CompanyCustomers, new List<string>(), new List<string>())
+            : base(DomainModel.Catalogs.CompanyCustomersCatalog, new List<string>(), new List<string>())
         {
         }
 

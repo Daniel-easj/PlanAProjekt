@@ -8,6 +8,7 @@ using Model.Interfaces;
 using PlanA.BaseClasses;
 using PlanA.Model;
 using PlanA.ViewModels.Base;
+using PlanA.ViewModels.Data.CombinedCustomers;
 
 namespace PlanA.ViewModels.Page.CustomerPageViewmodels
 {
@@ -17,33 +18,37 @@ namespace PlanA.ViewModels.Page.CustomerPageViewmodels
             : base(DomainModel.Catalogs.CustomersCatalog, new List<string>(), new List<string>())
         {
             CombineCustomerCatalogs();
+
+
+            int count = DomainModel.Catalogs.CustomersCatalog.All.Count;
+            int b = count;
         }
 
         public void CombineCustomerCatalogs()
         {
             foreach (var customer in DomainModel.Catalogs.PrivateCustomerCatalog.All)
             {
-                if (!DomainModel.Catalogs.CustomersCatalog.All.Contains(customer))
+                if (!DomainModel.Catalogs.CustomersCatalog.IDExists(customer))
                 {
-                    DomainModel.Catalogs.CustomersCatalog.All.Add(customer);
+                    DomainModel.Catalogs.CustomersCatalog.Create(customer);
                 }
                 
             }
 
-            foreach (var customer in DomainModel.Catalogs.HousingAssociationCustomer.All)
+            foreach (var customer in DomainModel.Catalogs.HousingAssociationCustomerCatalog.All)
             {
-                if (!DomainModel.Catalogs.CustomersCatalog.All.Contains(customer))
+                if (!DomainModel.Catalogs.CustomersCatalog.IDExists(customer))
                 {
-                    DomainModel.Catalogs.CustomersCatalog.All.Add(customer);
+                    DomainModel.Catalogs.CustomersCatalog.Create(customer);
                 }
                 
             }
 
-            foreach (var customer in DomainModel.Catalogs.CompanyCustomers.All)
+            foreach (var customer in DomainModel.Catalogs.CompanyCustomersCatalog.All)
             {
-                if (!DomainModel.Catalogs.CustomersCatalog.All.Contains(customer))
+                if (!DomainModel.Catalogs.CustomersCatalog.IDExists(customer))
                 {
-                    DomainModel.Catalogs.CustomersCatalog.All.Add(customer);
+                    DomainModel.Catalogs.CustomersCatalog.Create(customer);
                 }
             }
 
@@ -52,7 +57,7 @@ namespace PlanA.ViewModels.Page.CustomerPageViewmodels
 
         public override IDataWrapper<CustomerBase> CreateDataViewModel(CustomerBase obj)
         {
-            return new CombinedCustomersPageViewmodel();
+            return new CustomersDataViewmodel(obj);
         }
     }
 }

@@ -8,12 +8,12 @@ namespace PlanA.BaseClasses
 {
     public class CustomerBase : DomainBase
     {
-        public string Name { get; private set; }
-        public string Phone { get; private set; }
-        public string Address { get; private set; }
-        public string Email { get; private set; }
+        public virtual string Name { get;  set; }
+        public virtual string Phone { get; set; }
+        public virtual string Address { get; set; }
+        public virtual string Email { get; set; }
 
-
+        public virtual string CustomerType { get; set; }
         protected CustomerBase(string name, string phone, string address, string email)
         {
             Name = name;

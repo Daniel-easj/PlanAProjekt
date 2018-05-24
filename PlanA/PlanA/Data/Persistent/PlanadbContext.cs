@@ -31,10 +31,16 @@ namespace PlanA
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<CompanyCustomer>().Ignore(item => item.Key);
-            modelBuilder.Entity<Cover>().Ignore(item => item.Key);
+            modelBuilder.Entity<CompanyCustomer>().Ignore(item => item.CustomerType);
+
             modelBuilder.Entity<HousingAssociationCustomer>().Ignore(item => item.Key);
-            modelBuilder.Entity<Paint>().Ignore(item => item.Key);
+            modelBuilder.Entity<HousingAssociationCustomer>().Ignore(item => item.CustomerType);
+
             modelBuilder.Entity<PrivateCustomer>().Ignore(item => item.Key);
+            modelBuilder.Entity<PrivateCustomer>().Ignore(item => item.CustomerType);
+
+            modelBuilder.Entity<Cover>().Ignore(item => item.Key);
+            modelBuilder.Entity<Paint>().Ignore(item => item.Key);
             modelBuilder.Entity<Putty>().Ignore(item => item.Key);
             //TODO: Når Task implemeteres i GUI skal nedenstående kode anvendes
             //modelBuilder.Entity<Task>().Ignore(item => item.Key);

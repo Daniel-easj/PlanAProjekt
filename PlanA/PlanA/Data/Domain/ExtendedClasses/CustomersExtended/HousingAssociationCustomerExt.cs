@@ -27,5 +27,13 @@ namespace PlanA.Data.Domain.ExtendedClasses
             get { return HousingAssociationCustomerId; }
             set { HousingAssociationCustomerId = value; }
         }
+
+        public override string CustomerType
+        {
+            get { return "HousingAssociationCustomer"; }
+            set { CustomerType = value; }
+        }
+
+
     }
 }

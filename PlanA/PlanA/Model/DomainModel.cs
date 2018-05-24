@@ -70,8 +70,8 @@ namespace PlanA.Model
             await _companyCustomerCatalog.SaveAsync();
         }
 
-        public CompanyCustomerCatalog CompanyCustomers => _companyCustomerCatalog;
-        public HousingAssociationCustomerCatalog HousingAssociationCustomer => _housingAssociationCustomerCatalog;
+        public CompanyCustomerCatalog CompanyCustomersCatalog => _companyCustomerCatalog;
+        public HousingAssociationCustomerCatalog HousingAssociationCustomerCatalog => _housingAssociationCustomerCatalog;
         public PrivateCustomerCatalog PrivateCustomerCatalog => _privateCustomerCatalog;
         public CustomersCatalog CustomersCatalog => _customersCatalog;
 

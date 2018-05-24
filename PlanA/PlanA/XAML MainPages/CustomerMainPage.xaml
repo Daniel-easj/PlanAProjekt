@@ -10,7 +10,7 @@
     mc:Ignorable="d">
 
     <Page.DataContext>
-        <customerPageViewModels:PrivateCustomerPageViewModel/>
+        <customerPageViewModels:CombinedCustomersPageViewmodel/>
     </Page.DataContext>
 
     <Grid x:Name="MainGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -80,9 +80,9 @@
                     <DataTemplate>
                         <StackPanel Height="90" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,11,0,0" Padding="0,0,0,0" BorderBrush="Black" BorderThickness="0,0,0,0" Width="330">
                             <Grid Height="90" BorderBrush="Black" BorderThickness="2,2,2,2">
-                                <TextBlock Text="{Binding DataObject.Name}" Height="30" Margin="10,0,0,0" VerticalAlignment="Top"/>
-                                <TextBlock Text="{Binding DataObject.Address}" Height="30" Margin="10,0,0,0" VerticalAlignment="Center"/>
-                                <TextBlock Text="{Binding DataObject.Phone}" Height="30" Margin="10,0,0,0" VerticalAlignment="Bottom"/>
+                                <TextBlock Text="{Binding Name}" Height="30" Margin="10,0,0,0" VerticalAlignment="Top"/>
+                                <TextBlock Text="{Binding Address}" Height="30" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                                <TextBlock Text="{Binding Phone}" Height="30" Margin="10,0,0,0" VerticalAlignment="Bottom"/>
                             </Grid>
                         </StackPanel>
                     </DataTemplate>

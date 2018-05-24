@@ -22,5 +22,11 @@ namespace PlanA.Data.Domain.ExtendedClasses
             get { return PrivateCustomerId; }
             set { PrivateCustomerId = value; }
         }
+
+        public override string CustomerType
+        {
+            get { return "PrivateCustomer"; }
+            set { CustomerType = value; }
+        }
     }
 }

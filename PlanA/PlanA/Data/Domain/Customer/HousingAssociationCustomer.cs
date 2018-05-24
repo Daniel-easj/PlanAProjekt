@@ -6,10 +6,10 @@ namespace PlanA.Data.Domain.ExtendedClasses
     public partial class HousingAssociationCustomer
     {
         public int HousingAssociationCustomerId { get; set; }
-        public string Name { get; set; }
-        public string Phone { get; set; }
-        public string Address { get; set; }
-        public string Email { get; set; }
+        public override string Name { get; set; }
+        public override string Phone { get; set; }
+        public override string Address { get; set; }
+        public override string Email { get; set; }
         public string Cvr { get; set; }
     }
 }

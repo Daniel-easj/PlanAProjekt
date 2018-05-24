@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using PlanA.BaseClasses;
+using PlanA.Data.Domain.ExtendedClasses;
 
 namespace PlanA.ViewModels.Data.CombinedCustomers
 {
@@ -15,22 +16,22 @@ namespace PlanA.ViewModels.Data.CombinedCustomers
 
         public string Name
         {
-            get { return DataObject.Name.TrimEnd(); }
+            get { return DataObject.Name?.TrimEnd(); }
         }
 
         public string Phone
         {
-            get { return DataObject.Phone.TrimEnd(); }
+            get { return DataObject.Phone?.TrimEnd(); }
         }
 
         public string Address
         {
-            get { return DataObject.Address.TrimEnd(); }
+            get { return DataObject.Address?.TrimEnd(); }
         }
 
         public string Email
         {
-            get { return DataObject.Email.TrimEnd(); }
+            get { return DataObject.Email?.TrimEnd(); }
         }
     }
 }
