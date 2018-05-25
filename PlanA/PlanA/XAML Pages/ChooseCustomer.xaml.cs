@@ -49,7 +49,7 @@ namespace PlanA.XAML_Pages
 
         private void GoToNewCustomer(object sender, RoutedEventArgs a)
         {
-            this.Frame.Navigate(typeof(NewCustomer), null);
+            this.Frame.Navigate(typeof(NewCompanyCustomer), null);
         }
 
         private void GoToCustomerOverview(object sender, RoutedEventArgs a)
