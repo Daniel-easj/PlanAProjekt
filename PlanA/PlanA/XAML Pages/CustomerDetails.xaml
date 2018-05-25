@@ -58,52 +58,7 @@
                        Text="Kunde information" TextAlignment="Center" TextWrapping="Wrap" 
                        VerticalAlignment="Bottom" FontSize="20" LineHeight="6" Grid.ColumnSpan="2" Grid.Column="1"/>
         </Grid>
-        <Grid x:Name="CustomerDetailsGridWithCVR" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" 
-              Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="8*"/>
-                <RowDefinition Height="9*"/>
-                <RowDefinition Height="5*"/>
-                <RowDefinition Height="9*"/>
-                <RowDefinition Height="5*"/>
-                <RowDefinition Height="9*"/>
-                <RowDefinition Height="10*"/>
-                <RowDefinition Height="10*"/>
-                <RowDefinition Height="10*"/>
-                <RowDefinition Height="5*"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="25*"/>
-                <ColumnDefinition Width="25*"/>
-                <ColumnDefinition Width="25*"/>
-                <ColumnDefinition Width="25*"/>
-            </Grid.ColumnDefinitions>
-
-            <Button x:Name="Annuller" HorizontalAlignment="Stretch" Margin="10,0,5,0" VerticalAlignment="Stretch" Grid.Row="8" Grid.ColumnSpan="2" Background="#00000000" BorderBrush="Black" Click="GoToCustomerMainPage">
-                <StackPanel Margin="-10,-6,-10,-6" Orientation="Horizontal" Height="66" Width="165">
-                    <Image Source="../Assets/Back.png" Margin="5,10,0,10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-                    <TextBlock x:Name="TibageTekst" Text="Tilbage" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="15,0,0,0" FontSize="24"/>
-                </StackPanel>
-            </Button>
-            <Button x:Name="Gem" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="5,0,10,0" VerticalAlignment="Stretch" Grid.Row="8" Grid.Column="2" Background="#00000000" BorderBrush="#FF060606">
-                <StackPanel Margin="-10,-6,-10,-6" Orientation="Horizontal" Height="66" Width="165">
-                    <TextBlock x:Name="GemTekst" Text="Gem" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20,0,0,0" FontSize="24"/>
-                    <Image Source="../Assets/Save.png" Margin="40,10,0,10" Height="Auto"/>
-                </StackPanel>
-            </Button>
-            <TextBox x:Name="Fornavn" HorizontalAlignment="Stretch" Margin="10,0,0,0" Text="" VerticalAlignment="Top" Grid.Row="1" Grid.ColumnSpan="2" PlaceholderText="Fornavn"/>
-            <TextBox x:Name="Efternavn" HorizontalAlignment="Stretch" Margin="10,0,0,0" Text="" VerticalAlignment="Bottom" Grid.Row="1" Grid.ColumnSpan="3" PlaceholderText="Efternavn"/>
-            <TextBox x:Name="PostNummer" HorizontalAlignment="Stretch" Margin="0,0,10,0" Text="" VerticalAlignment="Top" Grid.Row="3" Grid.Column="3" PlaceholderText="PostNr."/>
-            <TextBox x:Name="ByNavn" HorizontalAlignment="Stretch" Margin="10,0,45,0" Text="" VerticalAlignment="Top" Grid.Row="3" Grid.ColumnSpan="3" PlaceholderText="Bynavn"/>
-            <TextBox x:Name="Adresse" HorizontalAlignment="Stretch" Margin="10,0,45,0" Text="" VerticalAlignment="Bottom" Grid.Row="3" Grid.ColumnSpan="3" PlaceholderText="Adresse"/>
-            <TextBox x:Name="HusNummer" HorizontalAlignment="Stretch" Margin="0,0,10,0" Text="" VerticalAlignment="Bottom" Grid.Row="3" Grid.Column="3" PlaceholderText="HusNr."/>
-            <TextBox x:Name="Email" HorizontalAlignment="Stretch" Margin="10,0,45,0" Text="" VerticalAlignment="Bottom" Grid.Row="5" Grid.ColumnSpan="4" PlaceholderText="E-mail"/>
-            <TextBox x:Name="Telefon" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="10,0,0,0" Text="" VerticalAlignment="Top" Grid.Row="5" PlaceholderText="Telefon"/>
-            <TextBox x:Name="CVR" HorizontalAlignment="Stretch" Margin="10,0,45,0" Text="" VerticalAlignment="Bottom" 
-                     Grid.Row="6" Grid.ColumnSpan="4" PlaceholderText="CVR"/>
-
-        </Grid>
-        <Grid x:Name="CustomerDetailsGridWithoutCVR" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" 
+        <Grid x:Name="CenterGridViewWithCVR" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" 
             Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="8*"/>
@@ -123,27 +78,68 @@
                 <ColumnDefinition Width="25*"/>
                 <ColumnDefinition Width="25*"/>
             </Grid.ColumnDefinitions>
-
-            <Button x:Name="Annuller1" HorizontalAlignment="Stretch" Margin="10,0,5,0" VerticalAlignment="Stretch" Grid.Row="8" Grid.ColumnSpan="2" Background="#00000000" BorderBrush="Black" Click="GoToCustomerMainPage">
+            <TextBox x:Name="Fornavn" HorizontalAlignment="Stretch" Margin="10,0,10,0" Text="" VerticalAlignment="Top" Grid.Row="1" Grid.ColumnSpan="4" PlaceholderText="Navn"/>
+            <TextBox x:Name="ByNavn" HorizontalAlignment="Stretch" Margin="10,0,45,0" Text="" VerticalAlignment="Top" Grid.Row="3" Grid.ColumnSpan="3" PlaceholderText="Bynavn"/>
+            <TextBox x:Name="Adresse" HorizontalAlignment="Stretch" Margin="10,0,10,0" Text="" VerticalAlignment="Bottom" Grid.Row="3" Grid.ColumnSpan="4" PlaceholderText="Adresse"/>
+            <TextBox x:Name="Email" HorizontalAlignment="Stretch" Margin="10,0,10,0" Text="" VerticalAlignment="Bottom" Grid.Row="5" Grid.ColumnSpan="4" PlaceholderText="E-mail"/>
+            <TextBox x:Name="Telefon" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="10,0,0,0" Text="" VerticalAlignment="Top" Grid.Row="5" PlaceholderText="Telefon"/>
+            <TextBox x:Name="CVR" HorizontalAlignment="Stretch" Margin="10,0,45,0" Text="" VerticalAlignment="Bottom" 
+                Grid.Row="6" Grid.ColumnSpan="4" PlaceholderText="CVR" Visibility="{Binding CVREnabled}"/>
+            <Button x:Name="Annuller" HorizontalAlignment="Stretch" Margin="10,0,5,0" VerticalAlignment="Stretch" Grid.Row="8" Grid.ColumnSpan="2" Background="#00000000" BorderBrush="Black" Click="GoToCustomerMainPage">
                 <StackPanel Margin="-10,-6,-10,-6" Orientation="Horizontal" Height="66" Width="165">
                     <Image Source="../Assets/Back.png" Margin="5,10,0,10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-                    <TextBlock x:Name="TibageTekst1" Text="Tilbage" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="15,0,0,0" FontSize="24"/>
+                    <TextBlock x:Name="AnnullerTekst" Text="Tilbage" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="15,0,0,0" FontSize="24"/>
                 </StackPanel>
             </Button>
-            <Button x:Name="Gem1" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="5,0,10,0" VerticalAlignment="Stretch" Grid.Row="8" Grid.Column="2" Background="#00000000" BorderBrush="#FF060606">
-                <StackPanel Margin="-10,-6,-10,-6" Orientation="Horizontal" Height="66" Width="165">
-                    <TextBlock x:Name="GemTekst1" Text="Gem" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20,0,0,0" FontSize="24"/>
-                    <Image Source="../Assets/Save.png" Margin="40,10,0,10" Height="Auto"/>
+            <Button x:Name="Næste" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="5,0,10,0" VerticalAlignment="Stretch" Grid.Row="8" Grid.Column="2" Background="#00000000" BorderBrush="#FF060606" HorizontalContentAlignment="Right">
+                <StackPanel Margin="-10,-6,-10,-6" Orientation="Horizontal" Height="66" Width="165" HorizontalAlignment="Stretch">
+                    <TextBlock x:Name="GemTekst" Text="Gem" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20,0,0,0" FontSize="24"/>
+                    <Image Source="../Assets/Save.png" Margin="20,10,0,10" Height="Auto" HorizontalAlignment="Stretch"/>
                 </StackPanel>
             </Button>
-            <TextBox x:Name="Fornavn1" HorizontalAlignment="Stretch" Margin="10,0,0,0" Text="" VerticalAlignment="Top" Grid.Row="1" Grid.ColumnSpan="2" PlaceholderText="Fornavn"/>
-            <TextBox x:Name="Efternavn1" HorizontalAlignment="Stretch" Margin="10,0,0,0" Text="" VerticalAlignment="Bottom" Grid.Row="1" Grid.ColumnSpan="3" PlaceholderText="Efternavn"/>
-            <TextBox x:Name="PostNummer1" HorizontalAlignment="Stretch" Margin="0,0,10,0" Text="" VerticalAlignment="Top" Grid.Row="3" Grid.Column="3" PlaceholderText="PostNr."/>
+            <ComboBox x:Name="Kundetype_Copy" HorizontalAlignment="Stretch" Margin="50,0,10,0" VerticalAlignment="Top" PlaceholderText="Post Nr." 
+                Grid.Column="2" Grid.ColumnSpan="2" ItemsSource="{Binding CustomerChosens}" SelectedItem="{Binding EnummCustomerChosen, Mode=TwoWay}" Grid.RowSpan="2" Grid.Row="3"/>
+
+        </Grid>
+        <Grid x:Name="CenterGridViewWithoutCVR" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" 
+            Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="Fornavn1" HorizontalAlignment="Stretch" Margin="10,0,10,0" Text="" VerticalAlignment="Top" Grid.Row="1" Grid.ColumnSpan="4" PlaceholderText="Navn"/>
             <TextBox x:Name="ByNavn1" HorizontalAlignment="Stretch" Margin="10,0,45,0" Text="" VerticalAlignment="Top" Grid.Row="3" Grid.ColumnSpan="3" PlaceholderText="Bynavn"/>
-            <TextBox x:Name="Adresse1" HorizontalAlignment="Stretch" Margin="10,0,45,0" Text="" VerticalAlignment="Bottom" Grid.Row="3" Grid.ColumnSpan="3" PlaceholderText="Adresse"/>
-            <TextBox x:Name="HusNummer1" HorizontalAlignment="Stretch" Margin="0,0,10,0" Text="" VerticalAlignment="Bottom" Grid.Row="3" Grid.Column="3" PlaceholderText="HusNr."/>
-            <TextBox x:Name="Email1" HorizontalAlignment="Stretch" Margin="10,0,45,0" Text="" VerticalAlignment="Bottom" Grid.Row="5" Grid.ColumnSpan="4" PlaceholderText="E-mail"/>
+            <TextBox x:Name="Adresse1" HorizontalAlignment="Stretch" Margin="10,0,10,0" Text="" VerticalAlignment="Bottom" Grid.Row="3" Grid.ColumnSpan="4" PlaceholderText="Adresse"/>
+            <TextBox x:Name="Email1" HorizontalAlignment="Stretch" Margin="10,0,10,0" Text="" VerticalAlignment="Bottom" Grid.Row="5" Grid.ColumnSpan="4" PlaceholderText="E-mail"/>
             <TextBox x:Name="Telefon1" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="10,0,0,0" Text="" VerticalAlignment="Top" Grid.Row="5" PlaceholderText="Telefon"/>
+            <Button x:Name="Annuller1" HorizontalAlignment="Stretch" Margin="10,0,5,0" VerticalAlignment="Stretch" Grid.Row="8" Grid.ColumnSpan="2" Background="#00000000" BorderBrush="Black" Click="GoToCustomerMainPage" >
+                <StackPanel Margin="-10,-6,-10,-6" Orientation="Horizontal" Height="66" Width="165">
+                    <Image Source="../Assets/Back.png" Margin="5,10,0,10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <TextBlock x:Name="AnnullerTekst1" Text="Tilbage" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="15,0,0,0" FontSize="24"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="Næste1" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="5,0,10,0" VerticalAlignment="Stretch" Grid.Row="8" Grid.Column="2" Background="#00000000" BorderBrush="#FF060606" HorizontalContentAlignment="Right">
+                <StackPanel Margin="-10,-6,-10,-6" Orientation="Horizontal" Height="66" Width="165" HorizontalAlignment="Stretch">
+                    <TextBlock x:Name="GemTekst1" Text="Gem" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20,0,0,0" FontSize="24"/>
+                    <Image Source="../Assets/Save.png" Margin="20,10,0,10" Height="Auto" HorizontalAlignment="Stretch"/>
+                </StackPanel>
+            </Button>
+            <ComboBox x:Name="Kundetype_Copy1" HorizontalAlignment="Stretch" Margin="50,0,10,0" VerticalAlignment="Top" PlaceholderText="Post Nr." 
+                Grid.Column="2" Grid.ColumnSpan="2" ItemsSource="{Binding CustomerChosens}" SelectedItem="{Binding EnummCustomerChosen, Mode=TwoWay}" Grid.RowSpan="2" Grid.Row="3"/>
 
         </Grid>
 
