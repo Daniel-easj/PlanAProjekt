@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using PlanA.XAML_MainPages;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -51,9 +52,9 @@ namespace PlanA.XAML_Pages
             this.Frame.Navigate(typeof(NewCustomer), null);
         }
 
-        private void ListView_SelectionChanged()
+        private void GoToChooseCustomerMainPage(object sender, RoutedEventArgs a)
         {
-
+            this.Frame.Navigate(typeof(ChooseCustomerMainPage), null);
         }
     }
 }

@@ -90,7 +90,7 @@
                 </ListView.ItemTemplate>
             </ListView>
             <Button x:Name="NewCustomerButton" HorizontalAlignment="Right" Margin="0,0,20,0" 
-                VerticalAlignment="Bottom" Click="GoToNewCustomer"
+                VerticalAlignment="Bottom" Click="GoToChooseCustomerMainPage"
                 Width="65" Height="65" Background="#00F30404" Grid.Row="2">
                 <Image Source="../Assets/Black Plus.png"/>
             </Button>
