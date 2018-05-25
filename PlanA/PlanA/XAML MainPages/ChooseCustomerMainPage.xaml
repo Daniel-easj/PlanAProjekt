@@ -5,10 +5,13 @@
     xmlns:local="using:PlanA.XAML_MainPages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:customerPageViewmodels="using:PlanA.ViewModels.Page.CustomerPageViewmodels"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    
+    <Page.DataContext>
+        <customerPageViewmodels:PrivateCustomerPageViewModel/>
+    </Page.DataContext>
 
     <Grid x:Name="MainGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.ColumnDefinitions>
@@ -87,10 +90,16 @@
                 <ColumnDefinition Width="25*"/>
                 <ColumnDefinition Width="25*"/>
             </Grid.ColumnDefinitions>
-            <Button Content="Privat" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.RowSpan="2" Grid.ColumnSpan="4" Margin="20,0,20,0" Background="#00000000" BorderBrush="Black" Grid.Row="1" FontSize="40" Click="GoToNewPrivateCustomer"/>
-            <Button Content="Erhverv" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch" Grid.RowSpan="2" Grid.ColumnSpan="4" Margin="20,0,20,0" Background="#00000000" BorderBrush="Black" FontSize="40" Click="GoToNewCompanyCustomer"/>
-            <Button Content="Boligforening" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch" Grid.RowSpan="2" Grid.ColumnSpan="4" Margin="20,0,20,0" Background="#00000000" BorderBrush="Black" FontSize="40" Click="GoToNewHousingAssociationCustomer"/>
+          
+         <Button Content="Privat" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.RowSpan="2" Grid.ColumnSpan="4" Margin="20,0,20,0" Background="#00000000" BorderBrush="Black" Grid.Row="1" FontSize="40" Click="GoToNewPrivateCustomer"/>
+         <Button Content="Erhverv" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch" Grid.RowSpan="2" Grid.ColumnSpan="4" Margin="20,0,20,0" Background="#00000000" BorderBrush="Black" FontSize="40" Click="GoToNewCompanyCustomer"/>
+         <Button Content="Boligforening" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch" Grid.RowSpan="2" Grid.ColumnSpan="4" Margin="20,0,20,0" Background="#00000000" BorderBrush="Black" FontSize="40" Click="GoToNewHousingAssociationCustomer"/>
 
+               
+            
+            
+             
+            
 
         </Grid>
 
