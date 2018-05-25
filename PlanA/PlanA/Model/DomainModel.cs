@@ -62,14 +62,14 @@ namespace PlanA.Model
             _productsCatalog = new ProductsCatalog();
         }
 
-        public async Task LoadAsync()
+        public async System.Threading.Tasks.Task LoadAsync()
         {
             await _companyCustomerCatalog.LoadAsync();
             await _privateCustomerCatalog.LoadAsync();
-
+            await _housingAssociationCustomerCatalog.LoadAsync();
         }
 
-        public async Task SaveAsync()
+        public async System.Threading.Tasks.Task SaveAsync()
         {
             await _companyCustomerCatalog.SaveAsync();
         }

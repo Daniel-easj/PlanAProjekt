@@ -83,7 +83,7 @@
                             <Grid Height="90" BorderBrush="Black" BorderThickness="2,2,2,2">
                                 <TextBlock Text="{Binding Name}" Height="30" Margin="10,0,0,0" VerticalAlignment="Top"/>
                                 <TextBlock Text="{Binding Address}" Height="30" Margin="10,0,0,0" VerticalAlignment="Center"/>
-                                <TextBlock Text="{Binding Phone}" Height="30" Margin="10,0,0,0" VerticalAlignment="Bottom"/>
+                                <TextBlock Text="{Binding Email}" Height="30" Margin="10,0,0,0" VerticalAlignment="Bottom"/>
                             </Grid>
                         </StackPanel>
                     </DataTemplate>

@@ -53,6 +53,16 @@ namespace PlanA.ViewModels.Data
             }
         }
 
+        public string Zip
+        {
+            get { return Zip; }
+            set
+            {
+                Zip = value;
+                OnPropertyChanged();
+            }
+        }
+
         public string Cvr
         {
             get { return DataObject.Cvr; }

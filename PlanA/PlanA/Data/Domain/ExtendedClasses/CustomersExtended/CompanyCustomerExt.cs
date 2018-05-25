@@ -31,5 +31,12 @@ namespace PlanA.Data.Domain.ExtendedClasses
             get { return "CompanyCustomer"; }
             set { CustomerType = value; }
         }
+
+        public override string City
+        {
+            get { return ZipNavigation.City1; }
+            set { ZipNavigation.City1 = value; }
+        }
+
     }
 }
