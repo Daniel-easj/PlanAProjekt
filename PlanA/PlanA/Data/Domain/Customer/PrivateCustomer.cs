@@ -10,5 +10,8 @@ namespace PlanA.Data.Domain.ExtendedClasses
         public override string Phone { get; set; }
         public override string Address { get; set; }
         public override string Email { get; set; }
+        public override string Zip { get; set; }
+
+        public City ZipNavigation { get; set; }
     }
 }

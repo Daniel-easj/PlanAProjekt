@@ -43,6 +43,16 @@ namespace PlanA.ViewModels.Data.Customer
             }
         }
 
+        public string Zip
+        {
+            get { return Zip; }
+            set
+            {
+                Zip = value;
+                OnPropertyChanged();
+            }
+        }
+
         public string Email
         {
             get { return DataObject.Email; }

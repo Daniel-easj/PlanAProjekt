@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace PlanA.Data.Domain
+namespace PlanA
 {
     public partial class Task
     {

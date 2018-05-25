@@ -102,9 +102,10 @@
     <Compile Include="CatalogClasses\ProductCatalogs\ToolCatalog.cs" />
     <Compile Include="CatalogClasses\ProductCatalogs\WallCoverCatalog.cs" />
     <Compile Include="CatalogClasses\TaskCatalog\TaskCatalog.cs" />
+    <Compile Include="Data\Domain\Customer\City.cs" />
     <Compile Include="Data\Domain\Customer\CompanyCustomer.cs" />
-    <Compile Include="Data\Domain\ExtendedClasses\ProductsExtended\WallCoverExt.cs" />
     <Compile Include="Data\Domain\Product\Cover.cs" />
+    <Compile Include="Data\Domain\ExtendedClasses\ProductsExtended\WallCoverExt.cs" />
     <Compile Include="Data\Base\DomainBase.cs" />
     <Compile Include="BaseClasses\ProductBase.cs" />
     <Compile Include="BaseClasses\CatalogAppBase.cs" />
@@ -117,15 +118,14 @@
     <Compile Include="Data\Domain\ExtendedClasses\CustomersExtended\CompanyCustomerExt.cs" />
     <Compile Include="Data\Domain\ExtendedClasses\CustomersExtended\PrivateCustomerExt.cs" />
     <Compile Include="Data\Domain\Customer\HousingAssociationCustomer.cs" />
+    <Compile Include="Model\DomainModel.cs" />
     <Compile Include="Data\Domain\Product\Paint.cs" />
     <Compile Include="Data\Persistent\PlanadbContext.cs" />
     <Compile Include="Data\Domain\Customer\PrivateCustomer.cs" />
+    <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Data\Domain\Product\Putty.cs" />
     <Compile Include="Data\Domain\Task\Task.cs" />
     <Compile Include="Data\Domain\Product\Tool.cs" />
-    <Compile Include="Data\Domain\Product\Wallcover.cs" />
-    <Compile Include="Model\DomainModel.cs" />
-    <Compile Include="Properties\Annotations.cs" />
     <Compile Include="ViewModels\App\AppViewModel.cs" />
     <Compile Include="ViewModels\App\CustomerTypeViewModel.cs" />
     <Compile Include="ViewModels\App\ProductTypeViewModel.cs" />
@@ -145,12 +145,14 @@
     <Compile Include="ViewModels\Page\CustomerPageViewmodels\CompanyCustomerPageViewModel.cs" />
     <Compile Include="ViewModels\Page\CustomerPageViewmodels\HousingAssociationCustomerPageViewModel.cs" />
     <Compile Include="ViewModels\Page\CustomerPageViewmodels\PrivateCustomerPageViewModel.cs" />
+    <Compile Include="ViewModels\Page\CustomersViewModel.cs" />
     <Compile Include="ViewModels\Page\ProductPageViewModels\CombinedProductsPageViewModel.cs" />
     <Compile Include="ViewModels\Page\ProductPageViewModels\CoverPageViewModel.cs" />
     <Compile Include="ViewModels\Page\ProductPageViewModels\PaintPageViewModel.cs" />
     <Compile Include="ViewModels\Page\ProductPageViewModels\PuttyPageViewModel.cs" />
     <Compile Include="ViewModels\Page\ProductPageViewModels\ToolPageViewModel.cs" />
     <Compile Include="ViewModels\Page\ProductPageViewModels\WallcoverPageViewModel.cs" />
+    <Compile Include="Data\Domain\Product\Wallcover.cs" />
     <Compile Include="XAML MainPages\LoadAndSaveMainPage.xaml.cs">
       <DependentUpon>LoadAndSaveMainPage.xaml</DependentUpon>
     </Compile>

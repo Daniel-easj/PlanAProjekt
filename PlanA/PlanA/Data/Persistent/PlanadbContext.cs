@@ -1,13 +1,13 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using PlanA.Data.Domain;
 using PlanA.Data.Domain.ExtendedClasses;
 
 namespace PlanA
 {
     public partial class PlanadbContext : DbContext
     {
+        public virtual DbSet<City> Cities { get; set; }
         public virtual DbSet<CompanyCustomer> CompanyCustomers { get; set; }
         public virtual DbSet<Cover> Covers { get; set; }
         public virtual DbSet<HousingAssociationCustomer> HousingAssociationCustomers { get; set; }
@@ -22,22 +22,24 @@ namespace PlanA
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                //optionsBuilder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=PlanADB;Integrated Security=True");
                 optionsBuilder.UseSqlServer(@"Server=tcp:danielbsqlserver.database.windows.net,1433;Initial Catalog=PlanADB;Persist Security Info=False;User ID=DanielB;Password=202020Design?;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
             }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
             modelBuilder.Entity<CompanyCustomer>().Ignore(item => item.Key);
             modelBuilder.Entity<CompanyCustomer>().Ignore(item => item.CustomerType);
+            modelBuilder.Entity<CompanyCustomer>().Ignore(item => item.City);
 
             modelBuilder.Entity<HousingAssociationCustomer>().Ignore(item => item.Key);
             modelBuilder.Entity<HousingAssociationCustomer>().Ignore(item => item.CustomerType);
+            modelBuilder.Entity<HousingAssociationCustomer>().Ignore(item => item.City);
 
             modelBuilder.Entity<PrivateCustomer>().Ignore(item => item.Key);
             modelBuilder.Entity<PrivateCustomer>().Ignore(item => item.CustomerType);
+            modelBuilder.Entity<PrivateCustomer>().Ignore(item => item.City);
 
             modelBuilder.Entity<Cover>().Ignore(item => item.Key);
             modelBuilder.Entity<Paint>().Ignore(item => item.Key);
@@ -46,6 +48,22 @@ namespace PlanA
             //modelBuilder.Entity<Task>().Ignore(item => item.Key);
             modelBuilder.Entity<Tool>().Ignore(item => item.Key);
             modelBuilder.Entity<Wallcover>().Ignore(item => item.Key);
+
+
+            modelBuilder.Entity<City>(entity =>
+            {
+                entity.HasKey(e => e.Zip);
+
+                entity.ToTable("City");
+
+                entity.Property(e => e.Zip)
+                    .HasColumnType("nchar(30)")
+                    .ValueGeneratedNever();
+
+                entity.Property(e => e.City1)
+                    .HasColumnName("City")
+                    .HasColumnType("nchar(100)");
+            });
 
             modelBuilder.Entity<CompanyCustomer>(entity =>
             {
@@ -66,6 +84,13 @@ namespace PlanA
                 entity.Property(e => e.Name).HasColumnType("nchar(100)");
 
                 entity.Property(e => e.Phone).HasColumnType("nchar(100)");
+
+                entity.Property(e => e.Zip).HasColumnType("nchar(30)");
+
+                entity.HasOne(d => d.ZipNavigation)
+                    .WithMany(p => p.CompanyCustomers)
+                    .HasForeignKey(d => d.Zip)
+                    .HasConstraintName("FK_CC_Zip");
             });
 
             modelBuilder.Entity<Cover>(entity =>
@@ -102,6 +127,13 @@ namespace PlanA
                 entity.Property(e => e.Name).HasColumnType("nchar(100)");
 
                 entity.Property(e => e.Phone).HasColumnType("nchar(100)");
+
+                entity.Property(e => e.Zip).HasColumnType("nchar(30)");
+
+                entity.HasOne(d => d.ZipNavigation)
+                    .WithMany(p => p.HousingAssociationCustomers)
+                    .HasForeignKey(d => d.Zip)
+                    .HasConstraintName("FK_HAC_Zip");
             });
 
             modelBuilder.Entity<Paint>(entity =>
@@ -134,6 +166,13 @@ namespace PlanA
                 entity.Property(e => e.Name).HasColumnType("nchar(100)");
 
                 entity.Property(e => e.Phone).HasColumnType("nchar(100)");
+
+                entity.Property(e => e.Zip).HasColumnType("nchar(30)");
+
+                entity.HasOne(d => d.ZipNavigation)
+                    .WithMany(p => p.PrivateCustomers)
+                    .HasForeignKey(d => d.Zip)
+                    .HasConstraintName("FK_PC_Zip");
             });
 
             modelBuilder.Entity<Putty>(entity =>
