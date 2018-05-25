@@ -12,17 +12,18 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using PlanA.XAML_Pages;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace PlanA.XAML_Pages
+namespace PlanA.XAML_MainPages
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class NewCustomer : Page
+    public sealed partial class ChooseCustomerMainPage : Page
     {
-        public NewCustomer()
+        public ChooseCustomerMainPage()
         {
             this.InitializeComponent();
         }
@@ -42,22 +43,27 @@ namespace PlanA.XAML_Pages
             this.Frame.Navigate(typeof(StatisticPage), null);
         }
 
+        private void GoToNewAssignment(object sender, RoutedEventArgs a)
+        {
+            this.Frame.Navigate(typeof(NewAssignment), null);
+        }
+
         private void GoToMainPage(object sender, RoutedEventArgs a)
         {
             this.Frame.Navigate(typeof(MainPage), null);
         }
 
-        private void GoToChooseCustomer(object sender, RoutedEventArgs a)
+        private void GoToNewPrivateCustomer(object sender, RoutedEventArgs a)
         {
-            this.Frame.Navigate(typeof(ChooseCustomer), null);
+            this.Frame.Navigate(typeof(NewPrivateCustomer), null);
         }
-
-        private void GoToSelectedProduct(object sender, RoutedEventArgs a)
+        private void GoToNewHousingAssociationCustomer(object sender, RoutedEventArgs a)
         {
-            this.Frame.Navigate(typeof(SelectedProduct), null);
+            this.Frame.Navigate(typeof(NewHousingAssociationCustomer), null);
         }
-
-
-
+        private void GoToNewCompanyCustomer(object sender, RoutedEventArgs a)
+        {
+            this.Frame.Navigate(typeof(NewCompanyCustomer), null);
+        }
     }
 }

@@ -1,17 +1,12 @@
 ﻿<Page
-    x:Class="PlanA.XAML_MainPages.LoadAndSaveMainPage"
+    x:Class="PlanA.XAML_MainPages.ChooseCustomerMainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:PlanA.XAML_MainPages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:app="using:PlanA.ViewModels.App"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-    <Page.DataContext>
-        <app:AppViewModel/>
-    </Page.DataContext>
 
     <Grid x:Name="MainGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.ColumnDefinitions>
@@ -36,7 +31,7 @@
             </Grid.ColumnDefinitions>
             <Button x:Name="Assignment" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
                     Background="#00F30404" Margin="0,0,0,0" Click="GoToMainPage">
-                <Image Source="../Assets/Assignment Selected.png"/>
+                <Image Source="../Assets/Assignment Not Selected.png"/>
             </Button>
             <Button x:Name="Inventory" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
                     Background="#00F30404" Margin="0,0,0,0" Grid.Column="1"
@@ -46,7 +41,7 @@
             <Button x:Name="Customer" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
                     Background="#00F30404" Margin="0,0,0,0" Grid.Column="2"
                     Click="GoToCustomerMainPage">
-                <Image Source="../Assets/People Not Selected.png"/>
+                <Image Source="../Assets/People Selected.png"/>
             </Button>
             <Button x:Name="Statistics"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
                     Background="#00F30404" Margin="0,0,0,0" Grid.Column="3"
@@ -62,27 +57,27 @@
                 <ColumnDefinition Width="25*"/>
             </Grid.ColumnDefinitions>
             <TextBlock x:Name="SiteDescription" HorizontalAlignment="Stretch" Margin="0,0,0,0" 
-                       Text="Opgaver" TextAlignment="Center" TextWrapping="Wrap" 
+                       Text="Vælg Kunde" TextAlignment="Center" TextWrapping="Wrap" 
                        VerticalAlignment="Bottom" FontSize="20" LineHeight="6" Grid.Column="1" Grid.ColumnSpan="2"/>
 
 
             <!--<AutoSuggestBox x:Name="SearchBar" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" Margin="0,0,10,0" 
                             VerticalAlignment="Bottom" Grid.Column="1" PlaceholderText="Søg" TextChanged="AutoSuggestionsBox_TextChanged"
                             QuerySubmitted="AutoSuggestBox_QuerySubmitted"  SuggestionChosen="AutoSuggestBox_SuggestionChosen"/>-->
-            </Grid>
+        </Grid>
         <Grid x:Name="CenterViewGrid" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" 
               Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="8*"/>
-                <RowDefinition Height="9*"/>
-                <RowDefinition Height="5*"/>
-                <RowDefinition Height="9*"/>
-                <RowDefinition Height="5*"/>
-                <RowDefinition Height="9*"/>
                 <RowDefinition Height="10*"/>
                 <RowDefinition Height="10*"/>
                 <RowDefinition Height="10*"/>
-                <RowDefinition Height="5*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="25*"/>
@@ -90,14 +85,9 @@
                 <ColumnDefinition Width="25*"/>
                 <ColumnDefinition Width="25*"/>
             </Grid.ColumnDefinitions>
-
-            <Button x:Name="NewAssignmentButton" HorizontalAlignment="Right" Margin="0,0,20,0" 
-                VerticalAlignment="Bottom" Width="65" Height="65" 
-                Background="#00F30404" Click="GoToNewAssignment" Grid.Column="1" Grid.Row="8" Grid.ColumnSpan="4">
-                <Image Source="../Assets/Black Plus.png"/>
-            </Button>
-            <Button Content="LOAD" HorizontalAlignment="Stretch" Command="{Binding NavigationCommands[Load]}" Grid.Row="1" VerticalAlignment="Stretch" Grid.RowSpan="4" Grid.ColumnSpan="4" Margin="20,0,20,0" Background="#00000000" BorderBrush="Black" Height="150"/>
-            <Button Content="SAVE" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch" Grid.RowSpan="3" Grid.ColumnSpan="4" Margin="20,0,20,0" Background="#00000000" BorderBrush="Black" Height="150"/>
+            <Button Content="Privat" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.RowSpan="2" Grid.ColumnSpan="4" Margin="20,0,20,0" Background="#00000000" BorderBrush="Black" Grid.Row="1" FontSize="40" Click="GoToNewPrivateCustomer"/>
+            <Button Content="Erhverv" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch" Grid.RowSpan="2" Grid.ColumnSpan="4" Margin="20,0,20,0" Background="#00000000" BorderBrush="Black" FontSize="40" Click="GoToNewCompanyCustomer"/>
+            <Button Content="Boligforening" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch" Grid.RowSpan="2" Grid.ColumnSpan="4" Margin="20,0,20,0" Background="#00000000" BorderBrush="Black" FontSize="40" Click="GoToNewHousingAssociationCustomer"/>
 
 
         </Grid>

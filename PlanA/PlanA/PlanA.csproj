@@ -153,6 +153,9 @@
     <Compile Include="ViewModels\Page\ProductPageViewModels\ToolPageViewModel.cs" />
     <Compile Include="ViewModels\Page\ProductPageViewModels\WallcoverPageViewModel.cs" />
     <Compile Include="Data\Domain\Product\Wallcover.cs" />
+    <Compile Include="XAML MainPages\ChooseCustomerMainPage.xaml.cs">
+      <DependentUpon>ChooseCustomerMainPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="XAML MainPages\LoadAndSaveMainPage.xaml.cs">
       <DependentUpon>LoadAndSaveMainPage.xaml</DependentUpon>
     </Compile>
@@ -182,8 +185,14 @@
     <Compile Include="XAML Pages\NewAssignment.xaml.cs">
       <DependentUpon>NewAssignment.xaml</DependentUpon>
     </Compile>
-    <Compile Include="XAML Pages\NewCustomer.xaml.cs">
-      <DependentUpon>NewCustomer.xaml</DependentUpon>
+    <Compile Include="XAML Pages\NewCompanyCustomer.xaml.cs">
+      <DependentUpon>NewCompanyCustomer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XAML Pages\NewHousingAssociationCustomer.xaml.cs">
+      <DependentUpon>NewHousingAssociationCustomer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XAML Pages\NewPrivateCustomer.xaml.cs">
+      <DependentUpon>NewPrivateCustomer.xaml</DependentUpon>
     </Compile>
     <Compile Include="XAML Pages\NewProduct.xaml.cs">
       <DependentUpon>NewProduct.xaml</DependentUpon>
@@ -234,6 +243,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="XAML MainPages\ChooseCustomerMainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="XAML MainPages\LoadAndSaveMainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -266,7 +279,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="XAML Pages\NewCustomer.xaml">
+    <Page Include="XAML Pages\NewCompanyCustomer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="XAML Pages\NewHousingAssociationCustomer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="XAML Pages\NewPrivateCustomer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
