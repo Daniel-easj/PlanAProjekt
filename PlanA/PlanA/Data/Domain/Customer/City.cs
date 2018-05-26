@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Data.InMemory.Interfaces;
 using PlanA.Data.Domain.ExtendedClasses;
 
 namespace PlanA
@@ -19,5 +20,10 @@ namespace PlanA
         public ICollection<CompanyCustomer> CompanyCustomers { get; set; }
         public ICollection<HousingAssociationCustomer> HousingAssociationCustomers { get; set; }
         public ICollection<PrivateCustomer> PrivateCustomers { get; set; }
+
+        public override string ToString()
+        {
+            return Zip;
+        }
     }
 }

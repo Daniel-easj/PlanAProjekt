@@ -28,6 +28,7 @@ namespace PlanA
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<City>().Ignore(item => item.Key);
 
             modelBuilder.Entity<CompanyCustomer>().Ignore(item => item.Key);
             modelBuilder.Entity<CompanyCustomer>().Ignore(item => item.CustomerType);

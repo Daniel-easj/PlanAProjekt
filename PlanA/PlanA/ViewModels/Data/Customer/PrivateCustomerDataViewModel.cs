@@ -1,16 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using PlanA.Data.Domain.ExtendedClasses;
+using PlanA.Model;
 
 namespace PlanA.ViewModels.Data.Customer
 {
     class PrivateCustomerDataViewModel : DataViewModelAppBase<PrivateCustomer>
     {
+
+        //private ObservableCollection<string> _zipCodes;
+
         public PrivateCustomerDataViewModel(PrivateCustomer obj) : base(obj)
         {
+            // _zipCodes = new ObservableCollection<string>();
+
+
         }
 
         public string Name
@@ -43,15 +51,7 @@ namespace PlanA.ViewModels.Data.Customer
             }
         }
 
-        public string Zip
-        {
-            get { return Zip; }
-            set
-            {
-                Zip = value;
-                OnPropertyChanged();
-            }
-        }
+
 
         public string Email
         {

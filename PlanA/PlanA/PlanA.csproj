@@ -102,8 +102,10 @@
     <Compile Include="CatalogClasses\ProductCatalogs\ToolCatalog.cs" />
     <Compile Include="CatalogClasses\ProductCatalogs\WallCoverCatalog.cs" />
     <Compile Include="CatalogClasses\TaskCatalog\TaskCatalog.cs" />
+    <Compile Include="CatalogClasses\ZipCatalog\ZipCatalog.cs" />
     <Compile Include="Data\Domain\Customer\City.cs" />
     <Compile Include="Data\Domain\Customer\CompanyCustomer.cs" />
+    <Compile Include="Data\Domain\ExtendedClasses\ZipExtended\ZipExt.cs" />
     <Compile Include="Data\Domain\Product\Cover.cs" />
     <Compile Include="Data\Domain\ExtendedClasses\ProductsExtended\WallCoverExt.cs" />
     <Compile Include="Data\Base\DomainBase.cs" />
