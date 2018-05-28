@@ -102,8 +102,10 @@
     <Compile Include="CatalogClasses\ProductCatalogs\ToolCatalog.cs" />
     <Compile Include="CatalogClasses\ProductCatalogs\WallCoverCatalog.cs" />
     <Compile Include="CatalogClasses\TaskCatalog\TaskCatalog.cs" />
+    <Compile Include="CatalogClasses\ZipCatalog\ZipCatalog.cs" />
     <Compile Include="Data\Domain\Customer\City.cs" />
     <Compile Include="Data\Domain\Customer\CompanyCustomer.cs" />
+    <Compile Include="Data\Domain\ExtendedClasses\ZipExtended\ZipExt.cs" />
     <Compile Include="Data\Domain\Product\Cover.cs" />
     <Compile Include="Data\Domain\ExtendedClasses\ProductsExtended\WallCoverExt.cs" />
     <Compile Include="Data\Base\DomainBase.cs" />
@@ -141,12 +143,10 @@
     <Compile Include="ViewModels\Data\Product\PuttyDataViewModel.cs" />
     <Compile Include="ViewModels\Data\Product\ToolDataViewModel.cs" />
     <Compile Include="ViewModels\Data\Product\WallCoverDataViewModel.cs" />
-    <Compile Include="ViewModels\Page\CustomerPageViewmodels\CombinedCustomersPageViewmodel.cs" />
     <Compile Include="ViewModels\Page\CustomerPageViewmodels\CompanyCustomerPageViewModel.cs" />
     <Compile Include="ViewModels\Page\CustomerPageViewmodels\HousingAssociationCustomerPageViewModel.cs" />
     <Compile Include="ViewModels\Page\CustomerPageViewmodels\PrivateCustomerPageViewModel.cs" />
     <Compile Include="ViewModels\Page\CustomersViewModel.cs" />
-    <Compile Include="ViewModels\Page\ProductPageViewModels\CombinedProductsPageViewModel.cs" />
     <Compile Include="ViewModels\Page\ProductPageViewModels\CoverPageViewModel.cs" />
     <Compile Include="ViewModels\Page\ProductPageViewModels\PaintPageViewModel.cs" />
     <Compile Include="ViewModels\Page\ProductPageViewModels\PuttyPageViewModel.cs" />

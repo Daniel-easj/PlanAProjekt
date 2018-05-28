@@ -8,6 +8,7 @@ using PlanA.BaseClasses;
 using PlanA.CatalogClasses.CombinedCatalogs;
 using PlanA.CatalogClasses.CustomerCatalogs;
 using PlanA.CatalogClasses.ProductCatalogs;
+using PlanA.CatalogClasses.ZipCatalog;
 
 namespace PlanA.Model
 {
@@ -21,6 +22,9 @@ namespace PlanA.Model
         // Combined CustomerCatalog
         private CustomersCatalog _customersCatalog;
         private ObservableCollection<CustomerBase> _customers;
+
+        // ZipCatalog
+        private ZipCatalog _zipCatalog;
 
         // ToolCatalogs
         private PuttyCatalog _puttyCatalog;
@@ -53,6 +57,9 @@ namespace PlanA.Model
             _customersCatalog = new CustomersCatalog();
             _customers = new ObservableCollection<CustomerBase>();
 
+            _zipCatalog = new ZipCatalog();
+
+
             _puttyCatalog = new PuttyCatalog();
             _toolCatalog = new ToolCatalog();
             _coverCatalog = new CoverCatalog();
@@ -67,6 +74,7 @@ namespace PlanA.Model
             await _companyCustomerCatalog.LoadAsync();
             await _privateCustomerCatalog.LoadAsync();
             await _housingAssociationCustomerCatalog.LoadAsync();
+            await _zipCatalog.LoadAsync();
         }
 
         public async System.Threading.Tasks.Task SaveAsync()
@@ -92,6 +100,8 @@ namespace PlanA.Model
         public PrivateCustomerCatalog PrivateCustomerCatalog => _privateCustomerCatalog;
         public CustomersCatalog CustomersCatalog => _customersCatalog;
         public ObservableCollection<CustomerBase> Customers => _customers;
+
+        public ZipCatalog ZipCodes => _zipCatalog;
 
 
         public PuttyCatalog PuttyCatalog => _puttyCatalog;

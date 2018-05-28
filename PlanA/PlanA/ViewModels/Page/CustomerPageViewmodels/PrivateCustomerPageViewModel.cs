@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,9 +21,24 @@ namespace PlanA.ViewModels.Page.CustomerPageViewmodels
         {
         }
 
+
         public override IDataWrapper<PrivateCustomer> CreateDataViewModel(PrivateCustomer obj)
         {
             return new PrivateCustomerDataViewModel(obj);
+        }
+
+        public List<City> ZipCollection
+        {
+            get { return DomainModel.Catalogs.ZipCodes.All; }
+        }
+
+        public City ZipSelected
+        {
+            get { return null; }
+            set
+            {
+                ItemDetails.DataObject.Zip = value.Zip;
+            }
         }
     }
 }
