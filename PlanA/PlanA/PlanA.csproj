@@ -349,7 +349,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="CommandClasses\" />
     <Folder Include="TaskClasses\" />
     <Folder Include="ViewModels\Data\Task\" />
     <Folder Include="ViewModels\Page\TaskPageViewModels\" />
