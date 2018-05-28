@@ -20,7 +20,6 @@ namespace PlanA.Model
         private PrivateCustomerCatalog _privateCustomerCatalog;
 
         // Combined CustomerCatalog
-        private CustomersCatalog _customersCatalog;
         private ObservableCollection<CustomerBase> _customers;
 
         // ZipCatalog
@@ -54,7 +53,6 @@ namespace PlanA.Model
             _housingAssociationCustomerCatalog = new HousingAssociationCustomerCatalog();
             _privateCustomerCatalog = new PrivateCustomerCatalog();
 
-            _customersCatalog = new CustomersCatalog();
             _customers = new ObservableCollection<CustomerBase>();
 
             _zipCatalog = new ZipCatalog();
@@ -80,6 +78,9 @@ namespace PlanA.Model
         public async System.Threading.Tasks.Task SaveAsync()
         {
             await _companyCustomerCatalog.SaveAsync();
+            await _privateCustomerCatalog.SaveAsync();
+            await _housingAssociationCustomerCatalog.SaveAsync();
+            await _zipCatalog.LoadAsync();
         }
 
         public bool IDExists(CustomerBase cb)
@@ -98,7 +99,6 @@ namespace PlanA.Model
         public CompanyCustomerCatalog CompanyCustomersCatalog => _companyCustomerCatalog;
         public HousingAssociationCustomerCatalog HousingAssociationCustomerCatalog => _housingAssociationCustomerCatalog;
         public PrivateCustomerCatalog PrivateCustomerCatalog => _privateCustomerCatalog;
-        public CustomersCatalog CustomersCatalog => _customersCatalog;
         public ObservableCollection<CustomerBase> Customers => _customers;
 
         public ZipCatalog ZipCodes => _zipCatalog;
