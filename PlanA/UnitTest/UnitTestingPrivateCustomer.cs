@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using PlanA.Model;
+using PlanA.ViewModels.Page;
+using PlanA.ViewModels.Page.CustomerPageViewmodels;
 
 namespace UnitTest
 {
@@ -11,9 +14,30 @@ namespace UnitTest
     public class UnitTestingPrivateCustomer
     {
 
+        private DomainModel testSubject;
+
+        public UnitTestingPrivateCustomer()
+        {
+            testSubject = new DomainModel();
+        }
+
         [TestMethod]
 
-        public void
+        public void IDExistTests()
+        {   // Arrange
+            
+
+            // Act
+
+
+
+            // Assert
+
+
+
+
+
+        }
 
 
     }

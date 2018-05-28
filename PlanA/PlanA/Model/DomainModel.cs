@@ -48,7 +48,7 @@ namespace PlanA.Model
         }
         public static DomainModel Catalogs => Instance;
 
-        private DomainModel()
+        public DomainModel()
         {
             _companyCustomerCatalog = new CompanyCustomerCatalog();
             _housingAssociationCustomerCatalog = new HousingAssociationCustomerCatalog();
@@ -85,7 +85,7 @@ namespace PlanA.Model
         public bool IDExists(CustomerBase cb)
         {
             foreach (var item in _customers)
-            {
+            {   
                 if (item.CustomerType.ToLower() == cb.CustomerType.ToLower() && cb.Key == item.Key)
                 {
                     return true;
