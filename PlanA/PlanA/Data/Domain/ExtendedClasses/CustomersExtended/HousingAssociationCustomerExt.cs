@@ -17,7 +17,6 @@ namespace PlanA.Data.Domain.ExtendedClasses
 
         }
 
-
         public HousingAssociationCustomer()
         {
         }

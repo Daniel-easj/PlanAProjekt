@@ -9,6 +9,6 @@ namespace PlanA
 {
     public partial class City : DomainBase
     {
-        public override int Key { get { return Convert.ToInt32(Zip); } set { Convert.ToInt32(Zip); } }
+        public override int Key { get => Convert.ToInt32(Zip); set => Convert.ToInt32(Zip);}
     }
 }

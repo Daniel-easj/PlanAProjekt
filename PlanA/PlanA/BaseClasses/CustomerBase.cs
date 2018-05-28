@@ -32,8 +32,8 @@ namespace PlanA.BaseClasses
 
         public override int Key
         {
-            get {  throw new Exception();}
-            set { throw new Exception(); }
+            get => throw new Exception();
+            set => throw new Exception();
         }
     }
 }

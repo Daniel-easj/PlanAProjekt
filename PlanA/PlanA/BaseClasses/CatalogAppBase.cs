@@ -11,24 +11,12 @@ namespace PlanA
     public class CatalogAppBase<T> : EFCorePersistableCatalogAsync<PlanadbContext, T, T, T>
         where T : class, IStorable, ICopyable, new()
     {
-        public override T CreateDomainObjectFromViewDataObject(T obj)
-        {
-            return obj;
-        }
+        public override T CreateDomainObjectFromViewDataObject(T obj) => obj;
 
-        public override T CreateViewDataObject(T obj)
-        {
-            return obj;
-        }
+        public override T CreateViewDataObject(T obj) => obj;
 
-        public override T CreatePersistentDataObject(T obj)
-        {
-            return obj;
-        }
+        public override T CreatePersistentDataObject(T obj) => obj;
 
-        public override T CreateDomainObjectFromPersistentDataObject(T obj)
-        {
-            return obj;
-        }
+        public override T CreateDomainObjectFromPersistentDataObject(T obj) => obj;
     }
 }

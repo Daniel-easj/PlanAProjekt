@@ -32,10 +32,7 @@ namespace PlanA.ViewModels.Page.CustomerPageViewmodels
         public City ZipSelected
         {
             get => null;
-            set
-            {
-                ItemDetails.DataObject.Zip = value.Zip;
-            }
+            set => ItemDetails.DataObject.Zip = value.Zip;
         }
     }
 }
