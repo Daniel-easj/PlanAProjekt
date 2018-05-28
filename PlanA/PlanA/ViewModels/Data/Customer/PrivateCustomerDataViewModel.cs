@@ -26,8 +26,16 @@ namespace PlanA.ViewModels.Data.Customer
             get => DataObject.Name;
             set
             {
-                DataObject.Name = value;
-                OnPropertyChanged();
+                if (string.IsNullOrWhiteSpace(Name) || Name.Length < 2)
+                {
+                    throw new Exception();
+                }
+                else
+                {
+                    DataObject.Name = value;
+                    OnPropertyChanged();
+                }
+                
             }
         }
 
@@ -36,8 +44,15 @@ namespace PlanA.ViewModels.Data.Customer
             get => DataObject.Phone;
             set
             {
-                DataObject.Phone = value;
-                OnPropertyChanged();
+                if (Phone.Length < 7)
+                {
+                    DataObject.Phone = value;
+                    OnPropertyChanged();
+                }
+                else
+                {
+                    throw new Exception();
+                }
             }
         }
 
