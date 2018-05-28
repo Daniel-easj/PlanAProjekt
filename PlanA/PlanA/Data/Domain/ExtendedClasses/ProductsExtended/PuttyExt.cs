@@ -26,8 +26,8 @@ namespace PlanA.Data.Domain.ExtendedClasses
 
         public override int Key
         {
-            get { return PuttyId; }
-            set { PuttyId = value; }
+            get => PuttyId;
+            set => PuttyId = value;
         }
     }
 }

@@ -20,8 +20,8 @@ namespace PlanA.Data.Domain.ExtendedClasses
 
         public override int Key
         {
-            get { return WallcoverId; }
-            set { WallcoverId = value; }
+            get => WallcoverId;
+            set => WallcoverId = value;
         }
     }
 }

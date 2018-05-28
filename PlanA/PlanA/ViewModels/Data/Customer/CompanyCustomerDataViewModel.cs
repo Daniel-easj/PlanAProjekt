@@ -15,7 +15,7 @@ namespace PlanA.ViewModels.Data
 
         public string Name
         {
-            get { return DataObject.Name; }
+            get => DataObject.Name;
             set
             {
                 DataObject.Name = value;
@@ -25,7 +25,7 @@ namespace PlanA.ViewModels.Data
 
         public string Phone
         {
-            get { return DataObject.Phone; }
+            get => DataObject.Phone;
             set
             {
                 DataObject.Phone = value;
@@ -45,7 +45,7 @@ namespace PlanA.ViewModels.Data
 
         public string Email
         {
-            get { return DataObject.Email; }
+            get => DataObject.Email;
             set
             {
                 DataObject.Email = value;
@@ -55,7 +55,7 @@ namespace PlanA.ViewModels.Data
 
         public string Zip
         {
-            get { return Zip; }
+            get => Zip;
             set
             {
                 Zip = value;
@@ -65,7 +65,7 @@ namespace PlanA.ViewModels.Data
 
         public string Cvr
         {
-            get { return DataObject.Cvr; }
+            get => DataObject.Cvr;
             set
             {
                 DataObject.Cvr = value;

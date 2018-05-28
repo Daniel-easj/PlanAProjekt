@@ -26,8 +26,8 @@ namespace PlanA.Data.Domain.ExtendedClasses
 
         public override int Key
         {
-            get { return PaintId; }
-            set { PaintId = value; }
+            get => PaintId;
+            set => PaintId = value;
         }
     }
 }

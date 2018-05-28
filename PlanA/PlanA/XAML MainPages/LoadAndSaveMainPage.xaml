@@ -96,10 +96,7 @@
                 Background="#00F30404" Click="GoToNewAssignment" Grid.Column="1" Grid.Row="8" Grid.ColumnSpan="4">
                 <Image Source="../Assets/Black Plus.png"/>
             </Button>
-            <Button Content="LOAD" HorizontalAlignment="Stretch" Command="{Binding NavigationCommands[Load]}" Grid.Row="1" VerticalAlignment="Stretch" Grid.RowSpan="4" Grid.ColumnSpan="4" Margin="20,0,20,0" Background="#00000000" BorderBrush="Black" Height="150"/>
-            <Button Content="SAVE" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch" Grid.RowSpan="3" Grid.ColumnSpan="4" Margin="20,0,20,0" Background="#00000000" BorderBrush="Black" Height="150"/>
-
-
+            <Button Content="Hent fra database" HorizontalAlignment="Stretch" Command="{Binding NavigationCommands[Load]}" Grid.Row="1" VerticalAlignment="Stretch" Grid.RowSpan="4" Grid.ColumnSpan="4" Margin="20,0,20,0" Background="#00000000" BorderBrush="Black" Height="150"/>
         </Grid>
 
     </Grid>

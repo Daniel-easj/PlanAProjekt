@@ -46,7 +46,7 @@ namespace PlanA.Model
                 return _instance;
             }
         }
-        public static DomainModel Catalogs { get { return Instance; } }
+        public static DomainModel Catalogs => Instance;
 
         private DomainModel()
         {

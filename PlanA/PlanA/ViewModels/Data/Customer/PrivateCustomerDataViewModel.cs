@@ -23,7 +23,7 @@ namespace PlanA.ViewModels.Data.Customer
 
         public string Name
         {
-            get { return DataObject.Name; }
+            get => DataObject.Name;
             set
             {
                 DataObject.Name = value;
@@ -33,7 +33,7 @@ namespace PlanA.ViewModels.Data.Customer
 
         public string Phone
         {
-            get { return DataObject.Phone; }
+            get => DataObject.Phone;
             set
             {
                 DataObject.Phone = value;
@@ -43,7 +43,7 @@ namespace PlanA.ViewModels.Data.Customer
 
         public string Address
         {
-            get { return DataObject.Address; }
+            get => DataObject.Address;
             set
             {
                 DataObject.Address = value;
@@ -55,7 +55,7 @@ namespace PlanA.ViewModels.Data.Customer
 
         public string Email
         {
-            get { return DataObject.Email; }
+            get => DataObject.Email;
             set
             {
                 DataObject.Email = value;

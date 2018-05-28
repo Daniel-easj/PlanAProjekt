@@ -16,7 +16,7 @@ namespace PlanA.ViewModels.Data.Product
 
         public int Quantity
         {
-            get { return DataObject.Quantity; }
+            get => DataObject.Quantity;
             set
             {
                 DataObject.Quantity = value;
@@ -26,7 +26,7 @@ namespace PlanA.ViewModels.Data.Product
 
         public string Description
         {
-            get { return DataObject.Description; }
+            get => DataObject.Description;
             set
             {
                 DataObject.Description = value;
@@ -36,7 +36,7 @@ namespace PlanA.ViewModels.Data.Product
 
         public int SpecificType
         {
-            get { return DataObject.SpecificType; }
+            get => DataObject.SpecificType;
             set
             {
                 DataObject.SpecificType = value;
@@ -46,7 +46,7 @@ namespace PlanA.ViewModels.Data.Product
 
         public int Gloss
         {
-            get { return DataObject.Gloss; }
+            get => DataObject.Gloss;
             set
             {
                 DataObject.Gloss = value;
@@ -69,6 +69,10 @@ namespace PlanA.ViewModels.Data.Product
                 }
             }
         }
-        
+
+        public void Method()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

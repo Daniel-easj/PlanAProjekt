@@ -22,8 +22,8 @@ namespace PlanA.Data.Domain.ExtendedClasses
 
         public override int Key
         {
-            get { return CoverId; }
-            set { CoverId = value; }
+            get => CoverId;
+            set => CoverId = value;
         }
 
     }

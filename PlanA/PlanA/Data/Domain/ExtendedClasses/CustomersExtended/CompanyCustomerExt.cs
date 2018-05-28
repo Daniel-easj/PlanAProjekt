@@ -22,20 +22,20 @@ namespace PlanA.Data.Domain.ExtendedClasses
 
         public override int Key
         {
-            get { return CompanyCustomer1; }
-            set { CompanyCustomer1 = value; }
+            get => CompanyCustomer1;
+            set => CompanyCustomer1 = value;
         }
 
         public override string CustomerType
         {
-            get { return "CompanyCustomer"; }
-            set { CustomerType = value; }
+            get => "CompanyCustomer";
+            set => CustomerType = value;
         }
 
         public override string City
         {
-            get { return ZipNavigation.City1; }
-            set { ZipNavigation.City1 = value; }
+            get => ZipNavigation.City1;
+            set => ZipNavigation.City1 = value;
         }
 
     }

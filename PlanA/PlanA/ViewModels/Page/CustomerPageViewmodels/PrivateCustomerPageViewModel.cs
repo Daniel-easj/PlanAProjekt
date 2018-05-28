@@ -27,14 +27,11 @@ namespace PlanA.ViewModels.Page.CustomerPageViewmodels
             return new PrivateCustomerDataViewModel(obj);
         }
 
-        public List<City> ZipCollection
-        {
-            get { return DomainModel.Catalogs.ZipCodes.All; }
-        }
+        public List<City> ZipCollection => DomainModel.Catalogs.ZipCodes.All;
 
         public City ZipSelected
         {
-            get { return null; }
+            get => null;
             set
             {
                 ItemDetails.DataObject.Zip = value.Zip;

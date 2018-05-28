@@ -47,9 +47,6 @@ namespace PlanA.ViewModels.Page
             }
         }
 
-        public ObservableCollection<CustomerBase> Customers
-        {
-            get { return DomainModel.Catalogs.Customers; }
-        }
+        public ObservableCollection<CustomerBase> Customers => DomainModel.Catalogs.Customers;
     }
 }
