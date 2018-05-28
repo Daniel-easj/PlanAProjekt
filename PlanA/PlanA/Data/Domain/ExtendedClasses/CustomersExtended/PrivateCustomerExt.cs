@@ -19,20 +19,20 @@ namespace PlanA.Data.Domain.ExtendedClasses
 
         public override int Key
         {
-            get { return PrivateCustomerId; }
-            set { PrivateCustomerId = value; }
+            get => PrivateCustomerId;
+            set => PrivateCustomerId = value;
         }
 
         public override string CustomerType
         {
-            get { return "PrivateCustomer"; }
-            set { CustomerType = value; }
+            get => "PrivateCustomer";
+            set => CustomerType = value;
         }
 
         public override string City
         {
-            get { return ZipNavigation.City1; }
-            set { ZipNavigation.City1 = value; }
+            get => ZipNavigation.City1;
+            set => ZipNavigation.City1 = value;
         }
     }
 }

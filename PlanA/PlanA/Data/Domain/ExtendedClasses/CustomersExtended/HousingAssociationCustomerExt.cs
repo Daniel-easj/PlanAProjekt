@@ -24,20 +24,20 @@ namespace PlanA.Data.Domain.ExtendedClasses
 
         public override int Key
         {
-            get { return HousingAssociationCustomerId; }
-            set { HousingAssociationCustomerId = value; }
+            get => HousingAssociationCustomerId;
+            set => HousingAssociationCustomerId = value;
         }
 
         public override string CustomerType
         {
-            get { return "HousingAssociationCustomer"; }
-            set { CustomerType = value; }
+            get => "HousingAssociationCustomer";
+            set => CustomerType = value;
         }
 
         public override string City
         {
-            get { return ZipNavigation.City1; }
-            set { ZipNavigation.City1 = value; }
+            get => ZipNavigation.City1;
+            set => ZipNavigation.City1 = value;
         }
     }
 }
