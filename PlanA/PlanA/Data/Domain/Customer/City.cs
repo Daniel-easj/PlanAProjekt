@@ -21,9 +21,6 @@ namespace PlanA
         public ICollection<HousingAssociationCustomer> HousingAssociationCustomers { get; set; }
         public ICollection<PrivateCustomer> PrivateCustomers { get; set; }
 
-        public override string ToString()
-        {
-            return Zip;
-        }
+        public override string ToString() => Zip;
     }
 }

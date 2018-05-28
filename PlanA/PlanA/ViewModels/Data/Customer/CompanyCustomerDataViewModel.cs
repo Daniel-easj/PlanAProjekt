@@ -35,7 +35,7 @@ namespace PlanA.ViewModels.Data
 
         public string Address
         {
-            get { return DataObject.Address; }
+            get => DataObject.Address;
             set
             {
                 DataObject.Address = value;

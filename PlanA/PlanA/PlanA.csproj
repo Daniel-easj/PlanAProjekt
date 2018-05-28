@@ -96,7 +96,6 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="BaseClasses\CustomerBase.cs" />
-    <Compile Include="CatalogClasses\CombinedCatalogs\CustomersCatalog.cs" />
     <Compile Include="CatalogClasses\CombinedCatalogs\ProductsCatalog.cs" />
     <Compile Include="CatalogClasses\ProductCatalogs\PuttyCatalog.cs" />
     <Compile Include="CatalogClasses\ProductCatalogs\ToolCatalog.cs" />
@@ -133,8 +132,6 @@
     <Compile Include="ViewModels\App\ProductTypeViewModel.cs" />
     <Compile Include="ViewModels\Base\DataViewModelAppBase.cs" />
     <Compile Include="ViewModels\Base\PageViewModelAppBase.cs" />
-    <Compile Include="ViewModels\Data\CombinedCustomers\CustomersDataViewmodel.cs" />
-    <Compile Include="ViewModels\Data\CombinedProducts\ProductsDataViewmodel.cs" />
     <Compile Include="ViewModels\Data\Customer\CompanyCustomerDataViewModel.cs" />
     <Compile Include="ViewModels\Data\Customer\HousingAssociationCustomerDataViewModel.cs" />
     <Compile Include="ViewModels\Data\Customer\PrivateCustomerDataViewModel.cs" />
@@ -349,10 +346,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="CommandClasses\" />
     <Folder Include="TaskClasses\" />
     <Folder Include="ViewModels\Data\Task\" />
-    <Folder Include="ViewModels\Page\TaskPageViewModels\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

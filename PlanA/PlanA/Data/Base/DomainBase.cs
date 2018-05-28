@@ -20,10 +20,7 @@ namespace PlanA.BaseClasses
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        public ICopyable Copy()
-        {
-            return (MemberwiseClone() as ICopyable);
-        }
+        public ICopyable Copy() => (MemberwiseClone() as ICopyable);
 
         public abstract int Key { get; set; }
     }

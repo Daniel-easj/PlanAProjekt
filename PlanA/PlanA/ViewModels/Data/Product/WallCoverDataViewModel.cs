@@ -36,7 +36,5 @@ namespace PlanA.ViewModels.Data.Product
                 DataObject.SpecificType = value;
                 OnPropertyChanged();
             }
-
-
         }
 }   }
