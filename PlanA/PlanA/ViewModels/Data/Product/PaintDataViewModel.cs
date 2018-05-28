@@ -69,6 +69,10 @@ namespace PlanA.ViewModels.Data.Product
                 }
             }
         }
-        
+
+        public void Method()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

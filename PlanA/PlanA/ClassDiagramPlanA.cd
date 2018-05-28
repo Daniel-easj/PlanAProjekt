@@ -8,23 +8,23 @@
     </TypeIdentifier>
   </Class>
   <Class Name="PlanA.BaseClasses.CustomerBase">
-    <Position X="38.25" Y="17.75" Width="4.5" />
+    <Position X="37.5" Y="20.75" Width="4.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAAAAAAAAAAQAAAAAAAACAAAAIAACAAA=</HashCode>
+      <HashCode>AgAAAAAAACAAAAQIAAAACAQAAAAAAAACAAAAIAAAAAA=</HashCode>
       <FileName>BaseClasses\CustomerBase.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlanA.BaseClasses.ProductBase">
-    <Position X="18" Y="17.75" Width="4" />
+    <Position X="17.25" Y="22.75" Width="4" />
     <TypeIdentifier>
-      <HashCode>AAABAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAgAACAAA=</HashCode>
+      <HashCode>AAABAAAAAAAgAAQAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
       <FileName>BaseClasses\ProductBase.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlanA.CatalogClasses.CombinedCatalogs.CustomersCatalog">
     <Position X="8.5" Y="14" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>CatalogClasses\CombinedCatalogs\CustomersCatalog.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -91,79 +91,79 @@
       <FileName>CatalogClasses\ProductCatalogs\WallCoverCatalog.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PlanA.CatalogClasses.TaskCatalog.TaskCatalog" Collapsed="true">
-    <Position X="67.75" Y="4.5" Width="1.5" />
+  <Class Name="PlanA.CatalogClasses.TaskCatalog.TaskCatalog">
+    <Position X="24.25" Y="16.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>CatalogClasses\TaskCatalog\TaskCatalog.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlanA.BaseClasses.DomainBase">
-    <Position X="27.25" Y="15.5" Width="3.75" />
+    <Position X="24.25" Y="21.25" Width="3.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAQAIAAAAAAAggAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Data\Base\DomainBase.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="PlanA.Data.Domain.ExtendedClasses.CompanyCustomer">
-    <Position X="31.5" Y="20.75" Width="5.5" />
+    <Position X="30.75" Y="25.75" Width="5.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAAAAAAAABAQAAAAAAAACAAAAKAgCAAA=</HashCode>
+      <HashCode>AoAAAAAAACAAAAQIAAAADAQAAAAAAAACAAAAKAgAAAA=</HashCode>
       <FileName>Data\Domain\Customer\CompanyCustomer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlanA.Data.Domain.ExtendedClasses.HousingAssociationCustomer">
-    <Position X="37.75" Y="20.75" Width="6" />
+    <Position X="37" Y="25.75" Width="6" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAgACAAAAAAAAAABAQAAAAAAAACAAAAKAACAAA=</HashCode>
+      <HashCode>AoAAAAAgACAAAAQIAAAADAQAAAAAAAACAAAAKAAAAAA=</HashCode>
       <FileName>Data\Domain\Customer\HousingAssociationCustomer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlanA.Data.Domain.ExtendedClasses.PrivateCustomer">
-    <Position X="44.5" Y="20.75" Width="4.75" />
+    <Position X="43.75" Y="25.75" Width="4.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAiAAAAAAAAAAAAQAAAAAAAACAAAAIAAAAAA=</HashCode>
+      <HashCode>AoAAAAAAAiAAAAQIAAAACAQAAAAAAAACAAAAIAAAAAA=</HashCode>
       <FileName>Data\Domain\Customer\PrivateCustomer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlanA.Data.Domain.ExtendedClasses.Cover">
-    <Position X="9" Y="20.5" Width="3.75" />
+    <Position X="8.25" Y="25.5" Width="3.75" />
     <TypeIdentifier>
-      <HashCode>AAABAAAAAAAgAAAAAgAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <HashCode>AAABAAAAAAAgAAQAAgAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
       <FileName>Data\Domain\ExtendedClasses\ProductsExtended\CoverExt.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlanA.Data.Domain.ExtendedClasses.Paint">
-    <Position X="18.25" Y="20.5" Width="3.75" />
+    <Position X="17.5" Y="25.5" Width="3.75" />
     <TypeIdentifier>
-      <HashCode>AABBAACCAAAgAAAAAAAAAAAAAAAAAAAAAAAAgCAiAAA=</HashCode>
+      <HashCode>AABBAACCAAAgAAQAAAAAAAAAAAAAAAAAAAAAgCAgAAA=</HashCode>
       <FileName>Data\Domain\ExtendedClasses\ProductsExtended\PaintExt.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlanA.Data.Domain.ExtendedClasses.Putty">
-    <Position X="22.75" Y="20.5" Width="3.75" />
+    <Position X="22" Y="25.5" Width="3.75" />
     <TypeIdentifier>
-      <HashCode>AAABAAAAAAAgAAAAAIAAAAAAAAAAAAAAAAAAggBCAAA=</HashCode>
+      <HashCode>AAABAAAAAAAgAAQAAIAAAAAAAAAAAAAAAAAAggBAAAA=</HashCode>
       <FileName>Data\Domain\ExtendedClasses\ProductsExtended\PuttyExt.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlanA.Data.Domain.ExtendedClasses.Tool">
-    <Position X="27.25" Y="20.5" Width="3.5" />
+    <Position X="26.5" Y="25.5" Width="3.5" />
     <TypeIdentifier>
-      <HashCode>AAABAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAgAAQAAA=</HashCode>
+      <HashCode>AAABAAAAAAAgAAQAAAAAAAAAAAAAAAAAAAAAgAAQAAA=</HashCode>
       <FileName>Data\Domain\ExtendedClasses\ProductsExtended\ToolExt.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlanA.Data.Domain.ExtendedClasses.Wallcover">
-    <Position X="13.5" Y="20.5" Width="4" />
+    <Position X="12.75" Y="25.5" Width="4" />
     <TypeIdentifier>
-      <HashCode>AAABAAAAAAAgAAAAAAAAAAAAAAAAAAAAAgAAgAAAAAA=</HashCode>
+      <HashCode>AAABAAAAAAAgAAQAAAAAAAAAAAAAAAAAAgAAgAAAAAA=</HashCode>
       <FileName>Data\Domain\ExtendedClasses\ProductsExtended\WallCoverExt.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PlanA.Data.Domain.Task" Collapsed="true">
-    <Position X="66" Y="4.5" Width="1.5" />
+  <Class Name="PlanA.Task">
+    <Position X="22.75" Y="18" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAIAAAIAAAAAAAAAAAAAAAAEAAgAAAIAAAAAAA=</HashCode>
       <FileName>Data\Domain\Task\Task.cs</FileName>
@@ -172,103 +172,103 @@
   <Class Name="PlanA.PlanadbContext" Collapsed="true">
     <Position X="67.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AgAAAAKAAQgAAAAAAIAAAAAAEAAAAAAAQAAIACAIAAA=</HashCode>
+      <HashCode>EgAAAAKAAQgAAAAAAIAAAAAAEAAAAAAAQAAIACAIAAA=</HashCode>
       <FileName>Data\Persistent\PlanadbContext.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PlanA.Model.DomainModel" Collapsed="true">
-    <Position X="64.25" Y="2.5" Width="1.5" />
+  <Class Name="PlanA.Model.DomainModel">
+    <Position X="28.75" Y="15.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AEAECFKkAAgAgAACAAQAAIggAIAAAAAAwIACAABBAAA=</HashCode>
+      <HashCode>AEEECFAkAAgAgAACAAQAAqggAIAAAEAAwIACAABBAAA=</HashCode>
       <FileName>Model\DomainModel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlanA.ViewModels.App.AppViewModel" Collapsed="true">
-    <Position X="64.25" Y="1.5" Width="1.5" />
+    <Position X="62.25" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ViewModels\App\AppViewModel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlanA.ViewModels.DataViewModelAppBase&lt;TViewData&gt;">
-    <Position X="27" Y="6.5" Width="3" />
+    <Position X="23.25" Y="5.5" Width="3" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ViewModels\Base\DataViewModelAppBase.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlanA.ViewModels.Base.PageViewModelAppBase&lt;TViewData&gt;">
-    <Position X="32.75" Y="1.5" Width="7.5" />
+    <Position X="32.75" Y="1.25" Width="7.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ViewModels\Base\PageViewModelAppBase.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlanA.ViewModels.Data.CombinedCustomers.CustomersDataViewmodel">
-    <Position X="34.25" Y="8.5" Width="3.25" />
+    <Position X="37" Y="8.5" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAAAAAAAAQAAAAAAAACAAAAIAAAAAA=</HashCode>
       <FileName>ViewModels\Data\CombinedCustomers\CustomersDataViewmodel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlanA.ViewModels.Data.CombinedProducts.ProductsDataViewmodel">
-    <Position X="41.5" Y="8.5" Width="3" />
+    <Position X="44.25" Y="8.5" Width="3" />
     <TypeIdentifier>
       <HashCode>AAABAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
       <FileName>ViewModels\Data\CombinedProducts\ProductsDataViewmodel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlanA.ViewModels.Data.CompanyCustomerDataViewModel">
-    <Position X="9" Y="8.5" Width="4" />
+    <Position X="11.75" Y="8.5" Width="4" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAAAAAAAAAAQAAAAAAAACAAAAKAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAACAAAAAAAAAACAQAAAAAAAACAAAAKAAAAAA=</HashCode>
       <FileName>ViewModels\Data\Customer\CompanyCustomerDataViewModel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlanA.ViewModels.Data.Customer.HousingAssociationCustomerDataViewModel">
-    <Position X="17" Y="8.5" Width="5.25" />
+    <Position X="19.75" Y="8.5" Width="5.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAAAAAAAAAAQAAAAAAAACAAAAKAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAACAAAAAAAAAACAQAAAAAAAACAAAAKAAAAAA=</HashCode>
       <FileName>ViewModels\Data\Customer\HousingAssociationCustomerDataViewModel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlanA.ViewModels.Data.Customer.PrivateCustomerDataViewModel">
-    <Position X="26" Y="8.5" Width="3.75" />
+    <Position X="28.75" Y="8.5" Width="3.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAAAAAAAAAAQAAAAAAAACAAAAIAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAACAAAAAAAAAACAQAAAAAAAACAAAAIAAAAAA=</HashCode>
       <FileName>ViewModels\Data\Customer\PrivateCustomerDataViewModel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlanA.ViewModels.Data.Product.CoverDataViewModel">
-    <Position X="38.25" Y="8.5" Width="2.5" />
+    <Position X="41" Y="8.5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAABAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
       <FileName>ViewModels\Data\Product\CoverDataViewModel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlanA.ViewModels.Data.Product.PaintDataViewModel">
-    <Position X="45.25" Y="8.5" Width="2.5" />
+    <Position X="48" Y="8.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAABAAACAAAgAAAAAAAAAAAAAAAAAAAAAAAAgAAgAAA=</HashCode>
+      <HashCode>AAABAAACAAAgAAAAAAAgAAAAAAAAAAAAAAAAgAAgAAA=</HashCode>
       <FileName>ViewModels\Data\Product\PaintDataViewModel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlanA.ViewModels.Data.Product.PuttyDataViewModel">
-    <Position X="13.75" Y="8.5" Width="2.5" />
+    <Position X="16.5" Y="8.5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAABAAAAAAAgAAAAAIAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
       <FileName>ViewModels\Data\Product\PuttyDataViewModel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlanA.ViewModels.Data.Product.ToolDataViewModel">
-    <Position X="23" Y="8.5" Width="2.25" />
+    <Position X="25.75" Y="8.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAABAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
       <FileName>ViewModels\Data\Product\ToolDataViewModel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlanA.ViewModels.Data.Product.WallCoverDataViewModel">
-    <Position X="30.5" Y="8.5" Width="3" />
+    <Position X="33.25" Y="8.5" Width="3" />
     <TypeIdentifier>
       <HashCode>AAABAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
       <FileName>ViewModels\Data\Product\WallCoverDataViewModel.cs</FileName>
@@ -277,7 +277,7 @@
   <Class Name="PlanA.ViewModels.Page.CustomerPageViewmodels.CombinedCustomersPageViewmodel">
     <Position X="42.75" Y="3.5" Width="5" />
     <TypeIdentifier>
-      <HashCode>AAAAgIAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAI=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAI=</HashCode>
       <FileName>ViewModels\Page\CustomerPageViewmodels\CombinedCustomersPageViewmodel.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -289,14 +289,14 @@
     </TypeIdentifier>
   </Class>
   <Class Name="PlanA.ViewModels.Page.CustomerPageViewmodels.HousingAssociationCustomerPageViewModel">
-    <Position X="9.75" Y="3.5" Width="6.5" />
+    <Position X="8.75" Y="3.75" Width="6.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
       <FileName>ViewModels\Page\CustomerPageViewmodels\HousingAssociationCustomerPageViewModel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlanA.ViewModels.Page.CustomerPageViewmodels.PrivateCustomerPageViewModel">
-    <Position X="21.5" Y="3.5" Width="5.25" />
+    <Position X="17" Y="2" Width="5.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
       <FileName>ViewModels\Page\CustomerPageViewmodels\PrivateCustomerPageViewModel.cs</FileName>
@@ -324,14 +324,14 @@
     </TypeIdentifier>
   </Class>
   <Class Name="PlanA.ViewModels.Page.ProductPageViewModels.PuttyPageViewModel">
-    <Position X="17" Y="3.5" Width="3.75" />
+    <Position X="10.5" Y="1" Width="3.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
       <FileName>ViewModels\Page\ProductPageViewModels\PuttyPageViewModel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlanA.ViewModels.Page.ProductPageViewModels.ToolPageViewModel">
-    <Position X="27.5" Y="3.5" Width="3.75" />
+    <Position X="27.25" Y="5.5" Width="3.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
       <FileName>ViewModels\Page\ProductPageViewModels\ToolPageViewModel.cs</FileName>
@@ -355,8 +355,8 @@
   <Class Name="PlanA.XAML_Pages.CustomerMainPage" Collapsed="true">
     <Position X="67.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAgAAgQAAAAAAAAAAIAAAAAAAAAAAAAoAAA=</HashCode>
-      <FileName>XAML Pages\CustomerMainPage.xaml.cs</FileName>
+      <HashCode>AAAAAAAAAAAIAgQAAAAAAAAAAIAAAAAAAAAAAAAoAAA=</HashCode>
+      <FileName>XAML MainPages\CustomerMainPage.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -372,7 +372,7 @@
     <Position X="66" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAQAAAAgAAAAAAAAAAAIAAAAAAAAAAAAAoAAA=</HashCode>
-      <FileName>XAML Pages\InventoryMainPage.xaml.cs</FileName>
+      <FileName>XAML MainPages\InventoryMainPage.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -403,16 +403,16 @@
   <Class Name="PlanA.XAML_Pages.SelectedProduct" Collapsed="true">
     <Position X="69.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAgQAAAAAAAAAAIAAAAAAAAAAAAAoACA=</HashCode>
+      <HashCode>AAAAAAAARAAAAgQAAAAAAAAAAIAAAAAAAAAAAAAoACA=</HashCode>
       <FileName>XAML Pages\SelectedProduct.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="PlanA.XAML_Pages.StatisticPage" Collapsed="true">
-    <Position X="64.25" Y="4.5" Width="1.5" />
+    <Position X="64.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAIAAAAAAAAAAAAAoAAA=</HashCode>
-      <FileName>XAML Pages\StatisticPage.xaml.cs</FileName>
+      <FileName>XAML MainPages\StatisticPage.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -427,9 +427,37 @@
   <Class Name="PlanA.MainPage" Collapsed="true">
     <Position X="67.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAgQAAAAAAAAAAIAAAAAAAAAAAAAoAAA=</HashCode>
-      <FileName>XAML Pages\MainPage.xaml.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAgQAIAAAAAAAAIAAAAAAAAAAAAAoAAA=</HashCode>
+      <FileName>XAML MainPages\MainPage.xaml.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Object">
+    <Position X="15.75" Y="15.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ViewModel.Data.Implementation.DataViewModelBase&lt;TViewData&gt;">
+    <Position X="17.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Data.Transformed.Implementation.DataWrapper&lt;TData&gt;">
+    <Position X="7" Y="8.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Extensions.ViewModel.Implementation.PageViewModelCRUD&lt;TViewData&gt;">
+    <Position X="44.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Extensions.ViewModel.Implementation.PageViewModelWithState&lt;TViewData&gt;">
+    <Position X="29.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ViewModel.Page.Implementation.PageViewModelBase&lt;TViewData&gt;">
+    <Position X="24" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
     <Lollipop Position="0.2" />
   </Class>
   <Font Name="Segoe UI" Size="9" />
