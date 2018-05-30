@@ -9,16 +9,10 @@ using PlanA.Model;
 
 namespace PlanA.ViewModels.Data.Customer
 {
-    class PrivateCustomerDataViewModel : DataViewModelAppBase<PrivateCustomer>
+    public class PrivateCustomerDataViewModel : DataViewModelAppBase<PrivateCustomer>
     {
-
-        //private ObservableCollection<string> _zipCodes;
-
         public PrivateCustomerDataViewModel(PrivateCustomer obj) : base(obj)
         {
-            // _zipCodes = new ObservableCollection<string>();
-
-
         }
 
         public string Name
