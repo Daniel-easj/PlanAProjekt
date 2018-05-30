@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using PlanA.BaseClasses;
-using PlanA.CatalogClasses.CombinedCatalogs;
 using PlanA.CatalogClasses.CustomerCatalogs;
 using PlanA.CatalogClasses.ProductCatalogs;
 using PlanA.CatalogClasses.ZipCatalog;
@@ -31,9 +30,6 @@ namespace PlanA.Model
         private CoverCatalog _coverCatalog;
         private WallCoverCatalog _wallCoverCatalog;
         private PaintCatalog _paintCatalog;
-
-        // Combined ProductCatalog
-        private ProductsCatalog _productsCatalog;
 
         private static DomainModel _instance;
 
@@ -63,8 +59,6 @@ namespace PlanA.Model
             _coverCatalog = new CoverCatalog();
             _wallCoverCatalog = new WallCoverCatalog();
             _paintCatalog = new PaintCatalog();
-
-            _productsCatalog = new ProductsCatalog();
         }
 
         public async System.Threading.Tasks.Task LoadAsync()
@@ -109,7 +103,6 @@ namespace PlanA.Model
         public CoverCatalog CoverCatalog => _coverCatalog;
         public WallCoverCatalog WallCoverCatalog => _wallCoverCatalog;
         public PaintCatalog PaintCatalog => _paintCatalog;
-        public ProductsCatalog ProductsCatalog => _productsCatalog;
 
     }
 }
