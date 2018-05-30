@@ -63,7 +63,7 @@
             </Grid.ColumnDefinitions>
             <TextBlock x:Name="SiteDescription" HorizontalAlignment="Stretch" Margin="0,0,0,0" 
                        Text="Opgaver" TextAlignment="Center" TextWrapping="Wrap" 
-                       VerticalAlignment="Bottom" FontSize="20" LineHeight="6"/>
+                       VerticalAlignment="Bottom" FontSize="20" LineHeight="6" Grid.Column="1" Grid.ColumnSpan="2"/>
             <Button x:Name="LoadAndSaveButton" Content="Temporary" Grid.Column="3" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch"
                     Background="#00000000" BorderBrush="Black" BorderThickness="2,0,2,0" Click="GoToLoadAndSaveMainPage"/>
 
