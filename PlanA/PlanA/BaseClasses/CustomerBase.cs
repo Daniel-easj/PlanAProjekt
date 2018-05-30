@@ -12,8 +12,6 @@ namespace PlanA.BaseClasses
         public virtual string Phone { get; set; }
         public virtual string Address { get; set; }
         public virtual string Email { get; set; }
-
-        public virtual string City { get; set; }
         public virtual string Zip { get; set; }
 
         public virtual string CustomerType { get; set; }
