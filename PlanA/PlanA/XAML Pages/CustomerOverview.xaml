@@ -5,8 +5,13 @@
     xmlns:local="using:PlanA.XAML_Pages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:page="using:PlanA.ViewModels.Page"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.DataContext>
+        <page:CustomersViewModel/>
+    </Page.DataContext>
 
     <Grid x:Name="MainGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.ColumnDefinitions>
@@ -86,20 +91,21 @@
                     <TextBlock x:Name="AnnullerTekst" Text="Tilbage" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="15,0,0,0" FontSize="24"/>
                 </StackPanel>
             </Button>
-            <ListView ItemsSource="{Binding Products}" Margin="0,0,0,0" Grid.RowSpan="8" Grid.ColumnSpan="4">
+            <ListView ItemsSource="{Binding Customers}" Margin="0,0,0,0" Grid.Row="1">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Height="90" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,11,0,0" Padding="0,0,0,0" BorderBrush="Black" BorderThickness="0,0,0,0" Width="330">
                             <Grid Height="90" BorderBrush="Black" BorderThickness="2,2,2,2">
-                                <TextBlock Text="Opgavebeskrivelse" Height="30" Margin="10,0,0,0" VerticalAlignment="Top"/>
-                                <TextBlock Text="Reference-nummer" Height="30" Margin="10,0,0,0" VerticalAlignment="Center"/>
-                                <TextBlock Text="Startdato" Height="30" Margin="10,0,0,0" VerticalAlignment="Bottom"/>
+                                <TextBlock Text="{Binding Name}" Height="30" Margin="10,0,0,0" VerticalAlignment="Top"/>
+                                <TextBlock Text="{Binding Address}" Height="30" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                                <TextBlock Text="{Binding Zip}" Height="30" Margin="10,0,0,0" VerticalAlignment="Bottom"/>
+                                <TextBlock HorizontalAlignment="Right" VerticalAlignment="Top" Text="{Binding CustomerType}"/>
                             </Grid>
                         </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            
+
 
 
         </Grid>
