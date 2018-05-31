@@ -55,7 +55,7 @@
             </Grid.ColumnDefinitions>
             <TextBlock x:Name="SiteDescription" HorizontalAlignment="Stretch" Margin="0,0,0,0" 
                        Text="Vælg kunde" TextAlignment="Center" TextWrapping="Wrap" 
-                       VerticalAlignment="Bottom" FontSize="20" LineHeight="6" Grid.ColumnSpan="2"/>
+                       VerticalAlignment="Bottom" FontSize="20" LineHeight="6" Grid.ColumnSpan="2" Grid.Column="1"/>
             <!--<AutoSuggestBox x:Name="SearchBar" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" Margin="0,0,10,0" 
                             VerticalAlignment="Bottom" Grid.Column="1" PlaceholderText="Søg" TextChanged="AutoSuggestionsBox_TextChanged"
                             QuerySubmitted="AutoSuggestBox_QuerySubmitted"  SuggestionChosen="AutoSuggestBox_SuggestionChosen"/>-->

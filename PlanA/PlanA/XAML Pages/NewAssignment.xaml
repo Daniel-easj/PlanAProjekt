@@ -88,7 +88,7 @@
             <TextBlock TextAlignment="Center" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" Margin="0,0,20,0" Text="Slutdato" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="6" Grid.Column="2"/>
             <TextBlock TextAlignment="Center" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="20,0,0,0" Text="Startdato" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="6"/>
 
-            <Button x:Name="Annuller" HorizontalAlignment="Stretch" Margin="10,0,5,0" VerticalAlignment="Stretch" Grid.Row="8" Grid.ColumnSpan="2" Background="#00000000" BorderBrush="Black" >
+            <Button x:Name="Annuller" HorizontalAlignment="Stretch" Margin="10,0,5,0" VerticalAlignment="Stretch" Grid.Row="8" Grid.ColumnSpan="2" Background="#00000000" BorderBrush="Black" Click="GoToMainPage">
                 <StackPanel Margin="-10,-6,-10,-6" Orientation="Horizontal" Height="66" Width="165">
                     <Image Source="../Assets/Back.png" Margin="5,10,0,10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
                     <TextBlock x:Name="AnnullerTekst" Text="Annuller" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="10,0,0,0" FontSize="24"/>
