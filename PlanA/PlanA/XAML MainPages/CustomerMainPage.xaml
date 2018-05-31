@@ -84,6 +84,7 @@
                                 <TextBlock Text="{Binding Name}" Height="30" Margin="10,0,0,0" VerticalAlignment="Top"/>
                                 <TextBlock Text="{Binding Address}" Height="30" Margin="10,0,0,0" VerticalAlignment="Center"/>
                                 <TextBlock Text="{Binding Zip}" Height="30" Margin="10,0,0,0" VerticalAlignment="Bottom"/>
+                                <TextBlock HorizontalAlignment="Right" VerticalAlignment="Top" Text="{Binding CustomerType}"/>
                             </Grid>
                         </StackPanel>
                     </DataTemplate>

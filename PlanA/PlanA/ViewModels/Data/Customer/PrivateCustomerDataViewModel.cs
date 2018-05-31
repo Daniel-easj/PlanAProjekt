@@ -19,7 +19,7 @@ namespace PlanA.ViewModels.Data.Customer
         {
             get => DataObject.Name;
             set
-            {
+            {   
                 if (string.IsNullOrWhiteSpace(Name) || Name.Length < 2)
                 {
                     throw new Exception();

@@ -29,7 +29,7 @@ namespace PlanA.Data.Domain.ExtendedClasses
 
         public override string CustomerType
         {
-            get => "HousingAssociationCustomer";
+            get => "Boligforening";
             set => CustomerType = value;
         }
     }
