@@ -6,11 +6,12 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:viewModels="using:PlanA.ViewModels"
+    xmlns:page="using:PlanA.ViewModels.Page"
     mc:Ignorable="d">
 
-    <!--<Page.DataContext>
-        <viewModels:ProductViewModel/>
-    </Page.DataContext>-->
+    <Page.DataContext>
+        <page:ProductsViewModel/>
+    </Page.DataContext>
 
     <Grid x:Name="MainGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.ColumnDefinitions>
@@ -77,11 +78,11 @@
             <ListView ItemsSource="{Binding Products}" VerticalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" Grid.RowSpan="3">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel Margin="20,10,10,10" Width="300">
-                            <Grid Height="60" BorderBrush="Black" BorderThickness="2,2,2,2">
-                                <TextBlock Text="{Binding Description, Mode=OneWay}" VerticalAlignment="Top" Margin="10,0,0,0"/>
-                                <TextBlock Text="{Binding SpecificType, Mode=OneWay}" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0,0,0"/>
-                                <TextBlock Text="{Binding Quantity, Mode=OneWay}" VerticalAlignment="Bottom" Margin="10,0,0,0"/>
+                        <StackPanel Height="90" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,11,0,0" Padding="0,0,0,0" BorderBrush="Black" BorderThickness="0,0,0,0" Width="330">
+                            <Grid Height="90" BorderBrush="Black" BorderThickness="2,2,2,2">
+                                <TextBlock Text="{Binding Description, Mode=OneWay}" VerticalAlignment="Top"  Margin="10,0,0,0"/>
+                                <TextBlock Text="{Binding ReadableQuantity, Mode=OneWay}" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                                <TextBlock Text="{Binding ProductType}" HorizontalAlignment="Right" VerticalAlignment="Top"/>
                             </Grid>
                         </StackPanel>
                     </DataTemplate>

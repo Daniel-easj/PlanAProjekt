@@ -29,5 +29,13 @@ namespace PlanA.Data.Domain.ExtendedClasses
             get => PaintId;
             set => PaintId = value;
         }
+
+        public override string ReadableQuantity { get { return $"Mængde: {Quantity}"; } }
+
+        public override string ProductType
+        {
+            get { return "Maling"; }
+            set { ProductType = value; }
+        }
     }
 }

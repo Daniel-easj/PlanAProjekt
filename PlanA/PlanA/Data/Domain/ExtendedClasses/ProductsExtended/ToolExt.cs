@@ -25,5 +25,13 @@ namespace PlanA.Data.Domain.ExtendedClasses
             get => ToolId;
             set => ToolId = value;
         }
+
+        public override string ReadableQuantity { get { return $"Mængde: {Quantity}"; } }
+
+        public override string ProductType
+        {
+            get { return "Værktøj"; }
+            set { ProductType = value; }
+        }
     }
 }

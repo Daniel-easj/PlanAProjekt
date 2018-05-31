@@ -14,6 +14,10 @@ namespace PlanA.BaseClasses
         public string Description { get; set; }
         public int SpecificType { get; set; }
 
+        public virtual string ReadableQuantity { get; }
+        
+        public virtual string ProductType { get; set; }
+
         protected ProductBase(int quantity, string description, int specificType)
         {
             Quantity = quantity;

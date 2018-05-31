@@ -41,8 +41,12 @@ namespace PlanA
 
             modelBuilder.Entity<Cover>().Ignore(item => item.Key);
             modelBuilder.Entity<Paint>().Ignore(item => item.Key);
+            modelBuilder.Entity<Paint>().Ignore(item => item.ProductType);
+            modelBuilder.Entity<Paint>().Ignore(item => item.ReadableQuantity);
             modelBuilder.Entity<Putty>().Ignore(item => item.Key);
             modelBuilder.Entity<Tool>().Ignore(item => item.Key);
+            modelBuilder.Entity<Tool>().Ignore(item => item.ProductType);
+            modelBuilder.Entity<Tool>().Ignore(item => item.ReadableQuantity);
             modelBuilder.Entity<Wallcover>().Ignore(item => item.Key);
 
 

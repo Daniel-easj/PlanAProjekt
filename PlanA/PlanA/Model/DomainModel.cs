@@ -24,12 +24,15 @@ namespace PlanA.Model
         // ZipCatalog
         private ZipCatalog _zipCatalog;
 
-        // ToolCatalogs
+        // ProductCatalogs
         private PuttyCatalog _puttyCatalog;
         private ToolCatalog _toolCatalog;
         private CoverCatalog _coverCatalog;
         private WallCoverCatalog _wallCoverCatalog;
         private PaintCatalog _paintCatalog;
+
+        // Combined ProductCatalog
+        private ObservableCollection<ProductBase> _products;
 
         private static DomainModel _instance;
 
@@ -59,6 +62,8 @@ namespace PlanA.Model
             _coverCatalog = new CoverCatalog();
             _wallCoverCatalog = new WallCoverCatalog();
             _paintCatalog = new PaintCatalog();
+
+            _products = new ObservableCollection<ProductBase>();
         }
 
         public async System.Threading.Tasks.Task LoadAsync()
@@ -66,6 +71,10 @@ namespace PlanA.Model
             await _companyCustomerCatalog.LoadAsync();
             await _privateCustomerCatalog.LoadAsync();
             await _housingAssociationCustomerCatalog.LoadAsync();
+
+            await _toolCatalog.LoadAsync();
+            await _paintCatalog.LoadAsync();
+
             await _zipCatalog.LoadAsync();
         }
 
@@ -90,6 +99,19 @@ namespace PlanA.Model
             return false;
         }
 
+        public bool IDExistsProduct(ProductBase pb)
+        {
+            foreach (var item in _customers)
+            {
+                if (item.CustomerType.ToLower() == pb.ProductType.ToLower() && pb.Key == item.Key)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
         public CompanyCustomerCatalog CompanyCustomersCatalog => _companyCustomerCatalog;
         public HousingAssociationCustomerCatalog HousingAssociationCustomerCatalog => _housingAssociationCustomerCatalog;
         public PrivateCustomerCatalog PrivateCustomerCatalog => _privateCustomerCatalog;
@@ -103,6 +125,8 @@ namespace PlanA.Model
         public CoverCatalog CoverCatalog => _coverCatalog;
         public WallCoverCatalog WallCoverCatalog => _wallCoverCatalog;
         public PaintCatalog PaintCatalog => _paintCatalog;
+
+        public ObservableCollection<ProductBase> Products => _products;
 
     }
 }

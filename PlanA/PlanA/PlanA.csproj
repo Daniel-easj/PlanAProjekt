@@ -149,6 +149,7 @@
     <Compile Include="ViewModels\Page\ProductPageViewModels\ToolPageViewModel.cs" />
     <Compile Include="ViewModels\Page\ProductPageViewModels\WallcoverPageViewModel.cs" />
     <Compile Include="Data\Domain\Product\Wallcover.cs" />
+    <Compile Include="ViewModels\Page\ProductsViewModel.cs" />
     <Compile Include="XAML MainPages\ChooseCustomerMainPage.xaml.cs">
       <DependentUpon>ChooseCustomerMainPage.xaml</DependentUpon>
     </Compile>
