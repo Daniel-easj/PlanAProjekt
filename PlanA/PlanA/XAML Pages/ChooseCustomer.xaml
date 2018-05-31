@@ -86,7 +86,7 @@
                     <TextBlock x:Name="AnnullerTekst" Text="Tilbage" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="15,0,0,0" FontSize="24"/>
                 </StackPanel>
             </Button>
-            <Button Content="Ny kunde" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" Margin="10,20,10,0" Click="GoToNewCustomer" 
+            <Button Content="Ny kunde" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" Margin="10,20,10,0" Click="GoToChooseCustomerMainPage" 
                     Grid.RowSpan="5" VerticalAlignment="Top" Height="180" FontSize="40" Background="#00000000" BorderBrush="Black" BorderThickness="2,2,2,2"/>
             <Button Content="Eksisterende kunde" HorizontalAlignment="Stretch" Margin="10,0,10,0" Click="GoToCustomerOverview" 
                     Grid.Row="5" VerticalAlignment="Top" Grid.RowSpan="4" Grid.ColumnSpan="4" Height="180" FontSize="36" Background="#00000000" BorderBrush="Black" BorderThickness="2,2,2,2" />
