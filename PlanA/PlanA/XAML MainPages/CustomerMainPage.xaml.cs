@@ -70,5 +70,10 @@ namespace PlanA.XAML_Pages
         {
             this.Frame.Navigate(typeof(NewCompanyCustomer), null);
         }
+
+        private void GoToDeletePrivateCustomer(object sender, RoutedEventArgs a)
+        {
+            this.Frame.Navigate(typeof(DeletePrivateCustomer), null);
+        }
     }
 }

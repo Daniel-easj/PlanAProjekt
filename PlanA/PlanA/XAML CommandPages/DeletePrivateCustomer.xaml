@@ -1,21 +1,12 @@
 ﻿<Page
-    x:Class="PlanA.XAML_Pages.NewPrivateCustomer"
+    x:Class="PlanA.XAML_Pages.DeletePrivateCustomer"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:PlanA.XAML_Pages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:customerPageViewmodels="using:PlanA.ViewModels.Page.CustomerPageViewmodels"
-    xmlns:customer="using:PlanA.ViewModels.Data.Customer"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-    <Page.DataContext>
-        <customerPageViewmodels:PrivateCustomerPageViewModel/>
-    </Page.DataContext>
-
-
-
 
     <Grid x:Name="MainGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.ColumnDefinitions>
@@ -106,15 +97,15 @@
                 </StackPanel>
             </Button>
 
-            
+
             <Button x:Name="Næste" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="5,0,10,0" VerticalAlignment="Stretch" Grid.Row="8" 
                     Grid.Column="2" Background="#00000000" BorderBrush="#FF060606" HorizontalContentAlignment="Right" IsEnabled="{Binding ControlStates[CreateControl].Enabled}" Command="{Binding DataCommand[CreateCommand]}">
                 <StackPanel Margin="-10,-6,-10,-6" Orientation="Horizontal" Height="66" Width="165" HorizontalAlignment="Stretch">
-                    <TextBlock x:Name="GemTekst" Text="Gem" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20,0,0,0" FontSize="24"/>
-                    <Image Source="../Assets/Save.png" Margin="20,10,0,10" Height="Auto" HorizontalAlignment="Stretch"/>
+                    <TextBlock x:Name="SletTekst" Text="Slet" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20,0,0,0" FontSize="24"/>
+                    <Image Source="../Assets/Delete.png" Margin="20,10,0,10" Height="Auto" HorizontalAlignment="Stretch"/>
                 </StackPanel>
             </Button>
-            
+
             <ComboBox x:Name="Kundetype_Copy" HorizontalAlignment="Stretch" Margin="85,0,10,0" VerticalAlignment="Top" PlaceholderText="Post Nr." 
                 Grid.Column="2" Grid.ColumnSpan="2" ItemsSource="{Binding ZipCollection}" SelectedItem="{Binding ZipSelected, Mode=TwoWay}" Grid.RowSpan="2" Grid.Row="3"/>
 

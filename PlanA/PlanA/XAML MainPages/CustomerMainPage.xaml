@@ -96,12 +96,12 @@
                 <Image Source="../Assets/Black Plus.png"/>
             </Button>-->
 
-            <Button Content="Tilstande" HorizontalAlignment="Right" Margin="0,0,20,0" 
-                    VerticalAlignment="Bottom" Width="auto" Height="auto" Grid.Row="1">
+            <Button Content="Tilstande" HorizontalAlignment="Right" Margin="0,0,20,20" 
+                    VerticalAlignment="Bottom" Width="70" Height="50" Grid.Row="1" Background="#00000000" BorderBrush="Black">
                 <Button.Flyout>
                     <MenuFlyout>
                         <MenuFlyoutSubItem Text="Delete">
-                            <MenuFlyoutItem Text="Privatkunde"/>
+                            <MenuFlyoutItem Text="Privatkunde" Click="GoToDeletePrivateCustomer"/>
                             <MenuFlyoutItem Text="Erhvervskunde"/>
                             <MenuFlyoutItem Text="Boligforening"/>
                         </MenuFlyoutSubItem>
@@ -117,10 +117,10 @@
                         </MenuFlyoutSubItem>
                     </MenuFlyout>
                 </Button.Flyout>
-                
+
             </Button>
 
-            <Button Content="Slet" IsEnabled="{Binding ControlStates[DeleteControl].Enabled}" Command="{Binding DataCommand[DeleteCommand]}" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="1"/>
+            
 
         </Grid>
 
