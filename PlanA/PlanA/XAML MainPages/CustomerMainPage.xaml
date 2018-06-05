@@ -106,9 +106,9 @@
                             <MenuFlyoutItem Text="Boligforening"/>
                         </MenuFlyoutSubItem>
                         <MenuFlyoutSubItem Text="Create">
-                            <MenuFlyoutItem Text="Privatkunde"/>
-                            <MenuFlyoutItem Text="Erhvervskunde"/>
-                            <MenuFlyoutItem Text="Boligforening"/>
+                            <MenuFlyoutItem Text="Privatkunde" Click="GoToNewPrivateCustomer"/>
+                            <MenuFlyoutItem Text="Erhvervskunde" Click="GoToNewCompanyCustomer"/>
+                            <MenuFlyoutItem Text="Boligforening" Click="GoToNewHousingAssociationCustomer"/>
                         </MenuFlyoutSubItem>
                         <MenuFlyoutSubItem Text="Update">
                             <MenuFlyoutItem Text="Privatkunde"/>

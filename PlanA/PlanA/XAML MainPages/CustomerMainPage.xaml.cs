@@ -56,5 +56,19 @@ namespace PlanA.XAML_Pages
         {
             this.Frame.Navigate(typeof(ChooseCustomerMainPage), null);
         }
+
+        private void GoToNewPrivateCustomer(object sender, RoutedEventArgs a)
+        {
+            this.Frame.Navigate(typeof(NewPrivateCustomer), null);
+        }
+
+        private void GoToNewHousingAssociationCustomer(object sender, RoutedEventArgs a)
+        {
+            this.Frame.Navigate(typeof(NewHousingAssociationCustomer), null);
+        }
+        private void GoToNewCompanyCustomer(object sender, RoutedEventArgs a)
+        {
+            this.Frame.Navigate(typeof(NewCompanyCustomer), null);
+        }
     }
 }
