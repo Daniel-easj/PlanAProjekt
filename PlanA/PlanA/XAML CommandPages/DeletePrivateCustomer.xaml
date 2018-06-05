@@ -72,9 +72,27 @@
         </Grid>
         <Grid x:Name="CenterViewGrid" HorizontalAlignment="Stretch" 
               Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1" Grid.ColumnSpan="4">
-            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="25*"/>
+            </Grid.ColumnDefinitions>
 
-            <ListView ItemsSource="{Binding ItemCollection}" SelectedItem="{Binding ItemSelected, Mode=TwoWay}" Margin="0,0,0,0" Grid.Column="0">
+
+            <ListView ItemsSource="{Binding ItemCollection}" SelectedItem="{Binding ItemSelected, Mode=TwoWay}" Margin="0,0,0,0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="8">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Height="90" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,11,0,0" Padding="0,0,0,0" BorderBrush="Black" BorderThickness="0,0,0,0" Width="330">
@@ -89,7 +107,7 @@
                 </ListView.ItemTemplate>
             </ListView>
 
-            <Button x:Name="Annuller" HorizontalAlignment="Left" Margin="10,0,0,30" VerticalAlignment="Bottom" Grid.Row="8" Grid.ColumnSpan="2" Background="#00000000" BorderBrush="Black" Click="GoToCustomerMainPage" Width="165" Height="66" >
+            <Button x:Name="Annuller" HorizontalAlignment="Stretch" Margin="10,0,5,0" VerticalAlignment="Stretch" Grid.ColumnSpan="2" Background="#00000000" BorderBrush="Black" Click="GoToCustomerMainPage" Grid.Row="8" >
                 <StackPanel Margin="-10,-6,-10,-6" Orientation="Horizontal" Height="66" Width="165">
                     <Image Source="../Assets/Back.png" Margin="5,10,0,10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
                     <TextBlock x:Name="AnnullerTekst" Text="Tilbage" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="15,0,0,0" FontSize="24"/>
@@ -97,8 +115,8 @@
             </Button>
 
 
-            <Button x:Name="Næste" Grid.ColumnSpan="2" HorizontalAlignment="Right" Margin="0,0,10,30" VerticalAlignment="Bottom" Grid.Row="8" 
-                    Grid.Column="2" Background="#00000000" BorderBrush="#FF060606" HorizontalContentAlignment="Right" IsEnabled="{Binding ControlStates[DeleteControl].Enabled}" Command="{Binding DataCommand[DeleteCommand]}" Width="165" Height="65">
+            <Button x:Name="Næste" HorizontalAlignment="Stretch" Margin="5,0,10,0" VerticalAlignment="Stretch" 
+                    Grid.Column="2" Background="#00000000" BorderBrush="#FF060606" HorizontalContentAlignment="Right" IsEnabled="{Binding ControlStates[DeleteControl].Enabled}" Command="{Binding DataCommand[DeleteCommand]}" Grid.Row="8" Grid.ColumnSpan="2">
                 <StackPanel Margin="-10,-6,-10,-6" Orientation="Horizontal" Height="66" Width="165" HorizontalAlignment="Stretch">
                     <TextBlock x:Name="SletTekst" Text="Slet" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20,0,0,0" FontSize="24"/>
                     <Image Source="../Assets/Delete.png" Margin="20,10,0,10" Height="Auto" HorizontalAlignment="Stretch"/>
