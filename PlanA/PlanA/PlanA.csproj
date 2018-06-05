@@ -191,8 +191,8 @@
     <Compile Include="XAML Pages\NewPrivateCustomer.xaml.cs">
       <DependentUpon>NewPrivateCustomer.xaml</DependentUpon>
     </Compile>
-    <Compile Include="XAML Pages\NewProduct.xaml.cs">
-      <DependentUpon>NewProduct.xaml</DependentUpon>
+    <Compile Include="XAML Pages\NewPaint.xaml.cs">
+      <DependentUpon>NewPaint.xaml</DependentUpon>
     </Compile>
     <Compile Include="XAML Pages\SelectedProduct.xaml.cs">
       <DependentUpon>SelectedProduct.xaml</DependentUpon>
@@ -288,7 +288,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="XAML Pages\NewProduct.xaml">
+    <Page Include="XAML Pages\NewPaint.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
