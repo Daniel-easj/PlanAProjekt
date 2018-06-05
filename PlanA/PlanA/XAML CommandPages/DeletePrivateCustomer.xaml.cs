@@ -26,5 +26,9 @@ namespace PlanA.XAML_Pages
         {
             this.InitializeComponent();
         }
+        public void GoToCustomerMainPage(object sender, RoutedEventArgs a)
+        {
+            this.Frame.Navigate(typeof(CustomerMainPage), null);
+        }
     }
 }

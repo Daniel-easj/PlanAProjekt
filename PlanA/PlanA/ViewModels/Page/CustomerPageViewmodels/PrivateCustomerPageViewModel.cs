@@ -20,7 +20,6 @@ namespace PlanA.ViewModels.Page.CustomerPageViewmodels
         public PrivateCustomerPageViewModel() 
             : base(DomainModel.Catalogs.PrivateCustomerCatalog,new List<string>(), new List<string>())
         {
-            CombineCustomerCatalogs();
         }
 
         private CustomerBase _selectedCustomer;
@@ -38,48 +37,6 @@ namespace PlanA.ViewModels.Page.CustomerPageViewmodels
             get => null;
             set => ItemDetails.DataObject.Zip = value.Zip;
         }
-
-        public void CombineCustomerCatalogs()
-        {
-            foreach (var customer in DomainModel.Catalogs.PrivateCustomerCatalog.All)
-            {
-                if (!DomainModel.Catalogs.IDExists(customer))
-                {
-                    DomainModel.Catalogs.Customers.Add(customer);
-                }
-
-            }
-
-            foreach (var customer in DomainModel.Catalogs.HousingAssociationCustomerCatalog.All)
-            {
-                if (!DomainModel.Catalogs.IDExists(customer))
-                {
-                    DomainModel.Catalogs.Customers.Add(customer);
-                }
-
-            }
-
-            foreach (var customer in DomainModel.Catalogs.CompanyCustomersCatalog.All)
-            {
-                if (!DomainModel.Catalogs.IDExists(customer))
-                {
-                    DomainModel.Catalogs.Customers.Add(customer);
-                }
-            }
-        }
-
-        public CustomerBase SelectedCustomer
-        {
-            get { return _selectedCustomer; }
-            set
-            {
-                _selectedCustomer = value;
-                OnPropertyChanged();
-            }
-        }
-
-        public ObservableCollection<CustomerBase> Customers => DomainModel.Catalogs.Customers;
-
 
     }
 }
