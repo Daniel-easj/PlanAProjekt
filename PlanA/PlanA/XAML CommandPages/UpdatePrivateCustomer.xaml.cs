@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using PlanA.XAML_Pages;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -20,11 +21,16 @@ namespace PlanA.XAML_CommandPages
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class DeleteHousingAssociationCustomer : Page
+    public sealed partial class UpdatePrivateCustomer : Page
     {
-        public DeleteHousingAssociationCustomer()
+        public UpdatePrivateCustomer()
         {
             this.InitializeComponent();
+        }
+
+        public void GoToCustomerMainPage(object sender, RoutedEventArgs a)
+        {
+            this.Frame.Navigate(typeof(CustomerMainPage), null);
         }
     }
 }
