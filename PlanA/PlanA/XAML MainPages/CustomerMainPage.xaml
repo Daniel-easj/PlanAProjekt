@@ -11,7 +11,7 @@
     mc:Ignorable="d">
 
     <Page.DataContext>
-        <page:CustomersViewModel/>
+        <customerPageViewModels:PrivateCustomerPageViewModel/>
     </Page.DataContext>
 
     <Grid x:Name="MainGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -76,27 +76,41 @@
                 <RowDefinition Height="91*"/>
             </Grid.RowDefinitions>
             <ComboBox HorizontalAlignment="Right" VerticalAlignment="Stretch" PlaceholderText="Sortering" Width="170" Margin="0,10,10,4" Height="32" />
-            <ListView ItemsSource="{Binding Customers}" Margin="0,0,0,0" Grid.Row="1">
+            <ListView ItemsSource="{Binding ItemCollection}" SelectedItem="{Binding ItemSelected, Mode=TwoWay}" Margin="0,0,0,0" Grid.Row="1">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Height="90" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,11,0,0" Padding="0,0,0,0" BorderBrush="Black" BorderThickness="0,0,0,0" Width="330">
                             <Grid Height="90" BorderBrush="Black" BorderThickness="2,2,2,2">
-                                <TextBlock Text="{Binding Name}" Height="30" Margin="10,0,0,0" VerticalAlignment="Top"/>
-                                <TextBlock Text="{Binding Address}" Height="30" Margin="10,0,0,0" VerticalAlignment="Center"/>
-                                <TextBlock Text="{Binding Zip}" Height="30" Margin="10,0,0,0" VerticalAlignment="Bottom"/>
-                                <TextBlock HorizontalAlignment="Right" VerticalAlignment="Top" Text="{Binding CustomerType}"/>
+                                <TextBlock Text="{Binding DataObject.Name}" Height="30" Margin="10,0,0,0" VerticalAlignment="Top"/>
+                                <TextBlock Text="{Binding DataObject.Address}" Height="30" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                                <TextBlock Text="{Binding DataObject.Zip}" Height="30" Margin="10,0,0,0" VerticalAlignment="Bottom"/>
+                                <TextBlock HorizontalAlignment="Right" VerticalAlignment="Top" Text="{Binding DataObject.CustomerType}"/>
                             </Grid>
                         </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Button x:Name="NewCustomerButton" HorizontalAlignment="Right" Margin="0,0,20,0" 
+            <!--<Button x:Name="NewCustomerButton" HorizontalAlignment="Right" Margin="0,0,20,0" 
                 VerticalAlignment="Bottom" Click="GoToChooseCustomerMainPage"
                 Width="65" Height="65" Background="#00F30404" Grid.Row="2">
                 <Image Source="../Assets/Black Plus.png"/>
+            </Button>-->
+
+            <Button Content="Tilstande" HorizontalAlignment="Right" Margin="0,0,20,0" 
+                    VerticalAlignment="Bottom" Width="auto" Height="auto" Grid.Row="1">
+                <Button.Flyout>
+                    <MenuFlyout>
+                        <MenuFlyoutItem Text="Delete" Command="{Binding StateCommand[DeleteStateCommand]}"/>
+                        <MenuFlyoutItem Text="Create" Click="GoToChooseCustomerMainPage"/>
+                    </MenuFlyout>
+                </Button.Flyout>
+                
             </Button>
+
+            <Button Content="Slet" IsEnabled="{Binding ControlStates[DeleteControl].Enabled}" Command="{Binding DataCommand[DeleteCommand]}" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="1"/>
 
         </Grid>
 
     </Grid>
 </Page>
+

@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Controls;
 using PlanA.Data.Domain.ExtendedClasses;
 using PlanA.Model;
 
@@ -45,7 +46,8 @@ namespace PlanA.ViewModels.Data.Customer
                 }
                 else
                 {
-                    throw new Exception();
+                    DisplayIncorrectPhone();
+                    DataObject.Phone = "";
                 }
             }
         }
@@ -70,6 +72,18 @@ namespace PlanA.ViewModels.Data.Customer
                 DataObject.Email = value;
                 OnPropertyChanged();
             }
+        }
+
+        private async void DisplayIncorrectPhone()
+        {
+            ContentDialog wrongPhoneNumberDialog = new ContentDialog()
+            {
+                Title = "Telefonnummer ikke gyldigt",
+                Content = "Indtast  venligst et telefonnummer med 8 cifre",
+                CloseButtonText = "OK"
+            };
+
+            await wrongPhoneNumberDialog.ShowAsync();
         }
 
     }
