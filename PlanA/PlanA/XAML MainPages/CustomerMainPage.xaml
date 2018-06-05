@@ -100,8 +100,21 @@
                     VerticalAlignment="Bottom" Width="auto" Height="auto" Grid.Row="1">
                 <Button.Flyout>
                     <MenuFlyout>
-                        <MenuFlyoutItem Text="Delete" Command="{Binding StateCommand[DeleteStateCommand]}"/>
-                        <MenuFlyoutItem Text="Create" Click="GoToChooseCustomerMainPage"/>
+                        <MenuFlyoutSubItem Text="Delete">
+                            <MenuFlyoutItem Text="Privatkunde"/>
+                            <MenuFlyoutItem Text="Erhvervskunde"/>
+                            <MenuFlyoutItem Text="Boligforening"/>
+                        </MenuFlyoutSubItem>
+                        <MenuFlyoutSubItem Text="Create">
+                            <MenuFlyoutItem Text="Privatkunde"/>
+                            <MenuFlyoutItem Text="Erhvervskunde"/>
+                            <MenuFlyoutItem Text="Boligforening"/>
+                        </MenuFlyoutSubItem>
+                        <MenuFlyoutSubItem Text="Update">
+                            <MenuFlyoutItem Text="Privatkunde"/>
+                            <MenuFlyoutItem Text="Erhvervskunde"/>
+                            <MenuFlyoutItem Text="Boligforening"/>
+                        </MenuFlyoutSubItem>
                     </MenuFlyout>
                 </Button.Flyout>
                 
