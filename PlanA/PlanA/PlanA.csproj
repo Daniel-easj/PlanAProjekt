@@ -150,8 +150,8 @@
     <Compile Include="ViewModels\Page\ProductPageViewModels\WallcoverPageViewModel.cs" />
     <Compile Include="Data\Domain\Product\Wallcover.cs" />
     <Compile Include="ViewModels\Page\ProductsViewModel.cs" />
-    <Compile Include="XAML CommandPages\DeleteHousingAssociationCustomer.xaml.cs">
-      <DependentUpon>DeleteHousingAssociationCustomer.xaml</DependentUpon>
+    <Compile Include="XAML CommandPages\UpdatePrivateCustomer.xaml.cs">
+      <DependentUpon>UpdatePrivateCustomer.xaml</DependentUpon>
     </Compile>
     <Compile Include="XAML MainPages\ChooseCustomerMainPage.xaml.cs">
       <DependentUpon>ChooseCustomerMainPage.xaml</DependentUpon>
@@ -247,7 +247,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="XAML CommandPages\DeleteHousingAssociationCustomer.xaml">
+    <Page Include="XAML CommandPages\UpdatePrivateCustomer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
