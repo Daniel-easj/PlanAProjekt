@@ -15,6 +15,7 @@ namespace PlanA.ViewModels.Page
        
         public CustomersViewModel()
         {
+            DomainModel.Catalogs.Customers.Clear();
             CombineCustomerCatalogs();
         }
 
