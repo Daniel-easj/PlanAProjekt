@@ -94,11 +94,11 @@
                 <ColumnDefinition Width="25*"/>
                 <ColumnDefinition Width="25*"/>
             </Grid.ColumnDefinitions>
-            <TextBox x:Name="Fornavn" HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Top" Grid.Row="1" Grid.ColumnSpan="4" PlaceholderText="Navn" Text="{Binding ItemDetails.DataObject.Name, Mode=TwoWay}"/>
+            <TextBox x:Name="Fornavn" HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Top" Grid.Row="1" Grid.ColumnSpan="4" PlaceholderText="Navn" Text="{Binding ItemDetails.Name, Mode=TwoWay}"/>
             <TextBox x:Name="ByNavn" HorizontalAlignment="Stretch" Margin="10,0,45,0" Text="" VerticalAlignment="Top" Grid.Row="3" Grid.ColumnSpan="3" PlaceholderText="Bynavn"/>
-            <TextBox x:Name="Adresse" HorizontalAlignment="Stretch" Margin="10,0,10,0" Text="{Binding ItemDetails.DataObject.Address, Mode=TwoWay}" VerticalAlignment="Bottom" Grid.Row="3" Grid.ColumnSpan="4" PlaceholderText="Adresse"/>
-            <TextBox x:Name="Email" HorizontalAlignment="Stretch" Margin="10,0,10,0" Text="{Binding ItemDetails.DataObject.Email, Mode=TwoWay}" VerticalAlignment="Bottom" Grid.Row="5" Grid.ColumnSpan="4" PlaceholderText="E-mail"/>
-            <TextBox x:Name="Telefon" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="10,0,0,0" Text="{Binding ItemDetails.DataObject.Phone, Mode=TwoWay}" VerticalAlignment="Top" Grid.Row="5" PlaceholderText="Telefon"/>
+            <TextBox x:Name="Adresse" HorizontalAlignment="Stretch" Margin="10,0,10,0" Text="{Binding ItemDetails.Address, Mode=TwoWay}" VerticalAlignment="Bottom" Grid.Row="3" Grid.ColumnSpan="4" PlaceholderText="Adresse"/>
+            <TextBox x:Name="Email" HorizontalAlignment="Stretch" Margin="10,0,10,0" Text="{Binding ItemDetails.Email, Mode=TwoWay}" VerticalAlignment="Bottom" Grid.Row="5" Grid.ColumnSpan="4" PlaceholderText="E-mail"/>
+            <TextBox x:Name="Telefon" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="10,0,0,0" Text="{Binding ItemDetails.Phone, Mode=TwoWay}" VerticalAlignment="Top" Grid.Row="5" PlaceholderText="Telefon"/>
             <Button x:Name="Annuller" HorizontalAlignment="Stretch" Margin="10,0,5,0" VerticalAlignment="Stretch" Grid.Row="8" Grid.ColumnSpan="2" Background="#00000000" BorderBrush="Black" Click="GoToCustomerMainPage" >
                 <StackPanel Margin="-10,-6,-10,-6" Orientation="Horizontal" Height="66" Width="165">
                     <Image Source="../Assets/Back.png" Margin="5,10,0,10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>

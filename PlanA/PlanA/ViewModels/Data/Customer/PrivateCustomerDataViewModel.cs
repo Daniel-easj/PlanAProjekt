@@ -20,17 +20,19 @@ namespace PlanA.ViewModels.Data.Customer
         {
             get => DataObject.Name;
             set
-            {   
-                if (string.IsNullOrWhiteSpace(Name) || Name.Length < 2)
+            {               
+                if (!value.Any(char.IsDigit))
                 {
-                    throw new Exception();
+                    {
+                        DataObject.Name = value;
+                        OnPropertyChanged();
+                    }
                 }
                 else
                 {
-                    DataObject.Name = value;
-                    OnPropertyChanged();
+                    DisplayIncorrectName(value);
                 }
-                
+
             }
         }
 
@@ -39,15 +41,14 @@ namespace PlanA.ViewModels.Data.Customer
             get => DataObject.Phone;
             set
             {
-                if (Phone.Length < 7)
+                if (value.Length == 8)
                 {
                     DataObject.Phone = value;
                     OnPropertyChanged();
                 }
                 else
                 {
-                    DisplayIncorrectPhone();
-                    DataObject.Phone = "";
+                    DisplayIncorrectPhone(value);
                 }
             }
         }
@@ -69,17 +70,49 @@ namespace PlanA.ViewModels.Data.Customer
             get => DataObject.Email;
             set
             {
-                DataObject.Email = value;
-                OnPropertyChanged();
+                if (value.Contains("@") && value.Contains("."))
+                {
+                    DataObject.Email = value;
+                    OnPropertyChanged();
+                }
+                else
+                {
+                    DisplayIncorrectEmail(value);
+                }
+
             }
         }
 
-        private async void DisplayIncorrectPhone()
+        private async void DisplayIncorrectPhone(string incorrectPhone)
         {
             ContentDialog wrongPhoneNumberDialog = new ContentDialog()
             {
                 Title = "Telefonnummer ikke gyldigt",
-                Content = "Indtast  venligst et telefonnummer med 8 cifre",
+                Content = $"Du indtastede {incorrectPhone}. Indtast venligst et gyldigt telefonnummer (8 cifre). Eksempel: 12345678",
+                CloseButtonText = "OK"
+            };
+
+            await wrongPhoneNumberDialog.ShowAsync();
+        }
+
+        private async void DisplayIncorrectEmail(string incorrectEmail)
+        {
+            ContentDialog wrongPhoneNumberDialog = new ContentDialog()
+            {
+                Title = "Ugyldig E-mailadresse",
+                Content = $"Du indtastede {incorrectEmail}. Indtast venligst en gyldig E-mail. Eksempel: mail@mail.dk",
+                CloseButtonText = "OK"
+            };
+
+            await wrongPhoneNumberDialog.ShowAsync();
+        }
+
+        private async void DisplayIncorrectName(string incorrectName)
+        {
+            ContentDialog wrongPhoneNumberDialog = new ContentDialog()
+            {
+                Title = "Navn ikke gyldigt",
+                Content = $"Du indtastede {incorrectName}. Indtast venligst et gyldigt navn uden tal. Eksempel: Hans Hansen",
                 CloseButtonText = "OK"
             };
 
