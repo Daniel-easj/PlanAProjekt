@@ -84,11 +84,6 @@ namespace PlanA
             this.Frame.Navigate(typeof(MainPage), null);
         }
 
-        private void GoToLoadAndSaveMainPage(object sender, RoutedEventArgs a)
-        {
-            this.Frame.Navigate(typeof(LoadAndSaveMainPage), null);
-        }
-
-        
+       
     }
 }

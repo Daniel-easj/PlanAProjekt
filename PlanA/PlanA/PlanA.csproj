@@ -156,9 +156,6 @@
     <Compile Include="XAML MainPages\ChooseCustomerMainPage.xaml.cs">
       <DependentUpon>ChooseCustomerMainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="XAML MainPages\LoadAndSaveMainPage.xaml.cs">
-      <DependentUpon>LoadAndSaveMainPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="XAML Pages\ChooseCustomer.xaml.cs">
       <DependentUpon>ChooseCustomer.xaml</DependentUpon>
     </Compile>
@@ -252,10 +249,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="XAML MainPages\ChooseCustomerMainPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="XAML MainPages\LoadAndSaveMainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
