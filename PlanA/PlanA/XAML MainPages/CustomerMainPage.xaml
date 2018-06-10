@@ -91,8 +91,8 @@
                 </ListView.ItemTemplate>
             </ListView>
 
-            <Button Content="Tilstande" HorizontalAlignment="Right" Margin="0,0,20,20" 
-                    VerticalAlignment="Bottom" Width="70" Height="50" Grid.Row="1" Background="#00000000" BorderBrush="Black">
+            <Button HorizontalAlignment="Right" Margin="0,0,20,20" 
+                    VerticalAlignment="Bottom" Width="70" Height="50" Grid.Row="1" Background="#00000000" BorderBrush="Black" BorderThickness="0,0,0,0">
                 <Button.Flyout>
                     <MenuFlyout>
                         <MenuFlyoutSubItem Text="Delete">
@@ -112,7 +112,7 @@
                         </MenuFlyoutSubItem>
                     </MenuFlyout>
                 </Button.Flyout>
-
+                <Image Source="../Assets/MoreDots.png"></Image>
             </Button>
 
             

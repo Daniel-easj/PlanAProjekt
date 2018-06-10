@@ -223,6 +223,8 @@
     <Content Include="Assets\Delete.png" />
     <Content Include="Assets\Inventory Not Selected.png" />
     <Content Include="Assets\Inventory Selected.png" />
+    <Content Include="Assets\MoreDots.png" />
+    <Content Include="Assets\MoreLine.png" />
     <Content Include="Assets\Next.png" />
     <Content Include="Assets\People Not Selected.png" />
     <Content Include="Assets\People Selected.png" />
