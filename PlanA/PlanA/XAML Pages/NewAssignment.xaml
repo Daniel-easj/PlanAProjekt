@@ -85,8 +85,8 @@
             <ComboBox x:Name="Kundetype" HorizontalAlignment="Stretch" Margin="0,10,10,0" VerticalAlignment="Top" PlaceholderText="Opgavetype" Grid.Column="2" Grid.ColumnSpan="2"/>
             <TextBox PlaceholderText="Opgavebeskrivelse" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" Margin="20,0,20,0" VerticalAlignment="Stretch" Grid.Row="2" Grid.RowSpan="2" TextWrapping="Wrap"/>
             <TextBox PlaceholderText="Reference Nr." Grid.ColumnSpan="4" HorizontalAlignment="Stretch" Margin="20,0,20,0" VerticalAlignment="Top" Grid.Row="5"/>
-            <TextBlock TextAlignment="Center" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" Margin="0,0,20,0" Text="Slutdato" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="6" Grid.Column="2"/>
-            <TextBlock TextAlignment="Center" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="20,0,0,0" Text="Startdato" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="6"/>
+            <CalendarDatePicker PlaceholderText="Vælg" Header="Slutdato" Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0,20,0" DateFormat="{}{day.integer}/{month.integer}/{year.full}" />
+            <CalendarDatePicker PlaceholderText="Vælg" Header="Startdato" Grid.Row="6" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="20,0,10,0" DateFormat="{}{day.integer}/{month.integer}/{year.full}" />
 
             <Button x:Name="Annuller" HorizontalAlignment="Stretch" Margin="10,0,5,0" VerticalAlignment="Stretch" Grid.Row="8" Grid.ColumnSpan="2" Background="#00000000" BorderBrush="Black" Click="GoToMainPage">
                 <StackPanel Margin="-10,-6,-10,-6" Orientation="Horizontal" Height="66" Width="165">
