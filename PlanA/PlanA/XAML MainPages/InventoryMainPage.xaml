@@ -106,7 +106,7 @@
                             <MenuFlyoutItem Text="Vægbeklædning"/>
                         </MenuFlyoutSubItem>
                         <MenuFlyoutSubItem Text="Opret">
-                            <MenuFlyoutItem Text="Maling"/>
+                            <MenuFlyoutItem Text="Maling" Click="GoToNewPaint"/>
                             <MenuFlyoutItem Text="Værktøj"/>
                             <MenuFlyoutItem Text="Spartelmasse"/>
                             <MenuFlyoutItem Text="Afdækning"/>
