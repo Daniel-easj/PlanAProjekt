@@ -98,21 +98,21 @@
                     VerticalAlignment="Bottom" Width="70" Height="50" Grid.Row="1" Background="#00000000">
                 <Button.Flyout>
                     <MenuFlyout>
-                        <MenuFlyoutSubItem Text="Delete">
+                        <MenuFlyoutSubItem Text="Slet">
                             <MenuFlyoutItem Text="Maling"/>
                             <MenuFlyoutItem Text="Værktøj"/>
                             <MenuFlyoutItem Text="Spartelmasse"/>
                             <MenuFlyoutItem Text="Afdækning"/>
                             <MenuFlyoutItem Text="Vægbeklædning"/>
                         </MenuFlyoutSubItem>
-                        <MenuFlyoutSubItem Text="Create">
+                        <MenuFlyoutSubItem Text="Opret">
                             <MenuFlyoutItem Text="Maling"/>
                             <MenuFlyoutItem Text="Værktøj"/>
                             <MenuFlyoutItem Text="Spartelmasse"/>
                             <MenuFlyoutItem Text="Afdækning"/>
                             <MenuFlyoutItem Text="Vægbeklædning"/>
                         </MenuFlyoutSubItem>
-                        <MenuFlyoutSubItem Text="Update">
+                        <MenuFlyoutSubItem Text="Rediger">
                             <MenuFlyoutItem Text="Maling"/>
                             <MenuFlyoutItem Text="Værktøj"/>
                             <MenuFlyoutItem Text="Spartelmasse"/>

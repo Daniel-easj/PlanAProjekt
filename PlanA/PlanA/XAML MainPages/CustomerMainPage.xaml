@@ -95,17 +95,17 @@
                     VerticalAlignment="Bottom" Width="70" Height="50" Grid.Row="1" Background="#00000000" BorderBrush="Black" BorderThickness="0,0,0,0">
                 <Button.Flyout>
                     <MenuFlyout>
-                        <MenuFlyoutSubItem Text="Delete">
+                        <MenuFlyoutSubItem Text="Slet">
                             <MenuFlyoutItem Text="Privatkunde" Click="GoToDeletePrivateCustomer"/>
                             <MenuFlyoutItem Text="Erhvervskunde"/>
                             <MenuFlyoutItem Text="Boligforening"/>
                         </MenuFlyoutSubItem>
-                        <MenuFlyoutSubItem Text="Create">
+                        <MenuFlyoutSubItem Text="Opret">
                             <MenuFlyoutItem Text="Privatkunde" Click="GoToNewPrivateCustomer"/>
                             <MenuFlyoutItem Text="Erhvervskunde" Click="GoToNewCompanyCustomer"/>
                             <MenuFlyoutItem Text="Boligforening" Click="GoToNewHousingAssociationCustomer"/>
                         </MenuFlyoutSubItem>
-                        <MenuFlyoutSubItem Text="Update">
+                        <MenuFlyoutSubItem Text="Rediger">
                             <MenuFlyoutItem Text="Privatkunde" Click="GoToUpdatePrivateCustomer"/>
                             <MenuFlyoutItem Text="Erhvervskunde"/>
                             <MenuFlyoutItem Text="Boligforening"/>
